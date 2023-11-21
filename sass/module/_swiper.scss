@@ -1,0 +1,335 @@
+:root {
+  --dotSize: 15px;
+}
+.mpSlider {
+  .caption {
+    position: absolute;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 0 1em;
+    font-size: 1.25em;
+    color: #fff;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+    @include textOverflow;
+    box-sizing: border-box;
+    @include screen('mobile') {
+      width: 100%;
+      height: 2em;
+      line-height: 2em;
+      left: 0;
+      padding: 0 1em;
+    }
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+  }
+}
+.cpSlider {
+  padding: 1em 0;
+}
+.swiperBox {
+  position: relative;
+}
+.swiper {
+  img {
+    display: block;
+  }
+}
+.swiperDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  .swiper-pagination-bullet {
+    /* 點的顏色 */
+    background: #666;
+    opacity: 0.4;
+    width: var(--dotSize);
+    height: var(--dotSize);
+    border-radius: 50%;
+    &:hover,
+    &:focus-visible {
+      opacity: 1;
+      /* 點hover的顏色 */
+      background: #21baff;
+    }
+    &:focus-visible {
+      opacity: 1;
+      /* 點focus的顏色 */
+      background: #ff3e4d;
+      // box-shadow: 0px 0px 0px 1px #ff3e4d; /* 讓focus過去的點大一些 */
+    }
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+      /* 點 active 的顏色 */
+      background: $aHover;
+      &:hover {
+        /* 點 active  hover的顏色 */
+        background: #ff3e4d;
+      }
+      &:focus-visible {
+        /* 點 active  focus的顏色 */
+        background: #ff3e4d;
+      }
+    }
+    &.noFonts {
+      font-size: 0;
+    }
+  }
+}
+.swiperArrow {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px 10px;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  z-index: 9;
+  &::before {
+    content: '';
+    width: 20px;
+    height: 30px;
+    display: block;
+    background: url('../vendor/swiper/ar.svg') center no-repeat;
+  }
+  &.prevSlider {
+    left: 0px;
+  }
+  &.nextSlider {
+    right: 0px;
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+  &.swiperArrow-disabled {
+    opacity: 0.3;
+  }
+}
+
+.cpSlider .swiper {
+  margin: 0 40px;
+  background: #fff;
+  overflow: hidden;
+
+  h3 {
+    font-size: 1.5em;
+    padding: 12px 0px 15px 0px;
+    margin: 0.5em 0px 1.2em;
+    border-bottom: 1px solid $colorPrimary;
+  }
+  .cpSlider {
+    @include gutter;
+  }
+  .imgContainer {
+    @include aspectRatio(4, 3);
+    overflow: hidden;
+  }
+  .caption {
+    padding: 0.5em;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    bottom: -2em;
+    left: 0;
+    font-size: 0.938em;
+    height: 2em;
+    line-height: 1;
+    width: 100%;
+    @include textOverflow;
+    transition: 0.3s ease-out;
+  }
+  a {
+    color: #555;
+    display: block;
+    &:hover,
+    &:focus-visible {
+      .caption {
+        bottom: 0;
+      }
+    }
+  }
+  .swiperArrow {
+    padding: 0;
+  }
+}
+
+.navSlider {
+  position: relative;
+  .swiper-slide {
+    max-height: 180px;
+    a {
+      position: relative;
+      display: block;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.adSlider {
+  img {
+    width: 100%;
+    aspect-ratio: 2/1;
+    display: block;
+    object-fit: contain;
+  }
+}
+
+//videoSlider
+.videoSlider {
+  position: relative;
+  margin: 1em 0;
+  .imgContainer {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    a {
+      display: block;
+      padding-bottom: 1em;
+    }
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    display: block;
+    object-fit: fill;
+    border-radius: 10px;
+  }
+  .caption {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 1em;
+    background: #edf9fb;
+    padding: 1.5em 3em;
+    font-size: 1.125em;
+    margin: 0;
+    top: 1em;
+    z-index: 2;
+    text-align: left;
+    border-radius: 50px;
+    font-weight: bold;
+
+    @include textOverflow;
+    box-sizing: border-box;
+  }
+  .swiperArrow {
+    top: auto;
+    bottom: -1.6em;
+    z-index: 98;
+    &::before {
+      content: '';
+      width: 20px;
+      height: 30px;
+      display: block;
+      background: url('../images/ar2.svg') center no-repeat;
+    }
+    &.prevSlider {
+      left: 0.8em;
+      @include screen('mobile') {
+        left: 0.8em;
+      }
+    }
+    &.nextSlider {
+      right: 0.8em;
+      @include screen('mobile') {
+        right: 0.8em;
+      }
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .swiperDots {
+    display: none;
+  }
+}
+
+//popupSlider
+.popupSlider {
+  position: relative;
+  margin: 0;
+  padding-bottom: 1em;
+
+  .imgContainer {
+    background: #fff;
+  }
+  .playimg {
+    background: rgba(0, 0, 0, 0.2) url('../images/video_play.png') no-repeat center center;
+    background-size: 80px auto;
+    width: 80%;
+    aspect-ratio: 6/3.5;
+    display: block;
+    object-fit: fill;
+    margin: 0 auto;
+    // border-radius: 10px;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.2s ease-out;
+    &:hover,
+    &:focus {
+      background: rgba(0, 0, 0, 0.4) url('../images/video_play.png') no-repeat center center;
+      background-size: 60px auto;
+    }
+  }
+  .popupText {
+    width: 80% !important;
+    margin: 0 auto;
+    .title {
+      font-size: 1.35em;
+      font-weight: bold;
+    }
+  }
+  img {
+    width: 80%;
+    aspect-ratio: 6/3.5;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  .caption {
+    position: relative;
+    width: 80%;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0;
+    font-size: 1.35em;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: left;
+    @include textOverflow;
+    box-sizing: border-box;
+    @include screen('mobile') {
+    }
+  }
+  .swiperArrow {
+    top: 50%;
+    z-index: 98;
+    &::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      display: block;
+      background: url('../vendor/swiper/ar.svg') center no-repeat;
+      background-size: 20px auto;
+    }
+  }
+}

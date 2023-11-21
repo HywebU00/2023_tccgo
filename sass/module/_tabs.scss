@@ -1,0 +1,100 @@
+.tabSet {
+  margin: 0 auto 30px;
+  .tabItems {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    @include screen('xsMobile') {
+      flex-flow: row wrap;
+    }
+
+    button {
+      flex: 1 1 auto;
+      font-size: 1.125em;
+      font-weight: bold;
+      height: 3em;
+      text-align: center;
+      border: none;
+      margin: 1px;
+      border-radius: 0;
+      box-shadow: none;
+      background: $colorGray;
+      cursor: pointer;
+      // @include screen('xsMobile') {
+      //   flex: 1 1 100%;
+      // }
+      &:hover {
+        background: $colorLight;
+      }
+      &:focus-visible {
+        outline: none;
+        box-shadow: 0 0px 0px 2px $aFocus inset;
+        @include screen('mobile') {
+          // box-shadow: none;
+        }
+      }
+      &.active {
+        cursor: default;
+        background: $colorPrimary;
+        color: $colorWord;
+        position: relative;
+        &:before {
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 12px 8px 0 8px;
+          border-color: $colorBlue transparent transparent transparent;
+          position: absolute;
+          bottom: -12px;
+          left: 50%;
+          margin-left: -8px;
+        }
+      }
+    }
+  }
+
+  .tabContent {
+    display: none;
+    position: relative;
+    padding: 15px;
+    // box-shadow: #bbb 0 0 0 1px inset;
+    &.active {
+      display: block;
+    }
+    a:focus {
+      outline: none;
+      box-shadow: 0 0px 0px 2px $aFocus inset;
+      @include screen('mobile') {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.onMobile {
+    .tabContent {
+      display: block;
+      box-shadow: none;
+      padding: 0;
+      .tabBtn {
+        width: 100%;
+        margin: 0 0 5px 0;
+        &.active {
+          background: $colorPrimary;
+          color: #fff;
+          border-color: $colorPrimary;
+        }
+      }
+      a:focus {
+        outline: none;
+        box-shadow: 0 0px 0px 2px #1aadfa inset;
+      }
+    }
+    .content {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+.rangeSlider {
+  flex: 1 1 90%;
+}
+.range-slider {
+  position: relative;
+  height: 46px;
+  width: 100px;
+  justify-content: flex-start;
+  margin-left: 6.5em;
+}
+.range-slider::before {
+  content: '關聯性：緊密';
+  position: absolute;
+  left: -6.5em;
+  top: 0.65em;
+}
+.range-slider::after {
+  content: '寬鬆';
+  position: absolute;
+  right: -2.5em;
+  top: 0.65em;
+}
+.range-slider__input {
+  width: 100%;
+  height: 46px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+.range-slider__input:focus {
+  /* outline: none; */
+}
+
+/**
+ * 1. Remove outline on FF.
+ */
+.range-slider__input::-moz-focus-outer {
+  border: 0;
+  /* [1] */
+}
+
+.range-slider__input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #cbcecf;
+}
+.range-slider__input:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 17px;
+  width: 12px;
+  height: 12px;
+  background: #cbcecf;
+  border-radius: 50%;
+  z-index: 1;
+}
+.range-slider__input:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 17px;
+  width: 12px;
+  height: 12px;
+  background: #cbcecf;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.range-slider__input::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  margin-top: -4px;
+  /* border: 2px solid white; */
+  /* box-shadow: 0 0 0 1px black; */
+  border-radius: 50%;
+  background: #4f5556;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  z-index: 2;
+  position: relative;
+}
+
+/* .range-slider__input::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+} */
+
+/* .range-slider__input::-moz-range-thumb {
+  width: 46px;
+  height: 46px;
+  margin-top: -22px;
+  border: 17px solid white;
+  box-shadow: 0 0 0 1px black;
+  border-radius: 50%;
+  background: blue;
+  cursor: pointer;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+} */
+/* 
+.range-slider__input::-ms-track {
+  width: 100%;
+  height: 2px;
+  border-color: transparent;
+  border-width: 2px 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+} */
+
+/* .range-slider__input::-ms-fill-lower {
+  background: #666;
+  border-radius: 0;
+  height: 2px;
+  box-sizing: border-box;
+}
+
+.range-slider__input::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 0;
+  height: 2px;
+  box-sizing: border-box;
+}
+
+.range-slider__input::-ms-thumb {
+  width: 44px;
+  height: 44px;
+  margin-top: 0;
+  border: 17px solid white;
+  box-shadow: 0 0 0 1px black;
+  border-radius: 50%;
+  background: blue;
+  cursor: pointer;
+  appearance: none;
+  box-sizing: border-box;
+} */
+
+/**
+ * The container for the dot elements to sit in.
+ */
+.range-slider__dots {
+  display: flex;
+  justify-content: space-between;
+  width: calc((100%) - (46px - 12px));
+  margin-left: 17px;
+  position: absolute;
+  top: 17px;
+  left: 0;
+  z-index: -1;
+}
+.range-slider__dots span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+}

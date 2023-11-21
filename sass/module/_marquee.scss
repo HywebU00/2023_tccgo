@@ -1,0 +1,83 @@
+.marquee {
+  .swiperBox {
+    margin: 1em 0;
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    // background: #fff;
+    position: relative;
+    text-align: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 30px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px dotted #9bb7bd;
+    &:before {
+      content: '';
+      width: 30px;
+      height: 25px;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      background: url('../images/marquee_icon.png') no-repeat center center;
+      background-size: 26px auto;
+    }
+
+    @media (max-width: 991px) {
+      margin: 1.5em 0em;
+    }
+    .swiper {
+      height: 40px;
+    }
+    .marquee-arrow {
+      padding: 0;
+      position: absolute;
+      cursor: pointer;
+      right: 5px;
+      z-index: 9;
+      transform: rotate(90deg);
+      padding: 0;
+      margin: 0;
+      border: none;
+      &:before {
+        content: '';
+        width: 10px;
+        height: 20px;
+        display: block;
+        background: url('../vendor/swiper/ar.svg') center no-repeat;
+      }
+      &.prevSlider {
+        top: 0;
+      }
+      &.nextSlider {
+        bottom: 0;
+        // right: 5px;
+        &::before {
+          transform: rotate(180deg);
+        }
+      }
+      &.marquee-arrow-disabled {
+        opacity: 0.3;
+      }
+    }
+  }
+  a {
+    display: block;
+    line-height: 40px;
+    margin-right: 3em;
+    // font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000;
+    text-decoration: none;
+    span {
+      margin: 0 10px;
+    }
+    &:hover {
+      color: darken($aHover, 0);
+    }
+  }
+}

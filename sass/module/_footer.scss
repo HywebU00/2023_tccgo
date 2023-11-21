@@ -1,0 +1,129 @@
+footer {
+  clear: both;
+  text-align: left;
+  font-size: 0.875em;
+  padding: 1em 0;
+  background: $footerBg;
+  color: $colorWhite;
+  .container {
+    justify-content: space-between;
+    @include gutter;
+    & > div {
+      padding-bottom: 1em;
+    }
+    display: flex;
+    @include screen('tablet') {
+      flex-wrap: wrap;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $colorPrimary;
+    &:hover,
+    &:focus-visible {
+      color: darken($colorPrimary, 10);
+    }
+  }
+  .footerLogo {
+    flex: 0 1 350px;
+  }
+  .footerInfo {
+    flex: 1 1 auto;
+  }
+  .footerIcon {
+    flex: 0 1 200px;
+    text-align: right;
+    @include screen('tablet') {
+      flex: 1 1 100%;
+    }
+  }
+  // 版權連結
+  .footerLink {
+    @include liReset();
+    clear: both;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    @include screen('mobile') {
+      flex-flow: row wrap;
+    }
+    li {
+      flex: 0 1 auto;
+      margin: 0px 5px 5px 0px;
+      @include screen('mobile') {
+        flex: 1 1 25%;
+      }
+      a {
+        display: block;
+        padding: 0.25em 1em;
+        background: darken($footerBg, 20);
+        color: #fff;
+        text-align: center;
+        transition: 0.3s ease-out;
+        white-space: nowrap;
+        &:hover,
+        &:focus-visible {
+          background: darken($footerBg, 30);
+        }
+      }
+    }
+  }
+  p {
+    line-height: 1.65em;
+  }
+  .update,
+  .counter {
+    display: inline-block;
+    margin-right: 5px;
+    em {
+      font-style: normal;
+      color: $colorPrimary;
+      padding: 0 0.5em;
+    }
+  }
+  .footerIcon {
+    a {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      &:focus-visible {
+        &:after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          box-shadow: 0px 0px 0px 1px $aHover inset;
+          z-index: 99;
+        }
+      }
+    }
+    img {
+      max-width: 150px !important;
+    }
+  }
+}
+
+footer.typeB {
+  padding-top: 3%;
+  background: #014072;
+  .container {
+    justify-content: space-between;
+  }
+  .footerInfo {
+    color: #fff;
+  }
+  .footerLink {
+    li a {
+      padding: 0;
+      padding: 0 0 0 20px;
+      text-align: right;
+      background: none;
+      font-size: rem(14);
+    }
+  }
+  .footerIcon {
+    text-align: right;
+  }
+}
