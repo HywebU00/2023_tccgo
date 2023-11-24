@@ -1379,15 +1379,20 @@ input[type='radio'] {
 
 input[type='radio'] {
   border-radius: 50%;
+  margin-bottom: 0.5em !important;
 }
 
 input[type='checkbox']:checked,
 input[type='checkbox']:focus,
 input[type='radio']:checked,
 input[type='radio']:focus {
+  // border-color: $colorWhite;
+  // background-color: $formFocus;
+  // outline: solid 1px $formFocus;
   border-color: $formFocus;
   background-color: $formFocus;
-  outline: none;
+  box-shadow: #fff 0 0 0 3px inset, $formFocus 0 0 0 1px;
+  margin-bottom: 0.5em !important;
 }
 
 input[type='checkbox']:checked {
@@ -1402,7 +1407,7 @@ input[type='checkbox']:checked {
 input[type='radio']:focus {
   border-color: $formFocus;
   background-color: $formFocus;
-  box-shadow: #fff 0 0 0 3px inset, $formFocus 0 0 0 2px;
+  box-shadow: #fff 0 0 0 3px inset, $formFocus 0 0 0 1px;
 }
 
 input[type='checkbox']:focus {
@@ -1565,5 +1570,29 @@ abbr[title] {
   }
   &.hide::before {
     background: url('../images/icon/icon_eye_dark.svg') center no-repeat;
+  }
+}
+//自訂
+.w80 {
+  width: calc(100% - 10em) !important;
+  @include screen('tablet') {
+    width: calc(100% - 6px) !important;
+  }
+}
+.formCol_9_3 {
+  @include screen('tablet') {
+    justify-content: flex-end;
+  }
+
+  .w50 {
+    // flex-basis: 40% !important;
+    flex: 1 1 40% !important;
+    max-width: 42% !important;
+    width: 42% !important;
+    @include screen('tablet') {
+      flex: 1 1 100% !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
   }
 }

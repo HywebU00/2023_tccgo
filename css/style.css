@@ -2809,8 +2809,8 @@ img {
     white-space: nowrap;
     line-height: normal;
     width: auto;
-    padding: 0.5em 1.25em;
-    min-width: 4em;
+    padding: 0.5em 1em;
+    min-width: 3em;
     margin: 0.25em 0.1em;
     font-weight: bold;
   }
@@ -3030,7 +3030,32 @@ img {
     border: solid 1px #33d3eb;
   }
   .btnReset {
-    color: #424040;
+    background: #d4d4d4;
+    border: 1px solid #d4d4d4;
+    color: #000;
+  }
+  .btnReset:hover {
+    background: silver;
+    border: 1px solid #bbbbbb;
+    cursor: pointer;
+    color: #222;
+    outline: none;
+  }
+  .btnReset:focus-visible {
+    background: #bbbbbb;
+    border: 1px solid #a1a1a1;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0px 0px 2px #0033cc;
+  }
+  .btnReset.active {
+    background: #e1e1e1;
+    cursor: pointer;
+  }
+  .btnReset:hover, .btnReset:focus-visible {
+    background: #bbbbbb;
+    border: solid 1px #d4d4d4;
   }
   .btnSearch {
     font-size: 0;
@@ -3109,7 +3134,7 @@ img {
   .breadcrumb {
     border-bottom: 1px solid #eee;
     padding: 0.1em 0em 0.1em;
-    font-size: 0.813em;
+    font-size: 0.875em;
     margin: 0px auto 5px;
   }
   .breadcrumb ul {
@@ -3205,8 +3230,8 @@ img {
   [class^=i_]:before {
     content: "";
     display: inline-block;
-    height: 1em;
-    width: 1em;
+    height: 1.18em;
+    width: 1.18em;
     vertical-align: middle;
   }
   .i_calendarColor:before {
@@ -4731,7 +4756,7 @@ img {
   }
   @media screen and (max-width: 575px) {
     .fatFooter {
-      padding: 50px 0 30px;
+      padding: 100px 0 30px;
     }
   }
   .fatFooter .container {
@@ -4742,6 +4767,15 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+  }
+  @media screen and (max-width: 991px) {
+    .fatFooter .container {
+      position: relative;
+      min-height: 1px;
+      padding-left: 0px;
+      padding-right: 0px;
+      box-sizing: border-box;
+    }
   }
   .fatFooter .btnFatFooter {
     font-size: 0.813em;
@@ -4792,7 +4826,7 @@ img {
     box-sizing: border-box;
     margin: 0 5%;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     .fatFooter nav {
       padding: 3em 0.5em 1em;
     }
@@ -4837,6 +4871,11 @@ img {
     margin: 0;
     padding: 0 1em 0 0;
     transition: height 0.5s;
+  }
+  @media screen and (max-width: 991px) {
+    .fatFooter nav ul li ul {
+      padding: 0 0.5em 0 0;
+    }
   }
   @media screen and (max-width: 767px) {
     .fatFooter nav ul li ul {
@@ -6164,6 +6203,7 @@ img {
   }
   input[type=radio] {
     border-radius: 50%;
+    margin-bottom: 0.5em !important;
   }
   input[type=checkbox]:checked,
   input[type=checkbox]:focus,
@@ -6171,7 +6211,8 @@ img {
   input[type=radio]:focus {
     border-color: #0033cc;
     background-color: #0033cc;
-    outline: none;
+    box-shadow: #fff 0 0 0 3px inset, #0033cc 0 0 0 1px;
+    margin-bottom: 0.5em !important;
   }
   input[type=checkbox]:checked {
     background-image: url(../images/basic/icon_checked.svg);
@@ -6184,7 +6225,7 @@ img {
   input[type=radio]:focus {
     border-color: #0033cc;
     background-color: #0033cc;
-    box-shadow: #fff 0 0 0 3px inset, #0033cc 0 0 0 2px;
+    box-shadow: #fff 0 0 0 3px inset, #0033cc 0 0 0 1px;
   }
   input[type=checkbox]:focus {
     border-color: #0033cc;
@@ -6319,6 +6360,31 @@ img {
   }
   .passwordEye.hide::before {
     background: url("../images/icon/icon_eye_dark.svg") center no-repeat;
+  }
+  .w80 {
+    width: calc(100% - 10em) !important;
+  }
+  @media screen and (max-width: 991px) {
+    .w80 {
+      width: calc(100% - 6px) !important;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .formCol_9_3 {
+      justify-content: flex-end;
+    }
+  }
+  .formCol_9_3 .w50 {
+    flex: 1 1 40% !important;
+    max-width: 42% !important;
+    width: 42% !important;
+  }
+  @media screen and (max-width: 991px) {
+    .formCol_9_3 .w50 {
+      flex: 1 1 100% !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
   }
   table {
     width: 100%;
@@ -7172,6 +7238,7 @@ img {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
+    margin-top: -3.2rem;
   }
   .functionPanel .fontSize {
     padding: 0;
@@ -9986,6 +10053,35 @@ img {
     outline: #0033cc 0px dashed !important;
     box-shadow: 0 0px 0px 2px #0033cc inset !important;
   }
+  .login {
+    width: 60%;
+    margin: 30px auto;
+  }
+  @media screen and (max-width: 767px) {
+    .login {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .login {
+      width: 90%;
+    }
+  }
+  .login .flexForm {
+    background: #eee url("../images/body_bg.png") repeat left top;
+    padding: 20px 30px;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    border: solid 1px #dfdede;
+  }
+  @media screen and (max-width: 575px) {
+    .login .flexForm {
+      padding: 20px;
+    }
+  }
+  .login p span {
+    color: #d30000;
+  }
   .aRight {
     float: right;
   }
@@ -9994,6 +10090,22 @@ img {
   }
   .btnGrp2 {
     padding-bottom: 0.5em;
+  }
+  .btnGrp3 {
+    margin-top: 2.4rem;
+  }
+  @media screen and (max-width: 991px) {
+    .btnGrp3 {
+      margin-top: 0;
+    }
+  }
+  .btnGrp4 {
+    margin-top: 2.4rem;
+  }
+  @media screen and (max-width: 575px) {
+    .btnGrp4 {
+      margin-top: 0;
+    }
   }
   .labelhidden {
     font-size: 0;
@@ -10016,6 +10128,11 @@ img {
     border-bottom: solid 1px #d4d4d4;
     padding: 1em 0;
   }
+  @media screen and (max-width: 575px) {
+    .listflex li {
+      padding: 0.5em 0;
+    }
+  }
   .listflex li .item {
     flex: 0 0 2em;
     text-align: center;
@@ -10025,7 +10142,17 @@ img {
     flex: 1 1 auto;
     padding: 0.5em 0;
     position: relative;
-    max-width: 80%;
+    max-width: 72%;
+  }
+  @media screen and (max-width: 991px) {
+    .listflex li .item2 {
+      max-width: 80%;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .listflex li .item2 {
+      max-width: 100%;
+    }
   }
   .listflex li .item3 {
     flex: 1 1 auto;
@@ -10058,11 +10185,39 @@ img {
     min-width: 5em;
     text-align: center;
     padding: 0 1em;
-    margin-right: 0.5em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex li .dept {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex li .date {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 0.5em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex li .date {
+      margin: 2px 0.5em;
+    }
   }
   .listflex li .starpage {
     color: #1b1a1a;
     background: #f5e276;
+    min-width: 5em;
+    text-align: center;
+    font-size: 0.938em;
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+  .listflex li .regular {
+    color: #1b1a1a;
+    background: #fcbaec;
     min-width: 5em;
     text-align: center;
     font-size: 0.938em;
@@ -10139,15 +10294,19 @@ img {
     font-size: 0.938em;
     background: #fff;
   }
-  .dataSearch label {
+  .dataSearch .ftitle {
     font-weight: bold;
     font-size: 1.125em;
     display: block;
     padding: 5px 8px;
     background: #eee;
+    width: 100%;
   }
   .dataSearch input,
   .dataSearch select {
+    margin-bottom: 1em;
+  }
+  .dataSearch fieldset {
     margin-bottom: 1em;
   }
   .printBox .formGrp {
@@ -10156,7 +10315,102 @@ img {
   .printBox .printBtn {
     min-width: 2em;
     padding: 0.5em 0.8em;
-    font-size: 0;
+  }
+  .historytb .aLeft {
+    text-align: left;
+  }
+  .historytb .aCenter {
+    text-align: center;
+  }
+  .historytb .aRight {
+    text-align: right;
+  }
+  .historytb .activeTh {
+    width: 30%;
+  }
+  .historytb .btn {
+    min-width: 2em;
+    padding: 0.5em 0.8em;
+  }
+  .formBox {
+    margin: 1em;
+  }
+  @media screen and (max-width: 575px) {
+    .formBox {
+      margin: 0.5em;
+    }
+  }
+  .pdfViewBox {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+  .pdfViewBox .col {
+    flex: 1 1 auto;
+  }
+  .pdfViewBox .col:nth-child(2) {
+    flex: 0 0 200px;
+  }
+  .pdfViewBox h1 {
+    height: 58px;
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    background: url(../images/body_bg.png) repeat left top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+  }
+  .pdfViewBox h2 {
+    font-size: 1.25em;
+    border-left: solid 5px #33d3eb;
+    padding-left: 8px;
+    line-height: 1em;
+  }
+  .pdfViewBox h3.title {
+    font-weight: bold;
+    font-size: 1em;
+    color: #07424b;
+    margin-left: 1em;
+  }
+  .pdfViewBox .content {
+    padding: 0 10px 20px;
+  }
+  .pdfViewBox ul {
+    font-size: 0.938em;
+  }
+  .pdfViewBox ul li {
+    margin-bottom: 5px;
+  }
+  .pdfViewBox ul ul {
+    font-size: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .pdfViewBox ul ul li {
+    background: url("../images/li_arrow.png") no-repeat left 2px top 0.4em;
+    background-size: 10px auto;
+    padding-left: 14px;
+  }
+  .pdfViewBox a {
+    color: #07424b;
+    text-decoration: underline;
+  }
+  .pdfViewBox a:hover {
+    text-decoration: none;
+    color: #d30000;
+  }
+  .pdfViewBox .btnGrp {
+    justify-content: center;
+  }
+  .pdfViewBox .btn {
+    padding: 0.2em 0.5em;
+    font-size: 0.875em;
+    margin: 5px;
+    font-weight: normal;
+  }
+  .pdfViewBox [class^=i_]:before {
+    width: 0.8em;
+    height: 0.8em;
   }
 }
 .colorA a:hover {

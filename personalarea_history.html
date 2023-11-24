@@ -177,37 +177,8 @@
           <a class="accessKey" href="#ac" id="aC" accesskey="C" title="主要內容區">:::</a>
 
           <!-- 如果不要sticky效果，就移除stickySidebar classname -->
-          <aside class="leftBlock stickySidebar">
-            <div class="sidebar__inner">
-              <div class="dataSearch">
-                <h2>搜尋條件</h2>
-                <button type="button" class="btn clearBtn">清除條件</button>
-                <!-- flexForm -->
-                <div class="flexForm">
-                  <label for="username" class="ftitle">分類</label>
-                  <input type="text" id="username" placeholder="會議記錄" />
-                  <label for="selectSample" class="ftitle">條件</label>
-                  <select name="" id="selectSample">
-                    <option value="">依部門</option>
-                  </select>
-                  <label for="selectSample" class="ftitle">部門</label>
-                  <select name="" id="selectSample">
-                    <option value="全部(23442筆)">全部(23442筆)</option>
-                    <option value="">民政(415筆)</option>
-                    <option value="">財政建設(29筆)</option>
-                    <option value="">教育(326筆)</option>
-                    <option value="">交通(17筆)</option>
-                    <option value="">警政衛生(24筆)</option>
-                    <option value="">公務(123筆)</option>
-                    <option value="">法規(17筆)</option>
-                    <option value="">總質詢(24筆)</option>
-                    <option value="">程序(123筆)</option>
-                    <option value="">紀律(123筆)</option>
-                  </select>
-                </div>
-                <!-- flexForm end -->
-              </div>
-            </div>
+          <aside class="leftBlock stickySidebar hidden">
+            <div class="sidebar__inner"></div>
           </aside>
           <!-- 主要內容區 -->
           <div class="centerBlock">
@@ -218,7 +189,7 @@
               </ul>
             </nav>
             <!-- h2節點 -->
-            <h2 class="title">公報會議紀錄</h2>
+            <h2 class="title">您的查詢歷史</h2>
             <!-- functionPanel -->
             <div class="functionPanel">
               <!-- <div class="publishTime"><span>發布日期：</span><time>2019-01-01</time></div> -->
@@ -233,231 +204,61 @@
                 </ul>
               </div>
             </div>
-            <!-- category -->
-            <div class="category">
-              <ul>
-                <li><a href="#">書面質詢申請</a></li>
-                <li><a href="#">議員提案</a></li>
-                <li><a href="#" class="active">公報會議紀錄</a></li>
-                <li><a href="#">議員發言</a></li>
-                <li><a href="#">書面質詢</a></li>
-                <li><a href="#">您的查詢歷史</a></li>
-              </ul>
-            </div>
-            <!-- LP Start -->
+
             <section class="lp">
-              <!-- aRight -->
-              <div class="printBox">
-                <div class="flexForm">
-                  <div class="formGrp formInline">
-                    <label for="selectSample" class="labelhidden">選擇筆數列印:</label>
-                    <select name="" id="selectSample">
-                      <option value="第1筆">第1筆</option>
-                      <option value="第2筆">第2筆</option>
-                    </select>
-                    ~
-                    <select name="pets" id="pet-select">
-                      <option value="第9筆">第9筆</option>
-                      <option value="第10筆">第10筆</option>
-                    </select>
-                    <button type="button" class="btn btnPrimary printBtn" aria-label="列印"><span class="i_print_dark"></span></button>
-                  </div>
-                </div>
-              </div>
-              <!-- aRight end-->
-              <!-- searchflex -->
-              <div class="searchflex">
-                <label for="">查詢</label>
-                <select name="" id="">
-                  <option value="">依屆會次</option>
-                  <option value="">...</option>
-                </select>
-                <select name="" id="">
-                  <option value="">由大到小</option>
-                  <option value="">...</option>
-                </select>
-                <input name="username" type="text" id="" />
-                <button type="button" class="btnSearch">查詢</button>
-              </div>
-              <!-- searchflex end-->
-              <!-- selbox -->
-              <div class="selbox">
-                <button type="button" class="btn btnYellow"><span class="i_checksel_dark"></span>全選</button>
-                <button type="button" class="btn btnYellow"><span class="i_checkdel_dark"></span>全部取消</button>
-              </div>
-              <!-- selbox end-->
-              <!-- 文字列表 -->
-              <div class="listflex">
+              <!-- category -->
+              <div class="category">
                 <ul>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">1</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">2</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">3</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">4</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">5</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">6</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">7</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">8</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">9</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">10</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
+                  <li><a href="#">書面質詢申請</a></li>
+                  <li><a href="#">議員提案</a></li>
+                  <li><a href="#">公報會議紀錄</a></li>
+                  <li><a href="#">議員發言</a></li>
+                  <li><a href="#">書面質詢</a></li>
+                  <li><a href="#" class="active">您的查詢歷史</a></li>
                 </ul>
+              </div>
+
+              <div class="historytb">
+                <table>
+                  <!-- 無障礙 caption 標題預設隱藏 -->
+                  <caption>
+                    查詢歷史表格列表
+                    <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
+                    <!-- <span class="summary">表格摘要</span> -->
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th class="aLeft">查詢條件</th>
+                      <th class="activeTh">動作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-title="查詢條件">[不限欄位：王世堅] [不限欄位：大巨蛋]</td>
+                      <td data-title="動作" class="aCenter">
+                        <button type="button" class="btn btnPrimary sactionBtn" aria-label="檢視"><span class="i_search_dark"></span></button>
+                        <button type="button" class="btn btnRed sactionBtn" aria-label="刪除"><span class="i_trash_dark"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="查詢條件">[不限欄位：王世堅] [不限欄位：大巨蛋]</td>
+                      <td data-title="動作" class="aCenter">
+                        <button type="button" class="btn btnPrimary sactionBtn" aria-label="檢視"><span class="i_search_dark"></span></button>
+                        <button type="button" class="btn btnRed sactionBtn" aria-label="刪除"><span class="i_trash_dark"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="查詢條件">[不限欄位：王世堅] [不限欄位：大巨蛋]</td>
+                      <td data-title="動作" class="aCenter">
+                        <button type="button" class="btn btnPrimary sactionBtn" aria-label="檢視"><span class="i_search_dark"></span></button>
+                        <button type="button" class="btn btnRed sactionBtn" aria-label="刪除"><span class="i_trash_dark"></span></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </section>
             <!-- LP End -->
-            <!-- Pagination -->
-            <div class="pagination">
-              <form action="">
-                <div class="formInline">
-                  <div class="total">
-                    共<span>308</span>筆資料，第<span>1/18</span>頁，<label for="pet-select">每頁顯示</label>
-                    <select name="" id="pet-select" aria-label="每頁顯示">
-                      <option value="">10</option>
-                      <option value="">20</option>
-                      <option value="">30</option>
-                      <option value="">40</option>
-                    </select>
-                    筆<input type="button" value="確定" class="btn btnSubmit" title="確定" />
-                  </div>
-                </div>
-              </form>
-              <ul class="page">
-                <li class="first"><a href="#" title="第一頁">第一頁 </a></li>
-                <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#">10</a></li>
-                <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
-                <li class="last">
-                  <a href="#" title="最後一頁">最後一頁 </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </main>

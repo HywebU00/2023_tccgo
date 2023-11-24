@@ -184,12 +184,32 @@
                 <button type="button" class="btn clearBtn">清除條件</button>
                 <!-- flexForm -->
                 <div class="flexForm">
-                  <label for="username" class="ftitle">分類</label>
-                  <input type="text" id="username" placeholder="會議記錄" />
+                  <!-- 分類 -->
+                  <fieldset>
+                    <legend class="ftitle">分類</legend>
+                    <div>
+                      <input type="radio" id="radio1" name="radioname" value="公報-會議紀錄發言" />
+                      <label for="radio1">公報-會議紀錄發言</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio2" name="radioname" value="搶鮮報-速紀錄發言" />
+                      <label for="radio2">搶鮮報-速紀錄發言</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="搶鮮報-會議紀錄發言" checked />
+                      <label for="radio3">搶鮮報-會議紀錄發言</label>
+                    </div>
+                  </fieldset>
+                  <!-- 分類 end-->
+                  <!-- 條件 -->
                   <label for="selectSample" class="ftitle">條件</label>
                   <select name="" id="selectSample">
                     <option value="">依部門</option>
                   </select>
+                  <!-- 條件 end-->
+                  <!-- 部門 -->
                   <label for="selectSample" class="ftitle">部門</label>
                   <select name="" id="selectSample">
                     <option value="全部(23442筆)">全部(23442筆)</option>
@@ -204,6 +224,7 @@
                     <option value="">程序(123筆)</option>
                     <option value="">紀律(123筆)</option>
                   </select>
+                  <!-- 部門 end-->
                 </div>
                 <!-- flexForm end -->
               </div>
@@ -218,7 +239,7 @@
               </ul>
             </nav>
             <!-- h2節點 -->
-            <h2 class="title">公報會議紀錄</h2>
+            <h2 class="title">議員發言-搶鮮報會議紀錄</h2>
             <!-- functionPanel -->
             <div class="functionPanel">
               <!-- <div class="publishTime"><span>發布日期：</span><time>2019-01-01</time></div> -->
@@ -238,8 +259,8 @@
               <ul>
                 <li><a href="#">書面質詢申請</a></li>
                 <li><a href="#">議員提案</a></li>
-                <li><a href="#" class="active">公報會議紀錄</a></li>
-                <li><a href="#">議員發言</a></li>
+                <li><a href="#">公報會議紀錄</a></li>
+                <li><a href="#" class="active">議員發言</a></li>
                 <li><a href="#">書面質詢</a></li>
                 <li><a href="#">您的查詢歷史</a></li>
               </ul>
@@ -295,11 +316,11 @@
                     </div>
                     <div class="item num">1</div>
                     <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="regular">第14屆第02次定期大會</span>
                     </div>
                   </li>
                   <li>
@@ -308,11 +329,11 @@
                     </div>
                     <div class="item num">2</div>
                     <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="regular">第14屆第02次定期大會</span>
                     </div>
                   </li>
                   <li>
@@ -321,11 +342,11 @@
                     </div>
                     <div class="item num">3</div>
                     <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="regular">第14屆第02次定期大會</span>
                     </div>
                   </li>
                   <li>
@@ -334,11 +355,11 @@
                     </div>
                     <div class="item num">4</div>
                     <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="regular">第14屆第02次定期大會</span>
                     </div>
                   </li>
                   <li>
@@ -347,11 +368,11 @@
                     </div>
                     <div class="item num">5</div>
                     <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="regular">第14屆第02次定期大會</span>
                     </div>
                   </li>
                   <li>
@@ -360,11 +381,11 @@
                     </div>
                     <div class="item num">6</div>
                     <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="regular">第14屆第02次定期大會</span>
                     </div>
                   </li>
                   <li>
@@ -373,11 +394,11 @@
                     </div>
                     <div class="item num">7</div>
                     <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="regular">第14屆第02次定期大會</span>
                     </div>
                   </li>
                   <li>
@@ -386,11 +407,11 @@
                     </div>
                     <div class="item num">8</div>
                     <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="regular">第14屆第02次定期大會</span>
                     </div>
                   </li>
                   <li>
@@ -399,11 +420,11 @@
                     </div>
                     <div class="item num">9</div>
                     <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="regular">第14屆第02次定期大會</span>
                     </div>
                   </li>
                   <li>
@@ -412,11 +433,11 @@
                     </div>
                     <div class="item num">10</div>
                     <div class="item2">
-                      <span class="dept">第13屆第02次定期大會</span><span class="dept">127卷07期</span>
-                      <a href="#">第13 屆第2 次定期大會第6 次會議紀錄</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="regular">第14屆第02次定期大會</span>
                     </div>
                   </li>
                 </ul>

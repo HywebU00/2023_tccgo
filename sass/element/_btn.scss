@@ -47,7 +47,7 @@
   line-height: normal;
   width: auto;
   padding: $btnPadding;
-  min-width: 4em;
+  min-width: 3em;
   margin: 0.25em 0.1em;
   font-weight: bold;
 
@@ -118,7 +118,12 @@
 }
 .btnReset {
   // @extend %btn;
-  color: lighten($colorWord, 15);
+  @include btnSetting(lighten($colorGray, 0), #000);
+  &:hover,
+  &:focus-visible {
+    background: darken($colorGray, 10);
+    border: solid 1px $colorGray;
+  }
 }
 .btnSearch {
   // @extend %btn;

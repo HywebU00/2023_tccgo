@@ -1,6 +1,29 @@
 @charset "utf-8";
 // 文章標題
 .login {
+  width: 60%;
+  margin: 30px auto;
+  @include screen('mobile') {
+    width: 80%;
+  }
+  @include screen('xsMobile') {
+    width: 90%;
+  }
+  .flexForm {
+    background: #eee url('../images/body_bg.png') repeat left top;
+    padding: 20px 30px;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    border: solid 1px #dfdede;
+    @include screen('xsMobile') {
+      padding: 20px;
+    }
+  }
+  p {
+    span {
+      color: $colorRed;
+    }
+  }
 }
 .aRight {
   float: right;
@@ -10,6 +33,18 @@
 }
 .btnGrp2 {
   padding-bottom: 0.5em;
+}
+.btnGrp3 {
+  margin-top: 2.4rem;
+  @include screen('tablet') {
+    margin-top: 0;
+  }
+}
+.btnGrp4 {
+  margin-top: 2.4rem;
+  @media screen and (max-width: 575px) {
+    margin-top: 0;
+  }
 }
 .labelhidden {
   font-size: 0;
@@ -36,6 +71,9 @@
     align-items: center;
     border-bottom: solid 1px $colorGray;
     padding: 1em 0;
+    @include screen('xsMobile') {
+      padding: 0.5em 0;
+    }
     .item {
       flex: 0 0 2em;
       text-align: center;
@@ -45,7 +83,13 @@
       flex: 1 1 auto;
       padding: 0.5em 0;
       position: relative;
-      max-width: 80%;
+      max-width: 72%;
+      @include screen('tablet') {
+        max-width: 80%;
+      }
+      @include screen('xsMobile') {
+        max-width: 100%;
+      }
     }
     .item3 {
       flex: 1 1 auto;
@@ -76,14 +120,39 @@
       min-width: 5em;
       text-align: center;
       padding: 0 1em;
-      margin-right: 0.5em;
+      margin: 2px 0.5em 2px 0;
+      @include screen('xsMobile') {
+        margin: 2px 0.5em;
+      }
+    }
+    .date {
+      display: inline-block;
+      font-size: 0.938em;
+      font-weight: normal;
+      // background: $colorLight;
+      // border-radius: 2em;
+      min-width: 5em;
+      text-align: center;
+      padding: 0 0.5em;
+      margin: 2px 0.5em 2px 0;
+      @include screen('xsMobile') {
+        margin: 2px 0.5em;
+      }
     }
     .starpage {
       color: $colorWord;
       background: $colorYellow;
       min-width: 5em;
       text-align: center;
-      // display: block;
+      font-size: 0.938em;
+      display: inline-block;
+      padding: 0 0.5em;
+    }
+    .regular {
+      color: $colorWord;
+      background: $colorRed2;
+      min-width: 5em;
+      text-align: center;
       font-size: 0.938em;
       display: inline-block;
       padding: 0 0.5em;
@@ -153,16 +222,20 @@
     font-size: 0.938em;
     background: #fff;
   }
-  label {
+  .ftitle {
     font-weight: bold;
     font-size: 1.125em;
     // border-bottom: solid 5px $colorLight;
     display: block;
     padding: 5px 8px;
     background: #eee;
+    width: 100%;
   }
   input,
   select {
+    margin-bottom: 1em;
+  }
+  fieldset {
     margin-bottom: 1em;
   }
 }
@@ -174,6 +247,107 @@
   .printBtn {
     min-width: 2em;
     padding: 0.5em 0.8em;
-    font-size: 0;
+  }
+}
+//historytb
+.historytb {
+  .aLeft {
+    text-align: left;
+  }
+  .aCenter {
+    text-align: center;
+  }
+  .aRight {
+    text-align: right;
+  }
+  .activeTh {
+    width: 30%;
+  }
+  .btn {
+    min-width: 2em;
+    padding: 0.5em 0.8em;
+  }
+}
+//formBox
+.formBox {
+  margin: 1em;
+  @include screen('xsMobile') {
+    margin: 0.5em;
+  }
+}
+// pdfViewBox
+.pdfViewBox {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+
+  .col {
+    flex: 1 1 auto;
+
+    &:nth-child(2) {
+      flex: 0 0 200px;
+    }
+  }
+  h1 {
+    height: 58px;
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    background: url(../images/body_bg.png) repeat left top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+  }
+  h2 {
+    font-size: 1.25em;
+    border-left: solid 5px $colorPrimary;
+    padding-left: 8px;
+    line-height: 1em;
+  }
+  h3.title {
+    font-weight: bold;
+    font-size: 1em;
+    color: darken($colorPrimary, 40);
+    margin-left: 1em;
+  }
+  .content {
+    padding: 0 10px 20px;
+  }
+  ul {
+    font-size: 0.938em;
+    li {
+      margin-bottom: 5px;
+    }
+    ul {
+      font-size: 1em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        background: url('../images/li_arrow.png') no-repeat left 2px top 0.4em;
+        background-size: 10px auto;
+        padding-left: 14px;
+      }
+    }
+  }
+  a {
+    color: darken($colorPrimary, 40);
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+      color: $colorRed;
+    }
+  }
+  .btnGrp {
+    justify-content: center;
+  }
+  .btn {
+    padding: 0.2em 0.5em;
+    font-size: 0.875em;
+    margin: 5px;
+    font-weight: normal;
+    // text-shadow: 0px 1px 2px #fff;
+  }
+  [class^='i_']:before {
+    width: 0.8em;
+    height: 0.8em;
   }
 }

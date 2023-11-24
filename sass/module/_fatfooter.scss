@@ -5,12 +5,15 @@
   padding: 100px 0 50px;
   background: $fatFooterBgColor url('../images/fatfooter_bg.png') repeat left top;
   @include screen('xsMobile') {
-    padding: 50px 0 30px;
+    padding: 100px 0 30px;
   }
   .container {
     overflow: hidden;
     box-sizing: border-box;
     @include gutter;
+    @include screen('tablet') {
+      @include gutter(0px);
+    }
   }
   // 按鈕
   .btnFatFooter {
@@ -65,7 +68,7 @@
     padding: 3em 0 0 3em;
     box-sizing: border-box;
     margin: 0 5%;
-    @include screen('mobile') {
+    @include screen('tablet') {
       padding: 3em 0.5em 1em;
     }
     ul {
@@ -100,6 +103,9 @@
           margin: 0;
           padding: 0 1em 0 0;
           transition: height 0.5s;
+          @include screen('tablet') {
+            padding: 0 0.5em 0 0;
+          }
           @include screen('mobile') {
             width: auto;
             overflow: hidden;
