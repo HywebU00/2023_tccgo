@@ -208,6 +208,7 @@
             <!-- formBox -->
             <section class="formBox">
               <div class="flexForm formGrid">
+                <!-- 申請編號 -->
                 <div class="formGrp">
                   <!-- 使用aria-required屬性指出必填的表單欄位 -->
                   <label for="username" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申請編號</label>
@@ -216,7 +217,8 @@
                     <div class="help">系統自動生成之流水號</div>
                   </div>
                 </div>
-
+                <!-- 申請編號 end -->
+                <!-- 屆會次 -->
                 <div class="formGrp">
                   <!-- 使用aria-required屬性指出必填的表單欄位 -->
                   <label for="selectSample" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>屆會次</label>
@@ -263,7 +265,8 @@
                     </div>
                   </div>
                 </div>
-
+                <!-- 屆會次end -->
+                <!-- 部門別 -->
                 <div class="formGrp">
                   <label for="selectSample" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>部門別</label>
                   <div class="formContent">
@@ -272,14 +275,16 @@
                     </select>
                   </div>
                 </div>
-
+                <!-- 部門別end -->
+                <!-- 質詢日期 -->
                 <div class="formGrp">
                   <label for="selectSample" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>質詢日期</label>
                   <div class="formContent">
                     <input type="datetime-local" value="2023-06-12T19:30" min="2023-06-07T00:00" max="2023-06-14T00:00" />
                   </div>
                 </div>
-
+                <!-- 質詢日期end -->
+                <!-- 質詢議員 -->
                 <div class="formGrp">
                   <!-- 使用aria-required屬性指出必填的表單欄位 -->
                   <label for="username" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>質詢議員</label>
@@ -288,7 +293,8 @@
                     <button type="button" class="btn btnPrimary">議員名單</button>
                   </div>
                 </div>
-
+                <!-- 質詢議員 end -->
+                <!-- 質詢對象 -->
                 <div class="formGrp">
                   <!-- 使用aria-required屬性指出必填的表單欄位 -->
                   <label for="username" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>質詢對象</label>
@@ -297,7 +303,8 @@
                     <input type="text" id="username" value="臺北市政府、臺北市教育局" placeholder="臺北市政府、臺北市教育局" />
                   </div>
                 </div>
-
+                <!-- 質詢對象 end -->
+                <!-- 質詢題目 -->
                 <div class="formGrp">
                   <!-- 使用aria-required屬性指出必填的表單欄位 -->
                   <label for="username" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>質詢題目</label>
@@ -306,7 +313,8 @@
                     <textarea name="" id="" cols="30" rows="10">請市府參照「國民小學與國民中學班級編制及教職員員額編制準則」第4條第1項第9款規範精神，協助本市興福國中設置住宿輔導員，以協助、輔導該校棒球隊住宿學生課業，管理、督導其飲食、盥洗、就寢等生活起居事宜，促進本市青少棒發展。</textarea>
                   </div>
                 </div>
-
+                <!-- 質詢題目end -->
+                <!-- 說明 -->
                 <div class="formGrp">
                   <!-- 使用aria-required屬性指出必填的表單欄位 -->
                   <label for="username" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>說明</label>
@@ -422,28 +430,28 @@
                       </div>
                     </div>
                     <!-- 第二層 end-->
-                    <!-- 說明附件 -->
-                    <div class="formContent formCol_12 aRight2">
-                      <div class="formGrp">
-                        <label for="username" class="formTitle">說明附件</label>
-                        <div class="uploadGrp">
-                          <input class="upload_file" id="" type="text" title="檔案名稱" readonly="" />
-                          <div class="uploadBtn">
-                            <span>上傳</span>
-                            <input type="file" class="check_file" title="請選擇檔案" />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="btnGrp2">
-                        <button type="button" class="btn btnPrimary">
-                          <span class="i_add_dark"></span>
-                        </button>
-                      </div>
-                    </div>
-                    <!-- 說明附件 end-->
                   </div>
                 </div>
+                <!-- 說明 end-->
+                <!-- 說明附件 -->
+                <div class="formGrp">
+                  <label for="" class="formTitle">說明附件</label>
+                  <div class="formContent aRight2">
+                    <div class="uploadGrp">
+                      <input class="upload_file" type="text" readonly="" />
+                      <div class="uploadBtn">
+                        <span>上傳檔案</span>
+                        <input type="file" class="check_file" multiple="" />
+                      </div>
+                    </div>
+                    <div class="btnGrp2">
+                      <button type="button" class="btn btnPrimary">
+                        <span class="i_add_dark"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 說明附件 end-->
                 <hr />
                 <div class="btnGrp formInline">
                   <!-- <button type="button" class="btn btnReset">清除</button> -->
