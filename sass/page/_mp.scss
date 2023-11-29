@@ -603,6 +603,15 @@ section {
       border: solid 1px #ebc803;
       border-radius: 3px;
     }
+    .aLeft {
+      text-align: left;
+    }
+    .aRight {
+      text-align: right;
+    }
+    .aCenter {
+      text-align: center;
+    }
   }
   .searchBox {
     box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.15);
@@ -636,6 +645,27 @@ section {
   }
   .btnLg {
     min-width: 6em;
+  }
+  //sellistradio
+  .sellistradio {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    label {
+      flex: 0 1 calc(100% / 3);
+      padding: 0.5em;
+      margin: 0;
+      border-bottom: dotted 1px #ccc;
+      @include screen('mobile') {
+        flex: 0 1 calc(100% / 2);
+      }
+      @include screen('xsMobile') {
+        flex: 0 1 calc(100% / 1);
+      }
+    }
   }
 }
 
@@ -744,9 +774,9 @@ section {
         height: 2em;
         margin: 0.45em auto auto 6px;
         text-align: center;
-        background: $hilight;
-        color: $white;
-        border-radius: 2em;
+        background: $colorPrimary;
+        color: $colorWord;
+        border-radius: 3px;
         cursor: pointer;
         transition: 0.2s;
 
@@ -759,7 +789,8 @@ section {
 
         &:hover,
         &:focus {
-          box-shadow: $hilight 0 0 0 2px;
+          // box-shadow: $hilight 0 0 0 2px;
+          background: darken($colorPrimary, 10);
         }
       }
     }

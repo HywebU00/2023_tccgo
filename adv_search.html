@@ -185,11 +185,11 @@
             <nav aria-label="Breadcrumb" class="breadcrumb">
               <ul>
                 <li><a href="#">首頁</a></li>
-                <li aria-current="page">個人專區</li>
+                <li aria-current="page">進階搜尋</li>
               </ul>
             </nav>
             <!-- h2節點 -->
-            <h2 class="title">議員提案</h2>
+            <h2 class="title">進階搜尋</h2>
             <!-- functionPanel -->
             <div class="functionPanel">
               <!-- <div class="publishTime"><span>發布日期：</span><time>2019-01-01</time></div> -->
@@ -204,56 +204,183 @@
                 </ul>
               </div>
             </div>
+            <!-- category -->
+            <div class="category">
+              <ul>
+                <li><a href="#" class="active">一般進階搜尋</a></li>
+                <li><a href="#">議員發言</a></li>
+                <li><a href="#">搜尋7-9公報（無摘要影像檔）</a></li>
+              </ul>
+            </div>
 
-            <section class="cp">
-              <!-- category -->
-              <div class="category">
-                <ul>
-                  <li><a href="#">書面質詢申請</a></li>
-                  <li><a href="#" class="active">議員提案</a></li>
-                  <li><a href="#">公報會議紀錄</a></li>
-                  <li><a href="#">議員發言</a></li>
-                  <li><a href="#">書面質詢</a></li>
-                  <li><a href="#">您的查詢歷史</a></li>
-                </ul>
-              </div>
+            <!-- formBox -->
+            <section class="formBox">
+              <div class="flexForm formGrid">
+                <!-- 輸入查詢詞 -->
+                <div class="formGrp">
+                  <!-- 使用aria-required屬性指出必填的表單欄位 -->
+                  <label for="username" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>輸入查詢詞</label>
+                  <div class="formContent">
+                    <!-- query_con_2_6_2_2 -->
+                    <div class="query_con_2_6_2_2">
+                      <div class="col">&nbsp;</div>
+                      <div class="col"><input type="text" id="name" name="name" placeholder="請輸入查詢詞" value="請輸入查詢詞" /></div>
+                      <div class="col">
+                        <select name="pets" id="pet-select">
+                          <option value="">不限欄位</option>
+                          <option value="">...</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <button type="button" class="btn btnPrimary" data-fancybox data-src="#dialog-content-sellist">選單</button>
+                      </div>
+                    </div>
+                    <!-- query_con_2_6_2_2 end -->
+                    <!-- query_con_2_6_2_2 -->
+                    <div class="query_con_2_6_2_2">
+                      <div class="col">
+                        <select name="pets" id="pet-select">
+                          <option value="">AND</option>
+                          <option value="">OR</option>
+                          <option value="">NOT</option>
+                        </select>
+                      </div>
+                      <div class="col"><input type="text" id="name" name="name" placeholder="請輸入查詢詞" value="請輸入查詢詞" /></div>
+                      <div class="col">
+                        <select name="pets" id="pet-select">
+                          <option value="">不限欄位</option>
+                          <option value="">...</option>
+                        </select>
+                      </div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                    <!-- query_con_2_6_2_2 end -->
+                    <!-- query_con_2_6_2_2 -->
+                    <div class="query_con_2_6_2_2">
+                      <div class="col">
+                        <select name="pets" id="pet-select">
+                          <option value="">AND</option>
+                          <option value="">OR</option>
+                          <option value="">NOT</option>
+                        </select>
+                      </div>
+                      <div class="col"><input type="text" id="name" name="name" placeholder="請輸入查詢詞" value="請輸入查詢詞" /></div>
+                      <div class="col">
+                        <select name="pets" id="pet-select">
+                          <option value="">不限欄位</option>
+                          <option value="">...</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <button type="button" class="btn btnPrimary">
+                          <span class="i_add_dark" aria-label="增加查詢條件"></span>
+                        </button>
+                        <button type="button" class="btn btnPrimary">
+                          <span class="i_minus_dark" aria-label="減少查詢條件"></span>
+                        </button>
+                      </div>
+                    </div>
+                    <!-- query_con_2_6_2_2 end -->
+                  </div>
+                </div>
+                <!-- 輸入查詢詞 end -->
+                <!-- 屆會次 -->
+                <div class="formGrp">
+                  <!-- 使用aria-required屬性指出必填的表單欄位 -->
+                  <label for="selectSample" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>屆會次</label>
+                  <div class="formContent">
+                    <div class="formGrp">
+                      <div class="formInline">
+                        <input type="radio" id="" name="sampleRadio5" value="" />
+                        　第
+                        <select id="selectSample" name="">
+                          <option value="">請選擇</option>
+                          <option value="">14</option>
+                          <option value="">13</option>
+                          <option value="">12</option>
+                        </select>
+                        屆　第
+                        <select id="selectSample" name="">
+                          <option value="">全部</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                        </select>
+                        次　
+                        <select id="selectSample" name="">
+                          <option value="">全部</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                        </select>
+                        <button type="button" class="btn btnPrimary" data-fancybox data-src="#dialog-content-chart">屆會次對照表</button>
+                      </div>
+                    </div>
 
-              <div class="proposal_detail">
-                <table>
-                  <!-- 無障礙 caption 標題預設隱藏 -->
-                  <caption>
-                    議員提案表格列表
-                    <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
-                    <!-- <span class="summary">表格摘要</span> -->
-                  </caption>
-                  <tr>
-                    <th>提案日期：</th>
-                    <td>民國088年01月04日</td>
-                  </tr>
-                  <tr>
-                    <th>案別：</th>
-                    <td>臨時提案</td>
-                  </tr>
-                  <tr>
-                    <th>案由：</th>
-                    <td>廢止「台北市公娼管理辦法」。</td>
-                  </tr>
-                  <tr>
-                    <th>結案會次：</th>
-                    <td>民國088年03月24日 第08屆 第1次定期大會 第 01次會議</td>
-                  </tr>
-                  <tr>
-                    <th>議決文：</th>
-                    <td>否決。</td>
-                  </tr>
-                  <tr>
-                    <th>市府答覆：</th>
-                    <td>答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文答覆內文</td>
-                  </tr>
-                </table>
+                    <div class="formGrp">
+                      <div class="formInline">
+                        <input type="radio" id="" name="sampleRadio5" value="" />
+                        　第
+                        <select id="selectSample" name="">
+                          <option value="">請選擇</option>
+                          <option value="">14</option>
+                          <option value="">13</option>
+                          <option value="">12</option>
+                        </select>
+                        屆休會
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 屆會次end -->
+                <!-- 公報卷期 -->
+                <div class="formGrp">
+                  <label for="selectSample" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>公報卷期</label>
+                  <div class="formContent">
+                    <div class="query_con_2_2_1_2_2">
+                      <div class="col">第<input type="text" id="username" placeholder="請輸入卷數" value="請輸入卷數" />卷</div>
+                      <div class="col">第<input type="text" id="username" placeholder="請輸入期數" value="請輸入期數" />期</div>
+                      <div class="col">~</div>
+                      <div class="col">第<input type="text" id="username" placeholder="請輸入卷數" value="請輸入卷數" />卷</div>
+                      <div class="col">第<input type="text" id="username" placeholder="請輸入期數" value="請輸入期數" />期</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 公報卷期end -->
+                <!-- 查詢範圍 -->
+                <div class="formGrp">
+                  <label for="selectSample" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>查詢範圍</label>
+                  <div class="formContent">
+                    <div class="query_con_5_5">
+                      <div class="col"><input type="checkbox" id="checkbox1" name="checkbox1" /> <label for="checkbox1">公報/議事錄(本系統公報將回溯至64卷20期)</label></div>
+                      <div class="col"><input type="checkbox" id="checkbox2" name="checkbox2" /> <label for="checkbox2">搶鮮報</label></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 查詢範圍end -->
+                <!-- 關聯性 -->
+                <div class="formGrp">
+                  <label for="selectSample" class="formTitle" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>關聯性</label>
+                  <div class="formContent">
+                    <!-- rangeSlider -->
+                    <div class="rangeSlider">
+                      <div class="range-slider2 range-slider--dotted">
+                        <input class="range-slider__input js-dotted-range-slider" type="range" value="0" min="0" max="2" id="selectSample" />
+                      </div>
+                    </div>
+                    <!-- rangeSlider end-->
+                  </div>
+                </div>
+                <!-- 關聯性end -->
+
+                <hr />
+                <div class="btnGrp formInline">
+                  <button type="button" class="btn btnLg btnReset">條件重設</button>
+                  <button type="button" class="btn btnLg btnSubmit">開始查詢</button>
+                </div>
               </div>
             </section>
-            <!-- CP End -->
+            <!-- formBox end -->
           </div>
         </div>
       </main>
@@ -384,7 +511,7 @@
             </div>
             <!-- flexForm end-->
           </div>
-          <div class="table1">
+          <div class="tableHover table1">
             <table>
               <!-- 無障礙 caption 標題預設隱藏 -->
               <caption>
@@ -439,6 +566,143 @@
         </section>
         <!-- popupBox End -->
         <!-- 選議員 end -->
+      </div>
+    </div>
+    <!-- 燈箱 end-->
+
+    <!-- 燈箱 -->
+    <div class="modal" id="dialog-content-sellist" style="display: none">
+      <div class="popupContent">
+        <h2>性質清單</h2>
+        <!-- 選單 start -->
+        <!-- popupBox -->
+        <section class="popupBox">
+          <div class="flexForm">
+            <!--最外層的form 或 radio_grp class加上form_inline-->
+            <div class="radioGrp formInline sellistradio">
+              <label><input name="radioSample" type="radio" value="一般提案" />一般提案</label>
+              <label><input name="radioSample" type="radio" value="工作報告" />工作報告</label>
+              <label><input name="radioSample" type="radio" value="工作報告質詢" />工作報告質詢</label>
+              <label><input name="radioSample" type="radio" value="公告事項" />公告事項</label>
+              <label><input name="radioSample" type="radio" value="市法規" />市法規</label>
+              <label><input name="radioSample" type="radio" value="決算案" />決算案</label>
+              <label><input name="radioSample" type="radio" value="其他" />其他</label>
+              <label><input name="radioSample" type="radio" value="施政報告" />施政報告</label>
+              <label><input name="radioSample" type="radio" value="相片簡歷" />相片簡歷</label>
+              <label><input name="radioSample" type="radio" value="原定議程" />原定議程</label>
+              <label><input name="radioSample" type="radio" value="座談會" />座談會</label>
+              <label><input name="radioSample" type="radio" value="書面質詢" />書面質詢</label>
+              <label><input name="radioSample" type="radio" value="副市長質詢" />副市長質詢</label>
+              <label><input name="radioSample" type="radio" value="專案報告" />專案報告</label>
+              <label><input name="radioSample" type="radio" value="專案調查" />專案調查</label>
+              <label><input name="radioSample" type="radio" value="速記錄" />速記錄</label>
+              <label><input name="radioSample" type="radio" value="報告事項" />報告事項</label>
+              <label><input name="radioSample" type="radio" value="報告案" />報告案</label>
+              <label><input name="radioSample" type="radio" value="復議案" />復議案</label>
+              <label><input name="radioSample" type="radio" value="會議記錄" />會議記錄</label>
+              <label><input name="radioSample" type="radio" value="業務質詢" />業務質詢</label>
+              <label><input name="radioSample" type="radio" value="預算案" />預算案</label>
+              <label><input name="radioSample" type="radio" value="實際議程" />實際議程</label>
+              <label><input name="radioSample" type="radio" value="請願案" />請願案</label>
+              <label><input name="radioSample" type="radio" value="總質詢" />總質詢</label>
+              <label><input name="radioSample" type="radio" value="臨時提案" />臨時提案</label>
+              <label><input name="radioSample" type="radio" value="覆議案" />覆議案</label>
+              <label><input name="radioSample" type="radio" value="議員出席情形統計表" />議員出席情形統計表</label>
+              <label><input name="radioSample" type="radio" value="議員提案" />議員提案</label>
+              <label><input name="radioSample" type="radio" value="議會內規" />議會內規</label>
+              <label><input name="radioSample" type="radio" value="黨團補助費明細表" />黨團補助費明細表</label>
+              <label><input name="radioSample" type="radio" value="聽證會" />聽證會</label>
+            </div>
+          </div>
+
+          <hr />
+          <div class="btnGrp formInline aCenter">
+            <button type="button" class="btn btnReset btnLg">關閉</button>
+            <button type="button" class="btn btnSubmit btnLg">確定</button>
+          </div>
+        </section>
+        <!-- popupBox End -->
+        <!-- 選單 end -->
+      </div>
+    </div>
+    <!-- 燈箱 end-->
+
+    <!-- 燈箱 -->
+    <div class="modal" id="dialog-content-chart" style="display: none">
+      <div class="popupContent">
+        <h2>屆會次對照表</h2>
+        <!-- 屆會次對照表 start -->
+        <!-- popupBox -->
+        <section class="popupBox">
+          <div class="searchBox">
+            <!-- flexForm -->
+            <div class="flexForm formGrid">
+              <div class="formGrp">
+                <label for="selectSample" class="formTitle">屆別:</label>
+                <div class="formContent">
+                  <select id="selectSample" name="">
+                    <option value="">第14屆</option>
+                    <option value="">第13屆</option>
+                    <option value="">第12屆</option>
+                  </select>
+                </div>
+              </div>
+              <div class="btnGrp formInline">
+                <button type="button" class="btn btnReset">清除</button>
+                <button type="button" class="btn btnSubmit">查詢</button>
+              </div>
+            </div>
+            <!-- flexForm end-->
+          </div>
+          <div class="table1">
+            <table>
+              <!-- 無障礙 caption 標題預設隱藏 -->
+              <caption>
+                請選取屆會次
+              </caption>
+              <thead>
+                <tr>
+                  <th class="seltd"></th>
+                  <th class="aLeft">屆會次</th>
+                  <th class="aLeft">日期起訖</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="radio" id="contactChoice1" name="contact" value="第08屆第05次定期大會" /></td>
+                  <td class="aLeft"><label for="contactChoice1">第08屆第05次定期大會</label></td>
+                  <td class="aLeft">民國90年04月02日～民國90年06月10日</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" id="contactChoice1" name="contact" value="第08屆第19次臨時大會" /></td>
+                  <td class="aLeft"><label for="contactChoice1">第08屆第19次臨時大會</label></td>
+                  <td class="aLeft">民國90年06月18日～民國90年06月27日</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" id="contactChoice1" name="contact" value="第08屆第20次臨時大會" /></td>
+                  <td class="aLeft"><label for="contactChoice1">第08屆第20次臨時大會</label></td>
+                  <td class="aLeft">民國90年08月27日～民國90年09月05日</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" id="contactChoice1" name="contact" value="第08屆第06次定期大會" /></td>
+                  <td class="aLeft"><label for="contactChoice1">第08屆第06次定期大會</label></td>
+                  <td class="aLeft">民國90年09月06日～民國90年11月24日</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" id="contactChoice1" name="contact" value="第08屆第21次臨時大會" /></td>
+                  <td class="aLeft"><label for="contactChoice1">第08屆第21次臨時大會</label></td>
+                  <td class="aLeft">民國90年12月03日～民國90年12月12日</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr />
+          <div class="btnGrp formInline aCenter">
+            <button type="button" class="btn btnSubmit btnLg">確認</button>
+          </div>
+        </section>
+        <!-- popupBox End -->
+        <!-- 屆會次對照表 end -->
       </div>
     </div>
     <!-- 燈箱 end-->

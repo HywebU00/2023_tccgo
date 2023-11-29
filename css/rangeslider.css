@@ -166,3 +166,25 @@
   background-color: #ccc;
   border-radius: 50%;
 }
+
+/* rangeSlider2 */
+
+.range-slider2 {
+  position: relative;
+  height: 46px;
+  width: 100px;
+  justify-content: flex-start;
+  margin-left: 2.5em;
+}
+.range-slider2::before {
+  content: '緊密';
+  position: absolute;
+  left: -2.5em;
+  top: 0.65em;
+}
+.range-slider2::after {
+  content: '寬鬆';
+  position: absolute;
+  right: -2.5em;
+  top: 0.65em;
+}
