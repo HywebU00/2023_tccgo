@@ -177,69 +177,19 @@
           <a class="accessKey" href="#ac" id="aC" accesskey="C" title="主要內容區">:::</a>
 
           <!-- 如果不要sticky效果，就移除stickySidebar classname -->
-          <aside class="leftBlock stickySidebar">
-            <div class="sidebar__inner">
-              <div class="dataSearch">
-                <h2>搜尋條件</h2>
-                <button type="button" class="btn clearBtn">清除條件</button>
-                <!-- flexForm -->
-                <div class="flexForm">
-                  <!-- 分類 -->
-                  <fieldset>
-                    <legend class="ftitle">分類</legend>
-                    <div>
-                      <input type="radio" id="radio1" name="radioname" value="公報-會議紀錄發言" checked />
-                      <label for="radio1">公報-會議紀錄發言</label>
-                    </div>
-
-                    <div>
-                      <input type="radio" id="radio2" name="radioname" value="搶鮮報-速紀錄發言" />
-                      <label for="radio2">搶鮮報-速紀錄發言</label>
-                    </div>
-
-                    <div>
-                      <input type="radio" id="radio3" name="radioname" value="搶鮮報-會議紀錄發言" />
-                      <label for="radio3">搶鮮報-會議紀錄發言</label>
-                    </div>
-                  </fieldset>
-                  <!-- 分類 end-->
-                  <!-- 條件 -->
-                  <label for="selectSample" class="ftitle">條件</label>
-                  <select name="" id="selectSample">
-                    <option value="">依部門</option>
-                  </select>
-                  <!-- 條件 end-->
-                  <!-- 部門 -->
-                  <label for="selectSample" class="ftitle">部門</label>
-                  <select name="" id="selectSample">
-                    <option value="全部(23442筆)">全部(23442筆)</option>
-                    <option value="">民政(415筆)</option>
-                    <option value="">財政建設(29筆)</option>
-                    <option value="">教育(326筆)</option>
-                    <option value="">交通(17筆)</option>
-                    <option value="">警政衛生(24筆)</option>
-                    <option value="">公務(123筆)</option>
-                    <option value="">法規(17筆)</option>
-                    <option value="">總質詢(24筆)</option>
-                    <option value="">程序(123筆)</option>
-                    <option value="">紀律(123筆)</option>
-                  </select>
-                  <!-- 部門 end-->
-                </div>
-                <!-- flexForm end -->
-              </div>
-            </div>
+          <aside class="leftBlock stickySidebar hidden">
+            <div class="sidebar__inner"></div>
           </aside>
           <!-- 主要內容區 -->
           <div class="centerBlock">
             <nav aria-label="Breadcrumb" class="breadcrumb">
               <ul>
                 <li><a href="#">首頁</a></li>
-                <li aria-current="page">個人專區</li>
+                <li aria-current="page">進階搜尋</li>
               </ul>
             </nav>
             <!-- h2節點 -->
-            <h2 class="title">議員發言-公報會議紀錄</h2>
+            <h2 class="title">進階搜尋</h2>
             <!-- functionPanel -->
             <div class="functionPanel">
               <!-- <div class="publishTime"><span>發布日期：</span><time>2019-01-01</time></div> -->
@@ -257,228 +207,91 @@
             <!-- category -->
             <div class="category">
               <ul>
-                <li><a href="#">書面質詢申請</a></li>
-                <li><a href="#">議員提案</a></li>
-                <li><a href="#">公報會議紀錄</a></li>
-                <li><a href="#" class="active">議員發言</a></li>
-                <li><a href="#">書面質詢</a></li>
-                <li><a href="#">您的查詢歷史</a></li>
+                <li><a href="#">一般進階搜尋</a></li>
+                <li><a href="#">議員發言</a></li>
+                <li><a href="#" class="active">搜尋7-9公報（無摘要影像檔）</a></li>
               </ul>
             </div>
-            <!-- LP Start -->
-            <section class="lp">
-              <!-- aRight -->
-              <div class="printBox">
-                <div class="flexForm">
-                  <div class="formGrp formInline">
-                    <label for="selectSample" class="labelhidden">選擇筆數列印:</label>
-                    <select name="" id="selectSample">
-                      <option value="第1筆">第1筆</option>
-                      <option value="第2筆">第2筆</option>
-                    </select>
-                    ~
-                    <select name="pets" id="pet-select">
-                      <option value="第9筆">第9筆</option>
-                      <option value="第10筆">第10筆</option>
-                    </select>
-                    <button type="button" class="btn btnPrimary printBtn" aria-label="列印"><span class="i_print_dark"></span></button>
+
+            <!-- formBox -->
+            <section class="formBox">
+              <div class="flexForm formGrid">
+                <!-- 公報類型 -->
+                <div class="formGrp">
+                  <label for="selectSample" class="formTitle">公報類型</label>
+                  <div class="formContent">
+                    <!-- query_con_3_3_3_3 -->
+                    <div class="query_con_3_3_3_3">
+                      <div class="col"><input type="radio" id="huey" name="drone" value="議事錄" /> <label for="huey">議事錄</label></div>
+                      <div class="col">
+                        <select name="pets" id="pet-select">
+                          <option value="">請選擇</option>
+                          <option value="14">14</option>
+                          <option value="13">13</option>
+                        </select>
+                        <label for="pet-select">屆</label>
+                      </div>
+                      <div class="col">
+                        <select name="pets" id="pet-select">
+                          <option value="">請選擇</option>
+                          <option value="臨時">臨時</option>
+                          <option value="定期">定期</option>
+                        </select>
+                        <label for="pet-select">大會</label>
+                      </div>
+                      <div class="col">
+                        <select name="pets" id="pet-select">
+                          <option value="">請選擇</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                        <label for="pet-select">次</label>
+                      </div>
+                    </div>
+                    <!-- query_con_3_3_3_3 end-->
+                    <!-- query_con_3_3_3_3 -->
+                    <div class="query_con_3_3_3_3">
+                      <div class="col"><input type="radio" id="huey" name="drone" value="議事錄" /> <label for="huey">公報</label></div>
+                      <div class="col">
+                        <select name="pets" id="pet-select">
+                          <option value="">請選擇</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                        </select>
+                        <label for="pet-select">卷</label>
+                      </div>
+                      <div class="col">
+                        <select name="pets" id="pet-select">
+                          <option value="">請選擇</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                        </select>
+                        <label for="pet-select">期</label>
+                      </div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                    <!-- query_con_3_3_3_3 end-->
+                    <!-- query_con_3_6_3 -->
+                    <div class="query_con_3_6_3">
+                      <div class="col"><label for="name1">起始頁碼</label></div>
+                      <div class="col">
+                        <input type="text" id="name1" name="name" />
+                        <button type="button" class="btn btnBlue">查詢啟始頁碼</button>
+                      </div>
+                      <div class="col"><button type="button" class="btn btnBlue" data-fancybox data-src="#dialog-content-selmember">開啟影像檔</button></div>
+                    </div>
+                    <!-- query_con_3_6_3 end-->
                   </div>
                 </div>
-              </div>
-              <!-- aRight end-->
-              <!-- searchflex -->
-              <div class="searchflex">
-                <label for="">查詢</label>
-                <select name="" id="">
-                  <option value="">依屆會次</option>
-                  <option value="">...</option>
-                </select>
-                <select name="" id="">
-                  <option value="">由大到小</option>
-                  <option value="">...</option>
-                </select>
-                <input name="username" type="text" id="" />
-                <button type="button" class="btnSearch">查詢</button>
-              </div>
-              <!-- searchflex end-->
-              <!-- selbox -->
-              <div class="selbox">
-                <button type="button" class="btn btnYellow"><span class="i_checksel_dark"></span>全選</button>
-                <button type="button" class="btn btnYellow"><span class="i_checkdel_dark"></span>全部取消</button>
-              </div>
-              <!-- selbox end-->
-              <!-- 文字列表 -->
-              <div class="listflex">
-                <ul>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">1</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">2</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1704</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">3</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">局長請回座。 柯市長，醫療是你的本業，所以我再來提這個問題就是長期以來基層醫療協會 害怕的，他</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1123</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">4</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">5</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1704</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">6</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">局長請回座。 柯市長，醫療是你的本業，所以我再來提這個問題就是長期以來基層醫療協會 害怕的，他</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1123</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">7</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">8</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1704</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">9</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">局長請回座。 柯市長，醫療是你的本業，所以我再來提這個問題就是長期以來基層醫療協會 害怕的，他</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1123</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">10</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                </ul>
+                <!-- 公報類型end -->
+                <hr />
+                <div class="btnGrp formInline">
+                  <button type="button" class="btn btnLg btnReset">條件重設</button>
+                  <button type="button" class="btn btnLg btnSubmit">開始查詢</button>
+                </div>
               </div>
             </section>
-            <!-- LP End -->
-            <!-- Pagination -->
-            <div class="pagination">
-              <form action="">
-                <div class="formInline">
-                  <div class="total">
-                    共<span>308</span>筆資料，第<span>1/18</span>頁，<label for="pet-select">每頁顯示</label>
-                    <select name="" id="pet-select" aria-label="每頁顯示">
-                      <option value="">10</option>
-                      <option value="">20</option>
-                      <option value="">30</option>
-                      <option value="">40</option>
-                    </select>
-                    筆<input type="button" value="確定" class="btn btnSubmit" title="確定" />
-                  </div>
-                </div>
-              </form>
-              <ul class="page">
-                <li class="first"><a href="#" title="第一頁">第一頁 </a></li>
-                <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#">10</a></li>
-                <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
-                <li class="last">
-                  <a href="#" title="最後一頁">最後一頁 </a>
-                </li>
-              </ul>
-            </div>
+            <!-- formBox end -->
           </div>
         </div>
       </main>
@@ -609,7 +422,7 @@
             </div>
             <!-- flexForm end-->
           </div>
-          <div class="table1">
+          <div class="tableHover table1">
             <table>
               <!-- 無障礙 caption 標題預設隱藏 -->
               <caption>
@@ -664,6 +477,143 @@
         </section>
         <!-- popupBox End -->
         <!-- 選議員 end -->
+      </div>
+    </div>
+    <!-- 燈箱 end-->
+
+    <!-- 燈箱 -->
+    <div class="modal" id="dialog-content-sellist" style="display: none">
+      <div class="popupContent">
+        <h2>性質清單</h2>
+        <!-- 選單 start -->
+        <!-- popupBox -->
+        <section class="popupBox">
+          <div class="flexForm">
+            <!--最外層的form 或 radio_grp class加上form_inline-->
+            <div class="radioGrp formInline sellistradio">
+              <label><input name="radioSample" type="radio" value="一般提案" />一般提案</label>
+              <label><input name="radioSample" type="radio" value="工作報告" />工作報告</label>
+              <label><input name="radioSample" type="radio" value="工作報告質詢" />工作報告質詢</label>
+              <label><input name="radioSample" type="radio" value="公告事項" />公告事項</label>
+              <label><input name="radioSample" type="radio" value="市法規" />市法規</label>
+              <label><input name="radioSample" type="radio" value="決算案" />決算案</label>
+              <label><input name="radioSample" type="radio" value="其他" />其他</label>
+              <label><input name="radioSample" type="radio" value="施政報告" />施政報告</label>
+              <label><input name="radioSample" type="radio" value="相片簡歷" />相片簡歷</label>
+              <label><input name="radioSample" type="radio" value="原定議程" />原定議程</label>
+              <label><input name="radioSample" type="radio" value="座談會" />座談會</label>
+              <label><input name="radioSample" type="radio" value="書面質詢" />書面質詢</label>
+              <label><input name="radioSample" type="radio" value="副市長質詢" />副市長質詢</label>
+              <label><input name="radioSample" type="radio" value="專案報告" />專案報告</label>
+              <label><input name="radioSample" type="radio" value="專案調查" />專案調查</label>
+              <label><input name="radioSample" type="radio" value="速記錄" />速記錄</label>
+              <label><input name="radioSample" type="radio" value="報告事項" />報告事項</label>
+              <label><input name="radioSample" type="radio" value="報告案" />報告案</label>
+              <label><input name="radioSample" type="radio" value="復議案" />復議案</label>
+              <label><input name="radioSample" type="radio" value="會議記錄" />會議記錄</label>
+              <label><input name="radioSample" type="radio" value="業務質詢" />業務質詢</label>
+              <label><input name="radioSample" type="radio" value="預算案" />預算案</label>
+              <label><input name="radioSample" type="radio" value="實際議程" />實際議程</label>
+              <label><input name="radioSample" type="radio" value="請願案" />請願案</label>
+              <label><input name="radioSample" type="radio" value="總質詢" />總質詢</label>
+              <label><input name="radioSample" type="radio" value="臨時提案" />臨時提案</label>
+              <label><input name="radioSample" type="radio" value="覆議案" />覆議案</label>
+              <label><input name="radioSample" type="radio" value="議員出席情形統計表" />議員出席情形統計表</label>
+              <label><input name="radioSample" type="radio" value="議員提案" />議員提案</label>
+              <label><input name="radioSample" type="radio" value="議會內規" />議會內規</label>
+              <label><input name="radioSample" type="radio" value="黨團補助費明細表" />黨團補助費明細表</label>
+              <label><input name="radioSample" type="radio" value="聽證會" />聽證會</label>
+            </div>
+          </div>
+
+          <hr />
+          <div class="btnGrp formInline aCenter">
+            <button type="button" class="btn btnReset btnLg">關閉</button>
+            <button type="button" class="btn btnSubmit btnLg">確定</button>
+          </div>
+        </section>
+        <!-- popupBox End -->
+        <!-- 選單 end -->
+      </div>
+    </div>
+    <!-- 燈箱 end-->
+
+    <!-- 燈箱 -->
+    <div class="modal" id="dialog-content-chart" style="display: none">
+      <div class="popupContent">
+        <h2>屆會次對照表</h2>
+        <!-- 屆會次對照表 start -->
+        <!-- popupBox -->
+        <section class="popupBox">
+          <div class="searchBox">
+            <!-- flexForm -->
+            <div class="flexForm formGrid">
+              <div class="formGrp">
+                <label for="selectSample" class="formTitle">屆別:</label>
+                <div class="formContent">
+                  <select id="selectSample" name="">
+                    <option value="">第14屆</option>
+                    <option value="">第13屆</option>
+                    <option value="">第12屆</option>
+                  </select>
+                </div>
+              </div>
+              <div class="btnGrp formInline">
+                <button type="button" class="btn btnReset">清除</button>
+                <button type="button" class="btn btnSubmit">查詢</button>
+              </div>
+            </div>
+            <!-- flexForm end-->
+          </div>
+          <div class="table1">
+            <table>
+              <!-- 無障礙 caption 標題預設隱藏 -->
+              <caption>
+                請選取屆會次
+              </caption>
+              <thead>
+                <tr>
+                  <th class="seltd"></th>
+                  <th class="aLeft">屆會次</th>
+                  <th class="aLeft">日期起訖</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="radio" id="contactChoice1" name="contact" value="第08屆第05次定期大會" /></td>
+                  <td class="aLeft"><label for="contactChoice1">第08屆第05次定期大會</label></td>
+                  <td class="aLeft">民國90年04月02日～民國90年06月10日</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" id="contactChoice1" name="contact" value="第08屆第19次臨時大會" /></td>
+                  <td class="aLeft"><label for="contactChoice1">第08屆第19次臨時大會</label></td>
+                  <td class="aLeft">民國90年06月18日～民國90年06月27日</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" id="contactChoice1" name="contact" value="第08屆第20次臨時大會" /></td>
+                  <td class="aLeft"><label for="contactChoice1">第08屆第20次臨時大會</label></td>
+                  <td class="aLeft">民國90年08月27日～民國90年09月05日</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" id="contactChoice1" name="contact" value="第08屆第06次定期大會" /></td>
+                  <td class="aLeft"><label for="contactChoice1">第08屆第06次定期大會</label></td>
+                  <td class="aLeft">民國90年09月06日～民國90年11月24日</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" id="contactChoice1" name="contact" value="第08屆第21次臨時大會" /></td>
+                  <td class="aLeft"><label for="contactChoice1">第08屆第21次臨時大會</label></td>
+                  <td class="aLeft">民國90年12月03日～民國90年12月12日</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr />
+          <div class="btnGrp formInline aCenter">
+            <button type="button" class="btn btnSubmit btnLg">確認</button>
+          </div>
+        </section>
+        <!-- popupBox End -->
+        <!-- 屆會次對照表 end -->
       </div>
     </div>
     <!-- 燈箱 end-->

@@ -184,47 +184,79 @@
                 <button type="button" class="btn clearBtn">清除條件</button>
                 <!-- flexForm -->
                 <div class="flexForm">
+                  <!-- 條件 -->
+                  <label for="selectSample" class="ftitle">依性質/屆會次/卷期</label>
+                  <select name="" id="selectSample">
+                    <option value="">性質</option>
+                    <option value="">屆會次</option>
+                    <option value="">卷期</option>
+                  </select>
+                  <!-- 條件 end-->
+
                   <!-- 分類 -->
                   <fieldset>
-                    <legend class="ftitle">分類</legend>
+                    <legend class="ftitle">性質</legend>
                     <div>
-                      <input type="radio" id="radio1" name="radioname" value="公報-會議紀錄發言" checked />
-                      <label for="radio1">公報-會議紀錄發言</label>
+                      <input type="radio" id="radio1" name="radioname" value="全部（977筆）" checked />
+                      <label for="radio1">全部（977筆）</label>
                     </div>
 
                     <div>
-                      <input type="radio" id="radio2" name="radioname" value="搶鮮報-速紀錄發言" />
-                      <label for="radio2">搶鮮報-速紀錄發言</label>
+                      <input type="radio" id="radio2" name="radioname" value="實際議程（4筆）" />
+                      <label for="radio2">實際議程（4筆）</label>
                     </div>
 
                     <div>
-                      <input type="radio" id="radio3" name="radioname" value="搶鮮報-會議紀錄發言" />
-                      <label for="radio3">搶鮮報-會議紀錄發言</label>
+                      <input type="radio" id="radio3" name="radioname" value="施政報告（19筆）" />
+                      <label for="radio3">施政報告（19筆）</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="工作報告（15筆）" />
+                      <label for="radio3">工作報告（15筆）</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="書面質詢（17筆）" />
+                      <label for="radio3">書面質詢（17筆）</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="其他（17筆）" />
+                      <label for="radio3">其他（17筆）</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="議員提案（17筆）" />
+                      <label for="radio3">議員提案（17筆）</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="臨時提案（17筆）" />
+                      <label for="radio3">臨時提案（17筆）</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="總質詢（17筆）" />
+                      <label for="radio3">總質詢（17筆）</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="業務質詢（17筆）" />
+                      <label for="radio3">業務質詢（17筆）</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="速記錄（17筆）" />
+                      <label for="radio3">速記錄（17筆）</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="會議紀錄（17筆）" />
+                      <label for="radio3">會議紀錄（17筆）</label>
                     </div>
                   </fieldset>
                   <!-- 分類 end-->
-                  <!-- 條件 -->
-                  <label for="selectSample" class="ftitle">條件</label>
-                  <select name="" id="selectSample">
-                    <option value="">依部門</option>
-                  </select>
-                  <!-- 條件 end-->
-                  <!-- 部門 -->
-                  <label for="selectSample" class="ftitle">部門</label>
-                  <select name="" id="selectSample">
-                    <option value="全部(23442筆)">全部(23442筆)</option>
-                    <option value="">民政(415筆)</option>
-                    <option value="">財政建設(29筆)</option>
-                    <option value="">教育(326筆)</option>
-                    <option value="">交通(17筆)</option>
-                    <option value="">警政衛生(24筆)</option>
-                    <option value="">公務(123筆)</option>
-                    <option value="">法規(17筆)</option>
-                    <option value="">總質詢(24筆)</option>
-                    <option value="">程序(123筆)</option>
-                    <option value="">紀律(123筆)</option>
-                  </select>
-                  <!-- 部門 end-->
                 </div>
                 <!-- flexForm end -->
               </div>
@@ -235,11 +267,11 @@
             <nav aria-label="Breadcrumb" class="breadcrumb">
               <ul>
                 <li><a href="#">首頁</a></li>
-                <li aria-current="page">個人專區</li>
+                <li aria-current="page">查詢結果</li>
               </ul>
             </nav>
             <!-- h2節點 -->
-            <h2 class="title">議員發言-公報會議紀錄</h2>
+            <h2 class="title">查詢結果</h2>
             <!-- functionPanel -->
             <div class="functionPanel">
               <!-- <div class="publishTime"><span>發布日期：</span><time>2019-01-01</time></div> -->
@@ -254,15 +286,12 @@
                 </ul>
               </div>
             </div>
+            <div class="condition">查詢條件：[不限欄位：<em>王世堅</em>] [不限欄位：<em>大巨蛋</em>]</div>
             <!-- category -->
             <div class="category">
               <ul>
-                <li><a href="#">書面質詢申請</a></li>
-                <li><a href="#">議員提案</a></li>
-                <li><a href="#">公報會議紀錄</a></li>
-                <li><a href="#" class="active">議員發言</a></li>
-                <li><a href="#">書面質詢</a></li>
-                <li><a href="#">您的查詢歷史</a></li>
+                <li><a href="#" class="active">公報</a></li>
+                <li><a href="#">搶鮮報</a></li>
               </ul>
             </div>
             <!-- LP Start -->
@@ -272,16 +301,18 @@
                 <div class="flexForm">
                   <div class="formGrp formInline">
                     <label for="selectSample" class="labelhidden">選擇筆數列印:</label>
+                    第
                     <select name="" id="selectSample">
-                      <option value="第1筆">第1筆</option>
-                      <option value="第2筆">第2筆</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
                     </select>
-                    ~
+                    筆 ~ 第
                     <select name="pets" id="pet-select">
-                      <option value="第9筆">第9筆</option>
-                      <option value="第10筆">第10筆</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
                     </select>
-                    <button type="button" class="btn btnPrimary printBtn" aria-label="列印"><span class="i_print_dark"></span></button>
+                    筆
+                    <button type="button" class="btn btnPrimary printBtn" aria-label="列印" data-fancybox data-src="#dialog-content-print"><span class="i_print_dark"></span></button>
                   </div>
                 </div>
               </div>
@@ -294,7 +325,7 @@
                   <option value="">...</option>
                 </select>
                 <select name="" id="">
-                  <option value="">由大到小</option>
+                  <option value="">由新到舊</option>
                   <option value="">...</option>
                 </select>
                 <input name="username" type="text" id="" />
@@ -308,7 +339,7 @@
               </div>
               <!-- selbox end-->
               <!-- 文字列表 -->
-              <div class="listflex">
+              <div class="listflex2">
                 <ul>
                   <li>
                     <div class="item checkGrp">
@@ -316,8 +347,19 @@
                     </div>
                     <div class="item num">1</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
+                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">「臺北市重大工程推動進度與檢討(含捷運南北環段、大巨蛋、臺北表演藝術中心、五大市場、臺北市自行車路網、淡北道路、動物之家)；市府追加工程預算應對機制；北市能源政策及朝向2050淨零排放」專案報告（第13屆第7次定期大會）</span>
+                          <div class="readset">
+                            <p>
+                              臺北大巨蛋，或稱臺北文化體育園區、臺北<em>大巨蛋</em>，是位於臺灣臺北市信義區的多功能室內棒球場，也是臺灣最大的室內運動場館，為了跟早已啟用的臺北小巨蛋區別，因此稱為「臺北<em>大巨蛋</em>」。巨蛋園區坐落於光復南路、忠孝東路與市民大道之間，並相隔忠孝東路與國父紀念館對望。
+                            </p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
                       <span class="starpage">起始頁：1237</span>
@@ -329,11 +371,25 @@
                     </div>
                     <div class="item num">2</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
+                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷06期</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover"
+                            >「臺北市重大工程與BOT
+                            案及交通政策(含社宅興建進度及政策檢討、臺北表演藝術中心工程進度與開幕及營運規劃、第一果菜及魚類批發市場改建檢討、捷運東環線與民生汐止線規劃進度、大巨蛋推動進度及議約規劃、共享運具與內科交通改善)；市府因人工及物料成本上漲影響，相關工程招標如何因應；臺北2050零碳路徑及本市減碳工作現況與能源轉型政策落實成效」專案報告(第13屆第6次定期大會)</span
+                          >
+                          <div class="readset">
+                            <p>
+                              臺北大巨蛋，或稱臺北文化體育園區、臺北<em>大巨蛋</em>，是位於臺灣臺北市信義區的多功能室內棒球場，也是臺灣最大的室內運動場館，為了跟早已啟用的臺北小巨蛋區別，因此稱為「臺北<em>大巨蛋</em>」。巨蛋園區坐落於光復南路、忠孝東路與市民大道之間，並相隔忠孝東路與國父紀念館對望。
+                            </p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1704</span>
+                      <span class="starpage">起始頁：3115</span>
                     </div>
                   </li>
                   <li>
@@ -342,11 +398,22 @@
                     </div>
                     <div class="item num">3</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">局長請回座。 柯市長，醫療是你的本業，所以我再來提這個問題就是長期以來基層醫療協會 害怕的，他</a>
+                      <span class="dept">第13屆第05次定期大會</span><span class="dept">124卷13期</span>
+                      <a href="#">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">「臺北市重大工程推動進度與檢討(含臺北藝術園區、音圖中心、市場改建、大巨蛋議約及經營權轉讓問題、捷運北環、南環、東環、民生汐止線、淡北道路)；施打AZ 疫苗進度規劃與核酸檢測訂價合理性」專案報告(第13 屆第5 次定期大會)</span>
+                          <div class="readset">
+                            <p>
+                              臺北大巨蛋，或稱臺北文化體育園區、臺北<em>大巨蛋</em>，是位於臺灣臺北市信義區的多功能室內棒球場，也是臺灣最大的室內運動場館，為了跟早已啟用的臺北小巨蛋區別，因此稱為「臺北<em>大巨蛋</em>」。巨蛋園區坐落於光復南路、忠孝東路與市民大道之間，並相隔忠孝東路與國父紀念館對望。
+                            </p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1123</span>
+                      <span class="starpage">起始頁：2885</span>
                     </div>
                   </li>
                   <li>
@@ -355,8 +422,19 @@
                     </div>
                     <div class="item num">4</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
+                      <span class="dept">第13屆第01次定期大會07次會議</span><span class="dept">124卷13期</span>
+                      <a href="#">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">「臺北市重大工程推動進度與檢討(含各大市場改建、北藝、北流、北投影視音產業園區、士林北段科學園區、社子島開發及南北環、東環、民生汐止線等捷運整體規劃)」專案報告及速紀錄</span>
+                          <div class="readset">
+                            <p>
+                              臺北大巨蛋，或稱臺北文化體育園區、臺北<em>大巨蛋</em>，是位於臺灣臺北市信義區的多功能室內棒球場，也是臺灣最大的室內運動場館，為了跟早已啟用的臺北小巨蛋區別，因此稱為「臺北<em>大巨蛋</em>」。巨蛋園區坐落於光復南路、忠孝東路與市民大道之間，並相隔忠孝東路與國父紀念館對望。
+                            </p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
                       <span class="starpage">起始頁：1237</span>
@@ -368,76 +446,22 @@
                     </div>
                     <div class="item num">5</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
+                      <span class="dept">第13屆第01次定期大會07次會議</span><span class="dept">112卷06期</span>
+                      <a href="#">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">「臺北市環保、交通、節能減碳及消費者保護」 (深澳電廠設立影響、雙北公共運輸定期票政策、臺北農產運銷公司營運與食安成效 )專案報告速記錄</span>
+                          <div class="readset">
+                            <p>
+                              臺北大巨蛋，或稱臺北文化體育園區、臺北<em>大巨蛋</em>，是位於臺灣臺北市信義區的多功能室內棒球場，也是臺灣最大的室內運動場館，為了跟早已啟用的臺北小巨蛋區別，因此稱為「臺北<em>大巨蛋</em>」。巨蛋園區坐落於光復南路、忠孝東路與市民大道之間，並相隔忠孝東路與國父紀念館對望。
+                            </p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
                       <span class="starpage">起始頁：1704</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">6</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">局長請回座。 柯市長，醫療是你的本業，所以我再來提這個問題就是長期以來基層醫療協會 害怕的，他</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1123</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">7</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">8</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1704</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">9</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">局長請回座。 柯市長，醫療是你的本業，所以我再來提這個問題就是長期以來基層醫療協會 害怕的，他</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1123</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">10</div>
-                    <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
-                    </div>
-                    <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
                     </div>
                   </li>
                 </ul>
@@ -664,6 +688,42 @@
         </section>
         <!-- popupBox End -->
         <!-- 選議員 end -->
+      </div>
+    </div>
+    <!-- 燈箱 end-->
+
+    <!-- 燈箱 -->
+    <div class="modal" id="dialog-content-print" style="display: none">
+      <div class="popupContent">
+        <h2>請選擇要列印/下載的格式</h2>
+        <!-- 列印 start -->
+        <!-- popupBox -->
+        <section class="popupBox">
+          <div class="searchBox">
+            <!-- flexForm -->
+            <div class="flexForm formGrid">
+              <div class="formGrp">
+                <label><input name="radioSample" type="radio" value="" />條列式</label>
+                <div class="formContent">&nbsp;</div>
+              </div>
+              <div class="formGrp">
+                <label><input name="radioSample" type="radio" value="" />全文式</label>
+                <div class="formContent">
+                  <div class="checkGrp">
+                    <label><input name="" type="checkbox" value="" />含答覆文</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="btnGrp formInline">
+                <button type="button" class="btn btnSubmit">確定</button>
+              </div>
+            </div>
+            <!-- flexForm end-->
+          </div>
+        </section>
+        <!-- popupBox End -->
+        <!-- 列印 end -->
       </div>
     </div>
     <!-- 燈箱 end-->

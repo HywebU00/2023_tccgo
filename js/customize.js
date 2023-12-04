@@ -356,3 +356,29 @@ $('.labelPool').each(function () {
     }
   );
 });
+
+//help readset
+
+$(function () {
+  $('.help2').mouseover(function () {
+    $(this).children('.readset').show();
+    $(this).siblings('.help2').children('.readset').hide();
+  });
+  $('.help2').mouseout(function () {
+    $('.help2 .readset').hide();
+  });
+
+  $('.help2 .taghover').click(function () {
+    $(this).next('.readset').slideDown();
+  });
+
+  $('.close_btn').click(function () {
+    $(this).parents('.readset').hide();
+  });
+
+  $('.readset')
+    .find('button:last')
+    .focusout(function () {
+      $(this).parents('.readset').hide();
+    });
+});

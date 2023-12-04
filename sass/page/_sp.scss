@@ -107,6 +107,8 @@
       @include screen('xsMobile') {
         white-space: normal;
       }
+      .litext {
+      }
     }
     label {
       margin: 0;
@@ -159,6 +161,111 @@
     }
   }
 }
+
+//listflex2
+.listflex2 {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: solid 1px $colorGray;
+    padding: 1em 0;
+    @include screen('xsMobile') {
+      padding: 0.5em 0;
+    }
+    .item {
+      flex: 0 0 2em;
+      text-align: center;
+      padding: 0.5em 0;
+    }
+    .item2 {
+      flex: 1 1 auto;
+      padding: 0.5em 0;
+      position: relative;
+      max-width: 80%;
+      @include screen('tablet') {
+        max-width: 80%;
+      }
+      @include screen('xsMobile') {
+        max-width: 100%;
+      }
+    }
+    .item3 {
+      flex: 1 1 auto;
+      text-align: right;
+      padding: 0.5em 0;
+    }
+    a {
+      display: block;
+      font-size: 1.125em;
+      // font-weight: bold;
+      padding: 0.5em 0.5em 0;
+      // overflow: hidden;
+      // white-space: nowrap;
+      // text-overflow: ellipsis;
+      // @include screen('xsMobile') {
+      //   white-space: normal;
+      // }
+      .litext {
+      }
+    }
+    label {
+      margin: 0;
+    }
+    .dept {
+      display: inline-block;
+      font-size: 0.938em;
+      font-weight: normal;
+      background: $colorLight;
+      border-radius: 2em;
+      min-width: 5em;
+      text-align: center;
+      padding: 0 1em;
+      margin: 2px 0.5em 2px 0;
+      @include screen('xsMobile') {
+        margin: 2px 0.5em;
+      }
+    }
+    .date {
+      display: inline-block;
+      font-size: 0.938em;
+      font-weight: normal;
+      // background: $colorLight;
+      // border-radius: 2em;
+      min-width: 5em;
+      text-align: center;
+      padding: 0 0.5em;
+      margin: 2px 0.5em 2px 0;
+      @include screen('xsMobile') {
+        margin: 2px 0.5em;
+      }
+    }
+    .starpage {
+      color: $colorWord;
+      background: $colorYellow;
+      min-width: 5em;
+      text-align: center;
+      font-size: 0.938em;
+      display: inline-block;
+      padding: 0 0.5em;
+    }
+    .regular {
+      color: $colorWord;
+      background: $colorRed2;
+      min-width: 5em;
+      text-align: center;
+      font-size: 0.938em;
+      display: inline-block;
+      padding: 0 0.5em;
+    }
+  }
+}
+//searchflex
 .searchflex {
   display: flex;
   flex-flow: row;
@@ -300,6 +407,94 @@
     font-size: 1.25em;
     border-left: solid 5px $colorPrimary;
     padding-left: 8px;
+    line-height: 1.25em;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 1em;
+    color: darken($colorPrimary, 40);
+  }
+  .content {
+    padding: 0 10px 20px;
+  }
+  ul {
+    font-size: 0.938em;
+    padding: 0 0 0 1.5em;
+    li {
+      margin-bottom: 5px;
+    }
+    ul {
+      font-size: 1em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        background: url('../images/li_arrow.png') no-repeat left 2px top 0.4em;
+        background-size: 10px auto;
+        padding-left: 14px;
+      }
+    }
+  }
+  a {
+    color: darken($colorPrimary, 40);
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+      color: $colorRed;
+    }
+  }
+  p {
+    font-size: 0.938em;
+    padding: 0 5px 10px 5px;
+  }
+  .pagelist {
+    font-size: 0.875em;
+    font-weight: bold;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    padding: 2px;
+  }
+  .btnGrp {
+    justify-content: center;
+  }
+  .btn {
+    padding: 0.2em 0.5em;
+    font-size: 0.875em;
+    margin: 5px;
+    font-weight: normal;
+    // text-shadow: 0px 1px 2px #fff;
+  }
+  [class^='i_']:before {
+    width: 0.8em;
+    height: 0.8em;
+  }
+}
+
+// pdfViewBox2
+.pdfViewBox2 {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+
+  .col {
+    flex: 0 0 200px;
+
+    &:nth-child(2) {
+      flex: 1 1 auto;
+    }
+  }
+  h1 {
+    height: 58px;
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    background: url(../images/body_bg.png) repeat left top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+  }
+  h2 {
+    font-size: 1.25em;
+    border-left: solid 5px $colorPrimary;
+    padding-left: 8px;
     line-height: 1em;
   }
   h3.title {
@@ -341,6 +536,119 @@
   }
   .btn {
     padding: 0.2em 0.5em;
+    font-size: 0.938em;
+    margin: 5px;
+    font-weight: normal;
+    // text-shadow: 0px 1px 2px #fff;
+  }
+  [class^='i_']:before {
+    width: 0.8em;
+    height: 0.8em;
+  }
+  .page {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.938rem;
+    .col {
+      box-sizing: border-box;
+      text-align: center;
+      flex: 1 1 auto;
+      padding: 0 5px;
+      input {
+        width: calc(100% - 6em);
+      }
+      label {
+      }
+    }
+    .btn {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+// pdfViewBox3
+.pdfViewBox3 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+
+  .col {
+    flex: 1 1 auto;
+
+    &:nth-child(2) {
+      flex: 0 0 250px;
+    }
+  }
+  h1 {
+    height: 58px;
+    margin: 0 0 20px 0;
+    padding: 5px 0;
+    background: url(../images/body_bg.png) repeat left top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+  }
+  h2 {
+    font-size: 1.25em;
+    border-left: solid 5px $colorPrimary;
+    padding-left: 8px;
+    line-height: 1.25em;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 1em;
+    color: darken($colorPrimary, 40);
+  }
+  .content {
+    padding: 0 10px 20px;
+  }
+  ul {
+    font-size: 0.938em;
+    padding: 0 0 0 1.5em;
+    li {
+      margin-bottom: 5px;
+    }
+    ul {
+      font-size: 1em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        background: url('../images/li_arrow.png') no-repeat left 2px top 0.4em;
+        background-size: 10px auto;
+        padding-left: 14px;
+      }
+    }
+  }
+  a {
+    color: darken($colorPrimary, 40);
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+      color: $colorRed;
+    }
+  }
+  p {
+    font-size: 0.938em;
+    padding: 0 5px 10px 5px;
+  }
+  .pagelist {
+    font-size: 0.875em;
+    font-weight: bold;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    padding: 2px;
+  }
+  .btnGrp {
+    justify-content: center;
+  }
+  .btn {
+    padding: 0.2em 0.5em;
     font-size: 0.875em;
     margin: 5px;
     font-weight: normal;
@@ -349,5 +657,86 @@
   [class^='i_']:before {
     width: 0.8em;
     height: 0.8em;
+  }
+}
+
+.condition {
+  background: #eee url('../images/li_arrow.png') no-repeat left 10px top 0.9em;
+  background-size: 12px auto;
+  padding: 0.5em 0.5em 0.5em 25px;
+  font-size: 0.938em;
+  em {
+    color: $colorRed;
+    font-style: normal;
+  }
+}
+
+///help2
+.help2 {
+  position: relative;
+  display: inline-block;
+  text-indent: 0;
+  padding-left: 0;
+  text-align: left;
+
+  .taghover {
+    color: $colorWord;
+    // font-weight: bold;
+    text-decoration: none !important;
+    cursor: pointer;
+    position: relative;
+    &:hover,
+    &:focus {
+      color: $aHover;
+      padding: 0 !important;
+      // background: #ffff00;
+    }
+  }
+
+  .readset {
+    position: absolute;
+    z-index: 999;
+    width: 320px;
+    display: none;
+    background: #ffffd9;
+    padding: 5px 1em;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif;
+    font-size: 0.938rem;
+    color: #333;
+    @include screen('mobile') {
+      display: none !important;
+    }
+  }
+  .close_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background: none;
+    border: none !important;
+
+    &:before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      background: url('../images/icon_close.png') no-repeat center center;
+      background-size: 40px auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 999;
+    }
+  }
+  p {
+    margin: 0.5em 0;
+  }
+  em {
+    color: $colorRed;
+    font-style: normal;
   }
 }

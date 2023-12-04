@@ -1677,3 +1677,54 @@ abbr[title] {
     }
   }
 }
+
+//query_con_3_3_3_3
+.query_con_3_3_3_3 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center !important;
+  width: 100%;
+  max-width: 100%;
+  .col {
+    flex: 1 1 calc(100% / 4);
+    box-sizing: border-box;
+    padding: 0 0.5em;
+    select {
+      width: calc(100% - 4em) !important;
+    }
+    @include screen('tablet') {
+      flex: 1 1 calc(100% / 2);
+    }
+    @include screen('mobile') {
+      flex: 1 1 calc(100% / 1);
+      label {
+        display: inline;
+      }
+    }
+  }
+}
+//query_con_3_6_3
+.query_con_3_6_3 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  .col {
+    flex: 0 0 7em;
+    box-sizing: border-box;
+    label {
+      text-align: right;
+      display: block;
+    }
+    &:nth-child(2) {
+      flex: 1 1 auto;
+      input {
+        width: calc(100% - 10em);
+      }
+    }
+    @include screen('tablet') {
+      flex: 0 0 5em;
+    }
+  }
+}

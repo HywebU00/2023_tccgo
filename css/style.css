@@ -4096,6 +4096,9 @@ img {
   .tooltip p > em {
     color: red;
   }
+  .tooltipText {
+    color: #d30000;
+  }
   .sidebarCtrlBtn {
     display: none;
     left: 0px;
@@ -6444,6 +6447,60 @@ img {
     .query_con_5_5 .col label {
       width: calc(100% - 2em) !important;
       display: inline-block !important;
+    }
+  }
+  .query_con_3_3_3_3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center !important;
+    width: 100%;
+    max-width: 100%;
+  }
+  .query_con_3_3_3_3 .col {
+    flex: 1 1 25%;
+    box-sizing: border-box;
+    padding: 0 0.5em;
+  }
+  .query_con_3_3_3_3 .col select {
+    width: calc(100% - 4em) !important;
+  }
+  @media screen and (max-width: 991px) {
+    .query_con_3_3_3_3 .col {
+      flex: 1 1 50%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .query_con_3_3_3_3 .col {
+      flex: 1 1 100%;
+    }
+    .query_con_3_3_3_3 .col label {
+      display: inline;
+    }
+  }
+  .query_con_3_6_3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  .query_con_3_6_3 .col {
+    flex: 0 0 7em;
+    box-sizing: border-box;
+  }
+  .query_con_3_6_3 .col label {
+    text-align: right;
+    display: block;
+  }
+  .query_con_3_6_3 .col:nth-child(2) {
+    flex: 1 1 auto;
+  }
+  .query_con_3_6_3 .col:nth-child(2) input {
+    width: calc(100% - 10em);
+  }
+  @media screen and (max-width: 991px) {
+    .query_con_3_6_3 .col {
+      flex: 0 0 5em;
     }
   }
   table {
@@ -10317,6 +10374,105 @@ img {
     display: inline-block;
     padding: 0 0.5em;
   }
+  .listflex2 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .listflex2 li {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: solid 1px #d4d4d4;
+    padding: 1em 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex2 li {
+      padding: 0.5em 0;
+    }
+  }
+  .listflex2 li .item {
+    flex: 0 0 2em;
+    text-align: center;
+    padding: 0.5em 0;
+  }
+  .listflex2 li .item2 {
+    flex: 1 1 auto;
+    padding: 0.5em 0;
+    position: relative;
+    max-width: 80%;
+  }
+  @media screen and (max-width: 991px) {
+    .listflex2 li .item2 {
+      max-width: 80%;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .listflex2 li .item2 {
+      max-width: 100%;
+    }
+  }
+  .listflex2 li .item3 {
+    flex: 1 1 auto;
+    text-align: right;
+    padding: 0.5em 0;
+  }
+  .listflex2 li a {
+    display: block;
+    font-size: 1.125em;
+    padding: 0.5em 0.5em 0;
+  }
+  .listflex2 li label {
+    margin: 0;
+  }
+  .listflex2 li .dept {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #a0ebf6;
+    border-radius: 2em;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 1em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex2 li .dept {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex2 li .date {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 0.5em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex2 li .date {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex2 li .starpage {
+    color: #1b1a1a;
+    background: #f5e276;
+    min-width: 5em;
+    text-align: center;
+    font-size: 0.938em;
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+  .listflex2 li .regular {
+    color: #1b1a1a;
+    background: #fcbaec;
+    min-width: 5em;
+    text-align: center;
+    font-size: 0.938em;
+    display: inline-block;
+    padding: 0 0.5em;
+  }
   .searchflex {
     display: flex;
     flex-flow: row;
@@ -10456,19 +10612,19 @@ img {
     font-size: 1.25em;
     border-left: solid 5px #33d3eb;
     padding-left: 8px;
-    line-height: 1em;
+    line-height: 1.25em;
   }
-  .pdfViewBox h3.title {
+  .pdfViewBox .title {
     font-weight: bold;
     font-size: 1em;
     color: #07424b;
-    margin-left: 1em;
   }
   .pdfViewBox .content {
     padding: 0 10px 20px;
   }
   .pdfViewBox ul {
     font-size: 0.938em;
+    padding: 0 0 0 1.5em;
   }
   .pdfViewBox ul li {
     margin-bottom: 5px;
@@ -10492,6 +10648,17 @@ img {
     text-decoration: none;
     color: #d30000;
   }
+  .pdfViewBox p {
+    font-size: 0.938em;
+    padding: 0 5px 10px 5px;
+  }
+  .pdfViewBox .pagelist {
+    font-size: 0.875em;
+    font-weight: bold;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    padding: 2px;
+  }
   .pdfViewBox .btnGrp {
     justify-content: center;
   }
@@ -10504,6 +10671,258 @@ img {
   .pdfViewBox [class^=i_]:before {
     width: 0.8em;
     height: 0.8em;
+  }
+  .pdfViewBox2 {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+  }
+  .pdfViewBox2 .col {
+    flex: 0 0 200px;
+  }
+  .pdfViewBox2 .col:nth-child(2) {
+    flex: 1 1 auto;
+  }
+  .pdfViewBox2 h1 {
+    height: 58px;
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    background: url(../images/body_bg.png) repeat left top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+  }
+  .pdfViewBox2 h2 {
+    font-size: 1.25em;
+    border-left: solid 5px #33d3eb;
+    padding-left: 8px;
+    line-height: 1em;
+  }
+  .pdfViewBox2 h3.title {
+    font-weight: bold;
+    font-size: 1em;
+    color: #07424b;
+    margin-left: 1em;
+  }
+  .pdfViewBox2 .content {
+    padding: 0 10px 20px;
+  }
+  .pdfViewBox2 ul {
+    font-size: 0.938em;
+  }
+  .pdfViewBox2 ul li {
+    margin-bottom: 5px;
+  }
+  .pdfViewBox2 ul ul {
+    font-size: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .pdfViewBox2 ul ul li {
+    background: url("../images/li_arrow.png") no-repeat left 2px top 0.4em;
+    background-size: 10px auto;
+    padding-left: 14px;
+  }
+  .pdfViewBox2 a {
+    color: #07424b;
+    text-decoration: underline;
+  }
+  .pdfViewBox2 a:hover {
+    text-decoration: none;
+    color: #d30000;
+  }
+  .pdfViewBox2 .btnGrp {
+    justify-content: center;
+  }
+  .pdfViewBox2 .btn {
+    padding: 0.2em 0.5em;
+    font-size: 0.938em;
+    margin: 5px;
+    font-weight: normal;
+  }
+  .pdfViewBox2 [class^=i_]:before {
+    width: 0.8em;
+    height: 0.8em;
+  }
+  .pdfViewBox2 .page {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.938rem;
+  }
+  .pdfViewBox2 .page .col {
+    box-sizing: border-box;
+    text-align: center;
+    flex: 1 1 auto;
+    padding: 0 5px;
+  }
+  .pdfViewBox2 .page .col input {
+    width: calc(100% - 6em);
+  }
+  .pdfViewBox2 .page .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+  }
+  .pdfViewBox3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+  .pdfViewBox3 .col {
+    flex: 1 1 auto;
+  }
+  .pdfViewBox3 .col:nth-child(2) {
+    flex: 0 0 250px;
+  }
+  .pdfViewBox3 h1 {
+    height: 58px;
+    margin: 0 0 20px 0;
+    padding: 5px 0;
+    background: url(../images/body_bg.png) repeat left top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+  }
+  .pdfViewBox3 h2 {
+    font-size: 1.25em;
+    border-left: solid 5px #33d3eb;
+    padding-left: 8px;
+    line-height: 1.25em;
+  }
+  .pdfViewBox3 .title {
+    font-weight: bold;
+    font-size: 1em;
+    color: #07424b;
+  }
+  .pdfViewBox3 .content {
+    padding: 0 10px 20px;
+  }
+  .pdfViewBox3 ul {
+    font-size: 0.938em;
+    padding: 0 0 0 1.5em;
+  }
+  .pdfViewBox3 ul li {
+    margin-bottom: 5px;
+  }
+  .pdfViewBox3 ul ul {
+    font-size: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .pdfViewBox3 ul ul li {
+    background: url("../images/li_arrow.png") no-repeat left 2px top 0.4em;
+    background-size: 10px auto;
+    padding-left: 14px;
+  }
+  .pdfViewBox3 a {
+    color: #07424b;
+    text-decoration: underline;
+  }
+  .pdfViewBox3 a:hover {
+    text-decoration: none;
+    color: #d30000;
+  }
+  .pdfViewBox3 p {
+    font-size: 0.938em;
+    padding: 0 5px 10px 5px;
+  }
+  .pdfViewBox3 .pagelist {
+    font-size: 0.875em;
+    font-weight: bold;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    padding: 2px;
+  }
+  .pdfViewBox3 .btnGrp {
+    justify-content: center;
+  }
+  .pdfViewBox3 .btn {
+    padding: 0.2em 0.5em;
+    font-size: 0.875em;
+    margin: 5px;
+    font-weight: normal;
+  }
+  .pdfViewBox3 [class^=i_]:before {
+    width: 0.8em;
+    height: 0.8em;
+  }
+  .condition {
+    background: #eee url("../images/li_arrow.png") no-repeat left 10px top 0.9em;
+    background-size: 12px auto;
+    padding: 0.5em 0.5em 0.5em 25px;
+    font-size: 0.938em;
+  }
+  .condition em {
+    color: #d30000;
+    font-style: normal;
+  }
+  .help2 {
+    position: relative;
+    display: inline-block;
+    text-indent: 0;
+    padding-left: 0;
+    text-align: left;
+  }
+  .help2 .taghover {
+    color: #1b1a1a;
+    text-decoration: none !important;
+    cursor: pointer;
+    position: relative;
+  }
+  .help2 .taghover:hover, .help2 .taghover:focus {
+    color: #0b626f;
+    padding: 0 !important;
+  }
+  .help2 .readset {
+    position: absolute;
+    z-index: 999;
+    width: 320px;
+    display: none;
+    background: #ffffd9;
+    padding: 5px 1em;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    font-family: Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif;
+    font-size: 0.938rem;
+    color: #333;
+  }
+  @media screen and (max-width: 767px) {
+    .help2 .readset {
+      display: none !important;
+    }
+  }
+  .help2 .close_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background: none;
+    border: none !important;
+  }
+  .help2 .close_btn:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("../images/icon_close.png") no-repeat center center;
+    background-size: 40px auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .help2 p {
+    margin: 0.5em 0;
+  }
+  .help2 em {
+    color: #d30000;
+    font-style: normal;
   }
 }
 .colorA a:hover {

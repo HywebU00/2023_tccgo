@@ -185,45 +185,57 @@
                 <!-- flexForm -->
                 <div class="flexForm">
                   <!-- 分類 -->
-                  <fieldset>
-                    <legend class="ftitle">分類</legend>
-                    <div>
-                      <input type="radio" id="radio1" name="radioname" value="公報-會議紀錄發言" checked />
-                      <label for="radio1">公報-會議紀錄發言</label>
-                    </div>
-
-                    <div>
-                      <input type="radio" id="radio2" name="radioname" value="搶鮮報-速紀錄發言" />
-                      <label for="radio2">搶鮮報-速紀錄發言</label>
-                    </div>
-
-                    <div>
-                      <input type="radio" id="radio3" name="radioname" value="搶鮮報-會議紀錄發言" />
-                      <label for="radio3">搶鮮報-會議紀錄發言</label>
-                    </div>
-                  </fieldset>
+                  <label for="selectSample" class="ftitle">分類</label>
+                  <select name="" id="selectSample">
+                    <option value="">書面質詢</option>
+                    <option value="">...</option>
+                  </select>
                   <!-- 分類 end-->
                   <!-- 條件 -->
                   <label for="selectSample" class="ftitle">條件</label>
                   <select name="" id="selectSample">
                     <option value="">依部門</option>
+                    <option value="">...</option>
                   </select>
                   <!-- 條件 end-->
                   <!-- 部門 -->
-                  <label for="selectSample" class="ftitle">部門</label>
-                  <select name="" id="selectSample">
-                    <option value="全部(23442筆)">全部(23442筆)</option>
-                    <option value="">民政(415筆)</option>
-                    <option value="">財政建設(29筆)</option>
-                    <option value="">教育(326筆)</option>
-                    <option value="">交通(17筆)</option>
-                    <option value="">警政衛生(24筆)</option>
-                    <option value="">公務(123筆)</option>
-                    <option value="">法規(17筆)</option>
-                    <option value="">總質詢(24筆)</option>
-                    <option value="">程序(123筆)</option>
-                    <option value="">紀律(123筆)</option>
-                  </select>
+                  <fieldset>
+                    <legend class="ftitle">部門</legend>
+                    <div>
+                      <input type="radio" id="radio1" name="radioname" value="全部(23442筆)" checked />
+                      <label for="radio1">全部（23442筆）</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio2" name="radioname" value="民政(415筆)" />
+                      <label for="radio2">民政(415筆)</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="財政建設(29筆)" />
+                      <label for="radio3">財政建設(29筆)</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="教育(326筆)" />
+                      <label for="radio3">教育(326筆)</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="交通(17筆)" />
+                      <label for="radio3">交通(17筆)</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="警政衛生(24筆)" />
+                      <label for="radio3">警政衛生(24筆)</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="radio3" name="radioname" value="工務(123筆)" />
+                      <label for="radio3">工務(123筆)</label>
+                    </div>
+                  </fieldset>
                   <!-- 部門 end-->
                 </div>
                 <!-- flexForm end -->
@@ -235,11 +247,11 @@
             <nav aria-label="Breadcrumb" class="breadcrumb">
               <ul>
                 <li><a href="#">首頁</a></li>
-                <li aria-current="page">個人專區</li>
+                <li aria-current="page">查詢結果</li>
               </ul>
             </nav>
             <!-- h2節點 -->
-            <h2 class="title">議員發言-公報會議紀錄</h2>
+            <h2 class="title">查詢結果</h2>
             <!-- functionPanel -->
             <div class="functionPanel">
               <!-- <div class="publishTime"><span>發布日期：</span><time>2019-01-01</time></div> -->
@@ -254,15 +266,12 @@
                 </ul>
               </div>
             </div>
+            <div class="condition">查詢條件：[不限欄位：<em>王世堅</em>] [不限欄位：<em>台北101</em>] [不限欄位：<em>捷運</em>] [不限欄位：<em>市長</em>]</div>
             <!-- category -->
             <div class="category">
               <ul>
-                <li><a href="#">書面質詢申請</a></li>
-                <li><a href="#">議員提案</a></li>
-                <li><a href="#">公報會議紀錄</a></li>
-                <li><a href="#" class="active">議員發言</a></li>
-                <li><a href="#">書面質詢</a></li>
-                <li><a href="#">您的查詢歷史</a></li>
+                <li><a href="#">公報</a></li>
+                <li><a href="#" class="active">搶鮮報</a></li>
               </ul>
             </div>
             <!-- LP Start -->
@@ -272,16 +281,18 @@
                 <div class="flexForm">
                   <div class="formGrp formInline">
                     <label for="selectSample" class="labelhidden">選擇筆數列印:</label>
+                    第
                     <select name="" id="selectSample">
-                      <option value="第1筆">第1筆</option>
-                      <option value="第2筆">第2筆</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
                     </select>
-                    ~
+                    筆 ~ 第
                     <select name="pets" id="pet-select">
-                      <option value="第9筆">第9筆</option>
-                      <option value="第10筆">第10筆</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
                     </select>
-                    <button type="button" class="btn btnPrimary printBtn" aria-label="列印"><span class="i_print_dark"></span></button>
+                    筆
+                    <button type="button" class="btn btnPrimary printBtn" aria-label="列印" data-fancybox data-src="#dialog-content-print"><span class="i_print_dark"></span></button>
                   </div>
                 </div>
               </div>
@@ -308,7 +319,7 @@
               </div>
               <!-- selbox end-->
               <!-- 文字列表 -->
-              <div class="listflex">
+              <div class="listflex2">
                 <ul>
                   <li>
                     <div class="item checkGrp">
@@ -316,11 +327,20 @@
                     </div>
                     <div class="item num">1</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="pdf_detail.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">針對「北市府成立青年局」一事提出質詢</span>
+                          <div class="readset">
+                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="starpage">張文潔</span>
                     </div>
                   </li>
                   <li>
@@ -329,37 +349,66 @@
                     </div>
                     <div class="item num">2</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
+                      <span class="date">112-10-19</span><span class="dept">工務</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">實現全台首例市立動物醫院並與台北市動物之家結合</span>
+                          <div class="readset">
+                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1704</span>
+                      <span class="starpage">王世堅</span>
                     </div>
                   </li>
+
                   <li>
                     <div class="item checkGrp">
                       <label><input type="checkbox" value="" /></label>
                     </div>
                     <div class="item num">3</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">局長請回座。 柯市長，醫療是你的本業，所以我再來提這個問題就是長期以來基層醫療協會 害怕的，他</a>
+                      <span class="date">112-10-19</span><span class="dept">財政建設</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">北市強制登革熱家戶入室內噴藥惹民怨，中南部縣市已改為「強制入戶孳清取代室內噴藥作業」，民眾普遍反應良好，請台北市衛生局及環保局評估是否跟進?</span>
+                          <div class="readset">
+                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1123</span>
+                      <span class="starpage">王世堅</span>
                     </div>
                   </li>
+
                   <li>
                     <div class="item checkGrp">
                       <label><input type="checkbox" value="" /></label>
                     </div>
                     <div class="item num">4</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">建請本市興福國中於學校穿堂規畫設置棒球特色教育走廊及設置公共藝術棒球紀念碑，以傳承該校優良棒球歷史沿革，並讓該紀念碑成為興福國中未來百年棒球運動傳承發展的精神象徵及彰顯本市積極鼓勵發展棒球運動之精神指標。</span>
+                          <div class="readset">
+                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="starpage">王世堅</span>
                     </div>
                   </li>
                   <li>
@@ -368,11 +417,20 @@
                     </div>
                     <div class="item num">5</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
+                      <span class="date">112-10-19</span><span class="dept">教育</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">請市府參照「國民小學與國民中學班級編制及教職員員額編制準則」第4條第1項第9款規範精神，協助本市興福國中設置住宿輔導員，以協助、輔導該校棒球隊住宿學生課業，管理、督導其飲食、盥洗、就寢等生活起居事宜，促進本市青少棒發展。</span>
+                          <div class="readset">
+                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1704</span>
+                      <span class="starpage">王世堅</span>
                     </div>
                   </li>
                   <li>
@@ -381,11 +439,20 @@
                     </div>
                     <div class="item num">6</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">局長請回座。 柯市長，醫療是你的本業，所以我再來提這個問題就是長期以來基層醫療協會 害怕的，他</a>
+                      <span class="date">112-10-19</span><span class="dept">交通</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">實現全台首例市立動物醫院並與台北市動物之家結合</span>
+                          <div class="readset">
+                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1123</span>
+                      <span class="starpage">王世堅</span>
                     </div>
                   </li>
                   <li>
@@ -394,11 +461,20 @@
                     </div>
                     <div class="item num">7</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
+                      <span class="date">112-10-19</span><span class="dept">工務</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">實現全台首例市立動物醫院並與台北市動物之家結合</span>
+                          <div class="readset">
+                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="starpage">王世堅</span>
                     </div>
                   </li>
                   <li>
@@ -407,11 +483,20 @@
                     </div>
                     <div class="item num">8</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">動保處處長請回。柯市長，本席再放一段影片你看一下，也是你說過的話。 ──播放影片── 柯市長</a>
+                      <span class="date">112-10-19</span><span class="dept">工務</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">實現全台首例市立動物醫院並與台北市動物之家結合</span>
+                          <div class="readset">
+                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1704</span>
+                      <span class="starpage">王世堅</span>
                     </div>
                   </li>
                   <li>
@@ -420,11 +505,20 @@
                     </div>
                     <div class="item num">9</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">局長請回座。 柯市長，醫療是你的本業，所以我再來提這個問題就是長期以來基層醫療協會 害怕的，他</a>
+                      <span class="date">112-10-19</span><span class="dept">工務</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">實現全台首例市立動物醫院並與台北市動物之家結合</span>
+                          <div class="readset">
+                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1123</span>
+                      <span class="starpage">王世堅</span>
                     </div>
                   </li>
                   <li>
@@ -433,11 +527,20 @@
                     </div>
                     <div class="item num">10</div>
                     <div class="item2">
-                      <span class="dept">第13屆第08次定期大會</span><span class="dept">127卷07期</span><span class="dept">市政總質詢第5組</span>
-                      <a href="#">謝謝主席。市長，本席認為這 6 年來臺北市政府做不好的原因，簡單地講有 2 大原因。第 1 點，你</a>
+                      <span class="date">112-10-19</span><span class="dept">工務</span>
+                      <a href="pdf_detail3.html">
+                        <!-- help2 star -->
+                        <div class="help2">
+                          <span class="taghover">實現全台首例市立動物醫院並與台北市動物之家結合</span>
+                          <div class="readset">
+                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
+                          </div>
+                        </div>
+                        <!-- help2 end -->
+                      </a>
                     </div>
                     <div class="item3">
-                      <span class="starpage">起始頁：1237</span>
+                      <span class="starpage">王世堅</span>
                     </div>
                   </li>
                 </ul>
@@ -664,6 +767,42 @@
         </section>
         <!-- popupBox End -->
         <!-- 選議員 end -->
+      </div>
+    </div>
+    <!-- 燈箱 end-->
+
+    <!-- 燈箱 -->
+    <div class="modal" id="dialog-content-print" style="display: none">
+      <div class="popupContent">
+        <h2>請選擇要列印/下載的格式</h2>
+        <!-- 列印 start -->
+        <!-- popupBox -->
+        <section class="popupBox">
+          <div class="searchBox">
+            <!-- flexForm -->
+            <div class="flexForm formGrid">
+              <div class="formGrp">
+                <label><input name="radioSample" type="radio" value="" />條列式</label>
+                <div class="formContent">&nbsp;</div>
+              </div>
+              <div class="formGrp">
+                <label><input name="radioSample" type="radio" value="" />全文式</label>
+                <div class="formContent">
+                  <div class="checkGrp">
+                    <label><input name="" type="checkbox" value="" />含答覆文</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="btnGrp formInline">
+                <button type="button" class="btn btnSubmit">確定</button>
+              </div>
+            </div>
+            <!-- flexForm end-->
+          </div>
+        </section>
+        <!-- popupBox End -->
+        <!-- 列印 end -->
       </div>
     </div>
     <!-- 燈箱 end-->
