@@ -58,6 +58,14 @@
       padding: 1em;
     }
   }
+  a {
+    color: $aHover;
+    text-decoration: underline;
+    &:hover {
+      color: $aColor;
+      text-decoration: none;
+    }
+  }
 }
 .listflex {
   ul {

@@ -10266,6 +10266,14 @@ img {
     width: 30%;
     padding: 1em;
   }
+  .proposal_detail a {
+    color: #0b626f;
+    text-decoration: underline;
+  }
+  .proposal_detail a:hover {
+    color: #1b1a1a;
+    text-decoration: none;
+  }
   .listflex ul {
     margin: 0;
     padding: 0;
