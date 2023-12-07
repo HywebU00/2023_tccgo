@@ -748,3 +748,16 @@
     font-style: normal;
   }
 }
+.print5_5 {
+  align-items: flex-start;
+  .formGrp {
+    flex: 1 1 45%;
+  }
+  .sub_fun {
+    margin-left: 1.2em;
+    width: 100%;
+  }
+  .btnGrp {
+    flex: 1 1 auto !important;
+  }
+}

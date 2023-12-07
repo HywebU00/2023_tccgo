@@ -95,6 +95,7 @@
   @include screen('mobile') {
     position: fixed;
     width: 100%;
+    z-index: 999;
   }
   &:before {
     position: absolute;

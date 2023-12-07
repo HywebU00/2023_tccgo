@@ -599,7 +599,7 @@ section {
       font-size: 0.938em;
       font-weight: normal;
       padding: 0.2em 0.5em;
-      margin: 0;
+      margin: 0 0 5px 0;
       border: solid 1px #ebc803;
       border-radius: 3px;
     }
@@ -615,9 +615,16 @@ section {
   }
   .searchBox {
     box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.15);
-    padding: 20px 5%;
+    padding: 10px 5%;
     margin: 30px 0 30px;
+    .btnGrp {
+      flex: 0 1 auto;
+      @include screen('mobile') {
+        flex: 1 1 auto;
+      }
+    }
   }
+
   .formGrp {
     label {
       text-align: right;
@@ -665,6 +672,46 @@ section {
       @include screen('xsMobile') {
         flex: 0 1 calc(100% / 1);
       }
+    }
+  }
+  .mlistbox {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      border-top: solid 3px #eee;
+      // border-bottom: solid 3px #eee;
+
+      li {
+        flex-basis: calc(100% / 6);
+        max-width: calc(100% / 6);
+        border-bottom: dotted 1px #ddd;
+        box-sizing: border-box;
+        @include screen('mobile') {
+          flex-basis: calc(100% / 3);
+          max-width: calc(100% / 3);
+        }
+        input[type='checkbox'],
+        input[type='radio'] {
+          margin: -0.2em 0.3em 0;
+        }
+      }
+    }
+    .btnYellow {
+      font-size: 0.938em;
+      font-weight: normal;
+      padding: 0.2em 0.5em;
+      margin: 0 0 5px 0;
+      border: solid 1px #ebc803;
+      border-radius: 3px;
+      float: right;
+      margin-top: -2.6em;
+    }
+    h3 {
+      margin: 0.5em 0;
     }
   }
 }
@@ -770,9 +817,9 @@ section {
 
       .addThis {
         flex: 0 0 2em;
-        width: 2em;
-        height: 2em;
-        margin: 0.45em auto auto 6px;
+        width: 2.2em;
+        height: 2.2em;
+        margin: 0.4em auto auto 6px;
         text-align: center;
         background: $colorPrimary;
         color: $colorWord;
@@ -791,6 +838,12 @@ section {
         &:focus {
           // box-shadow: $hilight 0 0 0 2px;
           background: darken($colorPrimary, 10);
+        }
+      }
+      .mList {
+        .btn {
+          margin: 0.4em;
+          padding: 0.4em 1em;
         }
       }
     }
@@ -821,14 +874,21 @@ section {
         }
 
         .addThis {
-          height: 2em;
-          width: 2em;
-          line-height: 2em;
+          height: 2.2em;
+          width: 2.2em;
+          line-height: 2.2em;
           margin: 0.1em 0 auto;
 
           &::before {
             font-size: 1.6em;
             line-height: 1.15em;
+          }
+        }
+
+        .mList {
+          .btn {
+            margin: 0 0.5em;
+            padding: 0.4em 1em;
           }
         }
 

@@ -2429,7 +2429,7 @@ img {
     box-sizing: border-box;
     background: url("../images/mp_search_bg.jpg") no-repeat left bottom;
     background-size: cover;
-    aspect-ratio: 3/0.8;
+    aspect-ratio: 3/0.5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2586,7 +2586,7 @@ img {
     margin-left: -56px;
   }
   .webSearch .btnGrp {
-    flex: 0 0 auto;
+    flex: 0 0 auto !important;
     padding: 0 0 0 0.5em;
     margin: 0 0 0.5em;
   }
@@ -2792,6 +2792,30 @@ img {
       display: block;
       width: 100%;
       padding: 0;
+    }
+  }
+  .p_area {
+    aspect-ratio: 3/0;
+    min-height: 40px;
+  }
+  .p_area .content {
+    display: none;
+  }
+  .p_area .pageSearchBtn {
+    background: rgba(255, 255, 255, 0.5) url("../images/icon_search.png") no-repeat center center;
+    background-size: 18px auto;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    border-radius: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .p_area .pageSearchBtn {
+      display: none;
     }
   }
   .btnGrp {
@@ -4198,6 +4222,7 @@ img {
     .header {
       position: fixed;
       width: 100%;
+      z-index: 999;
     }
   }
   .header:before {
@@ -5183,9 +5208,26 @@ img {
     margin-bottom: 0;
   }
   .flexForm .formContent .help {
-    font-size: 0.938em;
+    font-size: 0.875em;
     color: #d30000;
     padding: 0 0.5em;
+    margin: 1em 0 -5px;
+  }
+  @media screen and (max-width: 767px) {
+    .flexForm .formContent .help {
+      margin: 0;
+    }
+  }
+  .flexForm .formContent .help2 {
+    font-size: 0.875em;
+    color: #d30000;
+    padding: 0 0.5em;
+    margin: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .flexForm .formContent .help2 {
+      margin: 0;
+    }
   }
   .flexForm .formContent .formGrp {
     flex: 0 0 100%;
@@ -5231,6 +5273,14 @@ img {
   .flexForm .formContent .formGrp:last-child {
     border-bottom: none;
     margin-bottom: 0;
+  }
+  .flexForm .formContent .formGrp .subContent {
+    padding-left: 2em !important;
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+  }
+  .flexForm .formContent .formGrp .subContent .formGrp {
+    min-height: 1em !important;
   }
   .flexForm .formContent .tel input[type=text]:first-child,
   .flexForm .formContent .tel input[type=tel]:first-child {
@@ -6036,7 +6086,7 @@ img {
   label,
   legend {
     display: inline-block;
-    margin: 0 0 0.5em 0;
+    margin: 0.5em 0 0.5em 0;
     position: relative;
     min-height: 1px;
     padding-left: 0.3em;
@@ -9551,7 +9601,7 @@ img {
     font-size: 0.938em;
     font-weight: normal;
     padding: 0.2em 0.5em;
-    margin: 0;
+    margin: 0 0 5px 0;
     border: solid 1px #ebc803;
     border-radius: 3px;
   }
@@ -9566,8 +9616,16 @@ img {
   }
   .popupBox .searchBox {
     box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.15);
-    padding: 20px 5%;
+    padding: 10px 5%;
     margin: 30px 0 30px;
+  }
+  .popupBox .searchBox .btnGrp {
+    flex: 0 1 auto;
+  }
+  @media screen and (max-width: 767px) {
+    .popupBox .searchBox .btnGrp {
+      flex: 1 1 auto;
+    }
   }
   .popupBox .formGrp label {
     text-align: right;
@@ -9616,6 +9674,44 @@ img {
     .popupBox .sellistradio label {
       flex: 0 1 100%;
     }
+  }
+  .popupBox .mlistbox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    border-top: solid 3px #eee;
+  }
+  .popupBox .mlistbox ul li {
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+    border-bottom: dotted 1px #ddd;
+    box-sizing: border-box;
+  }
+  @media screen and (max-width: 767px) {
+    .popupBox .mlistbox ul li {
+      flex-basis: 33.3333333333%;
+      max-width: 33.3333333333%;
+    }
+  }
+  .popupBox .mlistbox ul li input[type=checkbox],
+  .popupBox .mlistbox ul li input[type=radio] {
+    margin: -0.2em 0.3em 0;
+  }
+  .popupBox .mlistbox .btnYellow {
+    font-size: 0.938em;
+    font-weight: normal;
+    padding: 0.2em 0.5em;
+    margin: 0 0 5px 0;
+    border: solid 1px #ebc803;
+    border-radius: 3px;
+    float: right;
+    margin-top: -2.6em;
+  }
+  .popupBox .mlistbox h3 {
+    margin: 0.5em 0;
   }
   .removeThis {
     position: absolute;
@@ -9700,9 +9796,9 @@ img {
   }
   .labelPool li.addOne .addThis {
     flex: 0 0 2em;
-    width: 2em;
-    height: 2em;
-    margin: 0.45em auto auto 6px;
+    width: 2.2em;
+    height: 2.2em;
+    margin: 0.4em auto auto 6px;
     text-align: center;
     background: #33d3eb;
     color: #1b1a1a;
@@ -9718,6 +9814,10 @@ img {
   }
   .labelPool li.addOne .addThis:hover, .labelPool li.addOne .addThis:focus {
     background: #15bdd6;
+  }
+  .labelPool li.addOne .mList .btn {
+    margin: 0.4em;
+    padding: 0.4em 1em;
   }
   @media screen and (min-width: 760px) {
     .labelPool li.addOne {
@@ -9741,14 +9841,18 @@ img {
       box-shadow: #f70 0 0 0 2px;
     }
     .labelPool li.addOne .addThis {
-      height: 2em;
-      width: 2em;
-      line-height: 2em;
+      height: 2.2em;
+      width: 2.2em;
+      line-height: 2.2em;
       margin: 0.1em 0 auto;
     }
     .labelPool li.addOne .addThis::before {
       font-size: 1.6em;
       line-height: 1.15em;
+    }
+    .labelPool li.addOne .mList .btn {
+      margin: 0 0.5em;
+      padding: 0.4em 1em;
     }
     .labelPool li.addOne.typing input[type=text] {
       flex-basis: auto;
@@ -10931,6 +11035,19 @@ img {
   .help2 em {
     color: #d30000;
     font-style: normal;
+  }
+  .print5_5 {
+    align-items: flex-start;
+  }
+  .print5_5 .formGrp {
+    flex: 1 1 45%;
+  }
+  .print5_5 .sub_fun {
+    margin-left: 1.2em;
+    width: 100%;
+  }
+  .print5_5 .btnGrp {
+    flex: 1 1 auto !important;
   }
 }
 .colorA a:hover {

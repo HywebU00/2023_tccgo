@@ -241,9 +241,22 @@ select::-ms-expand {
     }
 
     .help {
-      font-size: 0.938em;
+      font-size: 0.875em;
       color: $colorRed;
       padding: 0 0.5em;
+      margin: 1em 0 -5px;
+      @include screen('mobile') {
+        margin: 0;
+      }
+    }
+    .help2 {
+      font-size: 0.875em;
+      color: $colorRed;
+      padding: 0 0.5em;
+      margin: 0;
+      @include screen('mobile') {
+        margin: 0;
+      }
     }
 
     // 第二層的設定
@@ -289,6 +302,14 @@ select::-ms-expand {
       &:last-child {
         border-bottom: none;
         margin-bottom: 0;
+      }
+      .subContent {
+        padding-left: 2em !important;
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+        .formGrp {
+          min-height: 1em !important;
+        }
       }
     }
 
@@ -1209,7 +1230,7 @@ label,
 legend {
   // white-space: nowrap;
   display: inline-block;
-  margin: 0 0 0.5em 0;
+  margin: 0.5em 0 0.5em 0;
   @include gutter(0.6em);
 
   @include screen('xsMobile') {

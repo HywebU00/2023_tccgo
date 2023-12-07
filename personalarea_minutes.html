@@ -136,10 +136,11 @@
         <section class="flex_12 full">
           <div class="container">
             <!-- Search Start -->
-            <div class="webSearch" role="search">
-              <div class="content">
+            <div class="webSearch p_area" role="search">
+              <button class="pageSearchBtn">查詢</button>
+              <div class="content" id="pageSearchBox">
                 <div class="hTitle">
-                  <span class="t1" id="easysearch">簡易搜尋</span><span class="t2"><a href="#">搜尋紀錄</a></span>
+                  <span class="t1" id="easysearch" tabindex="0">簡易搜尋</span><span class="t2"><a href="#">搜尋紀錄</a></span>
                 </div>
 
                 <div class="formGrp" aria-labelledby="easysearch">
@@ -538,103 +539,228 @@
         <!-- 選議員 start -->
         <!-- popupBox -->
         <section class="popupBox">
+          <!-- searchBox -->
           <div class="searchBox">
-            <!-- flexForm -->
-            <div class="flexForm formGrid">
+            <div class="flexForm formInline">
               <div class="formGrp">
-                <label for="selectSample" class="formTitle">黨籍:</label>
-                <div class="formContent">
-                  <select id="selectSample" name="">
-                    <option value="">國民黨</option>
-                    <option value="">民進黨</option>
-                    <option value="">民眾黨</option>
-                  </select>
-                </div>
+                <label for="selectSample" class="formTitle2">黨籍:</label>
+                <select id="selectSample" name="">
+                  <option value="">國民黨</option>
+                  <option value="">民進黨</option>
+                  <option value="">民眾黨</option>
+                </select>
+              </div>
+              <div class="formGrp">
+                <label for="selectSample" class="formTitle2">屆別:</label>
+                <select id="selectSample" name="">
+                  <option value="">第14屆</option>
+                  <option value="">第13屆</option>
+                  <option value="">第12屆</option>
+                </select>
+              </div>
+              <div class="formGrp">
+                <label for="username" class="formTitle2">議員姓名:</label>
+                <input type="text" id="username" value="請輸入議員姓名" title="請輸入議員姓名" />
               </div>
 
-              <div class="formGrp">
-                <label for="selectSample" class="formTitle">屆別:</label>
-                <div class="formContent">
-                  <select id="selectSample" name="">
-                    <option value="">第14屆</option>
-                    <option value="">第13屆</option>
-                    <option value="">第12屆</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="formGrp">
-                <!-- 使用aria-required屬性指出必填的表單欄位 -->
-                <label for="username" class="formTitle" aria-required="true">議員姓名:</label>
-                <div class="formContent">
-                  <!-- test -->
-                  <div class="labelPool">
-                    <ul>
-                      <li class="pdLabel">王世堅<span class="removeThis"></span></li>
-                      <li class="pdLabel">徐巧芯<span class="removeThis"></span></li>
-                      <li class="addOne"><input type="text" id="username" value="請輸入議員姓名" placeholder="請輸入議員姓名" /><span class="addThis"></span></li>
-                    </ul>
-                  </div>
-                  <!-- test end -->
-                  <input type="text" id="username" value="請輸入議員姓名" title="請輸入議員姓名" />
-                </div>
-              </div>
-              <div class="btnGrp formInline">
-                <button type="button" class="btn btnReset">清除</button>
-                <button type="button" class="btn btnSubmit">查詢</button>
+              <div class="btnGrp">
+                <input name="" type="submit" value="查詢" class="btn btnSubmit" />
               </div>
             </div>
-            <!-- flexForm end-->
           </div>
-          <div class="table1">
-            <table>
-              <!-- 無障礙 caption 標題預設隱藏 -->
-              <caption>
-                請選取議員
-              </caption>
-              <thead>
-                <tr>
-                  <th class="seltd"><button role="button" class="btnYellow">全選</button></th>
-                  <th>黨籍</th>
-                  <th>屆別</th>
-                  <th>姓名</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="checkbox" id="nameid1" name="nameid1" /></td>
-                  <td>國民黨</td>
-                  <td>14屆</td>
-                  <td><label for="nameid1">陳大仙</label></td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" id="nameid2" name="nameid2" /></td>
-                  <td>國民黨</td>
-                  <td>14屆</td>
-                  <td><label for="nameid2">王大仙</label></td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" id="nameid3" name="nameid3" /></td>
-                  <td>國民黨</td>
-                  <td>14屆</td>
-                  <td><label for="nameid3">林大仙</label></td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" id="nameid4" name="nameid4" /></td>
-                  <td>國民黨</td>
-                  <td>14屆</td>
-                  <td><label for="nameid1">范大仙</label></td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" id="nameid5" name="nameid5" /></td>
-                  <td>國民黨</td>
-                  <td>14屆</td>
-                  <td><label for="nameid5">藍大仙</label></td>
-                </tr>
-              </tbody>
-            </table>
+          <!-- searchBox end-->
+          <!-- mlistbox -->
+          <div class="mlistbox">
+            <h3>第14屆 議員名單</h3>
+            <button role="button" class="btnYellow">全選</button>
+            <ul>
+              <li>
+                <label><input name="" type="checkbox" value="王世堅" /> 王世堅</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="吳沛憶" /> 吳沛憶</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="徐巧芯" /> 徐巧芯</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="郭昭巖" /> 郭昭巖</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="劉耀仁" /> 劉耀仁</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="王孝維" /> 王孝維</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="李芳儒" /> 李芳儒</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="徐弘庭" /> 徐弘庭</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="許淑華" /> 許淑華</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="應曉薇" /> 應曉薇</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="王欣儀" /> 王欣儀</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="汪志冰" /> 汪志冰</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="徐立信" /> 徐立信</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="陳炳甫" /> 陳炳甫</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="戴錫欽" /> 戴錫欽</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="王閔生" /> 王閔生</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="林世宗" /> 林世宗</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="秦慧珠" /> 秦慧珠</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="陳賢蔚" /> 陳賢蔚</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="鍾佩玲" /> 鍾佩玲</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="王鴻薇" /> 王鴻薇</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="林亮君" /> 林亮君</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="耿葳" /> 耿葳</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="陳重文" /> 陳重文</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="鍾小平" /> 鍾小平</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="何孟樺" /> 何孟樺</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="林延鳳" /> 林延鳳</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="張志豪" /> 張志豪</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="陳錦祥" /> 陳錦祥</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="鍾沛君" /> 鍾沛君</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="吳世正" /> 吳世正</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="林杏兒" /> 林杏兒</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="張文潔" /> 張文潔</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="游淑慧" /> 游淑慧</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="闕枚莎" /> 闕枚莎</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="李傅中武" /> 李傅中武</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="林珍羽" /> 林珍羽</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="張斯綱" /> 張斯綱</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="曾獻瑩" /> 曾獻瑩</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="簡舒培" /> 簡舒培</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="李建昌" /> 李建昌</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="侯漢廷" /> 侯漢廷</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="陳宥丞" /> 陳宥丞</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="黃瀞瑩" /> 黃瀞瑩</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="顏若芳" /> 顏若芳</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="李彥秀" /> 李彥秀</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="洪健益" /> 洪健益</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="許家蓓" /> 許家蓓</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="楊植斗" /> 楊植斗</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="吳志剛" /> 吳志剛</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="洪婉臻" /> 洪婉臻</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="陳怡君" /> 陳怡君</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="葉林傳" /> 葉林傳</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="李明賢" /> 李明賢</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="柳采葳" /> 柳采葳</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="陳慈慧" /> 陳慈慧</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="詹為元" /> 詹為元</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="李柏毅" /> 李柏毅</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="苗博雅" /> 苗博雅</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="陳政忠" /> 陳政忠</label>
+              </li>
+              <li>
+                <label><input name="" type="checkbox" value="趙怡翔" /> 趙怡翔</label>
+              </li>
+            </ul>
           </div>
-          <hr />
+          <!-- mlistbox end-->
+
           <div class="btnGrp formInline aCenter">
             <button type="button" class="btn btnSubmit btnLg">確認</button>
           </div>
