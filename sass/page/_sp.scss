@@ -311,6 +311,45 @@
     display: none;
   }
 }
+
+.searchflex2 {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: end;
+  background: #eee;
+  padding: 5px;
+  @include screen('xsMobile') {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+  select {
+    flex: 0 0 8em;
+    @include screen('xsMobile') {
+      flex: 1 1 38%;
+      max-width: 46%;
+    }
+  }
+  input {
+    flex: 1 1 auto;
+    max-width: 70%;
+    @include screen('xsMobile') {
+      flex: 1 1 94%;
+      max-width: 94%;
+    }
+  }
+  .btnSearch {
+    margin-left: -45px;
+    background-size: 20px auto;
+    width: 40px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  label {
+    display: none;
+  }
+}
+
 .selbox {
   margin-top: 1em;
   .btn {
@@ -760,4 +799,159 @@
   .btnGrp {
     flex: 1 1 auto !important;
   }
+}
+
+//listflex3
+.listflex3 {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: solid 1px $colorGray;
+    padding: 0.5em 0;
+    @include screen('xsMobile') {
+      padding: 0.5em 0;
+    }
+    .item {
+      flex: 0 0 2em;
+      text-align: center;
+      padding: 0.5em 0;
+    }
+    .item2 {
+      flex: 1 1 auto;
+      padding: 0.5em 0;
+      position: relative;
+      max-width: 100%;
+      @include screen('tablet') {
+        max-width: 100%;
+      }
+      @include screen('xsMobile') {
+        max-width: 100%;
+      }
+    }
+    .item3 {
+      flex: 1 1 auto;
+      text-align: right;
+      padding: 0.5em 0;
+    }
+    a {
+      display: block;
+      font-size: 1.125em;
+      font-weight: bold;
+      padding: 0.5em;
+      // overflow: hidden;
+      // white-space: nowrap;
+      // text-overflow: ellipsis;
+      // @include screen('xsMobile') {
+      //   white-space: normal;
+      // }
+      .litext {
+      }
+    }
+    label {
+      margin: 0;
+    }
+    .dept2 {
+      display: inline-block;
+      font-size: 0.938em;
+      font-weight: normal;
+      background: $colorLight;
+      border-radius: 2em;
+      min-width: 5em;
+      text-align: center;
+      padding: 0 1em;
+      margin: 2px 0.5em 2px 0;
+      @include screen('xsMobile') {
+        margin: 2px 0.5em;
+      }
+    }
+    .issuedate {
+      display: inline-block;
+      font-size: 0.938em;
+      font-weight: normal;
+      background: $colorRed2;
+      border-radius: 2em;
+      min-width: 5em;
+      text-align: center;
+      padding: 0 1em;
+      margin: 2px 0.5em 2px 0;
+      @include screen('xsMobile') {
+        margin: 2px 0.5em;
+      }
+    }
+    .rollbox {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      width: 100%;
+      max-width: 100%;
+      a {
+        flex: 1 1 auto;
+      }
+      .dept2 {
+        flex: 0 0 13em;
+      }
+      .issuedate {
+        flex: 0 0 10em;
+      }
+    }
+    .dept {
+      display: inline-block;
+      font-size: 0.938em;
+      font-weight: normal;
+      background: $colorLight;
+      border-radius: 2em;
+      min-width: 5em;
+      text-align: center;
+      padding: 0 1em;
+      margin: 2px 0.5em 2px 0;
+      @include screen('xsMobile') {
+        margin: 2px 0.5em;
+      }
+    }
+
+    .date {
+      display: inline-block;
+      font-size: 0.938em;
+      font-weight: normal;
+      // background: $colorLight;
+      // border-radius: 2em;
+      min-width: 5em;
+      text-align: center;
+      padding: 0 0.5em;
+      margin: 2px 0.5em 2px 0;
+      @include screen('xsMobile') {
+        margin: 2px 0.5em;
+      }
+    }
+    .starpage {
+      color: $colorWord;
+      background: $colorYellow;
+      min-width: 5em;
+      text-align: center;
+      font-size: 0.938em;
+      display: inline-block;
+      padding: 0 0.5em;
+    }
+    .regular {
+      color: $colorWord;
+      background: $colorRed2;
+      min-width: 5em;
+      text-align: center;
+      font-size: 0.938em;
+      display: inline-block;
+      padding: 0 0.5em;
+    }
+  }
+}
+
+.t_arrow {
+  background: url(../images/li_arrow.png) no-repeat left top 0.75em;
+  background-size: 10px auto;
+  padding-left: 1em !important;
 }

@@ -5027,7 +5027,8 @@ img {
     .flexForm .formTitle {
       max-width: calc(100% - 0.6em);
       flex-basis: calc(100% - 0.6em);
-      margin: 0 0.3em;
+      padding: 0.3em 1em;
+      margin: 0;
       position: relative;
       min-height: 1px;
       padding-left: 0;
@@ -6993,7 +6994,6 @@ img {
     white-space: nowrap;
     text-overflow: ellipsis;
     padding: 0.3em 13em 0.3em 0;
-    margin-right: 13em;
   }
   @media screen and (max-width: 575px) {
     .gazette .list > ul > li > a,
@@ -7073,6 +7073,118 @@ img {
   }
   .gazette .list > ul > li time,
   .gazette .list ol > li time {
+    display: inline-block;
+    color: #646464;
+    font-size: 0.938em;
+    font-weight: normal;
+  }
+  .gazette2 .list {
+    margin: 0 15px 30px;
+  }
+  .gazette2 .list > ul,
+  .gazette2 .list ol {
+    list-style-type: none;
+    padding: 0;
+  }
+  .gazette2 .list > ul > li,
+  .gazette2 .list ol > li {
+    padding: 0.75em 0 0.5em;
+    border-bottom: 1px solid #d4d4d4;
+    position: relative;
+  }
+  .gazette2 .list > ul > li .tag,
+  .gazette2 .list ol > li .tag {
+    margin-left: 2em;
+  }
+  .gazette2 .list > ul > li > a,
+  .gazette2 .list ol > li > a {
+    display: block;
+    line-height: 1.6em;
+    font-weight: bold;
+    color: #1b1a1a;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0.3em 13em 0.3em 0;
+  }
+  @media screen and (max-width: 575px) {
+    .gazette2 .list > ul > li > a,
+    .gazette2 .list ol > li > a {
+      white-space: normal;
+      padding: 0.3em 0;
+      margin-right: 0;
+    }
+  }
+  .gazette2 .list > ul > li > a:hover,
+  .gazette2 .list ol > li > a:hover {
+    color: #0b626f;
+  }
+  .gazette2 .list > ul > li > a .num,
+  .gazette2 .list ol > li > a .num {
+    width: 1.5em;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .gazette2 .list > ul > li > a .num:after,
+  .gazette2 .list ol > li > a .num:after {
+    content: ".";
+    display: inline-block;
+  }
+  .gazette2 .list > ul > li span.dept,
+  .gazette2 .list ol > li span.dept {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #a0ebf6;
+    border-radius: 2em;
+    min-width: 5em;
+    text-align: center;
+  }
+  .gazette2 .list > ul > li span.dept2,
+  .gazette2 .list ol > li span.dept2 {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #a0ebf6;
+    border-radius: 2em;
+    padding: 0 1em;
+    min-width: 5em;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 2.6em;
+  }
+  .gazette2 .list > ul > li span.mName,
+  .gazette2 .list ol > li span.mName {
+    font-size: 0.938em;
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    top: 2.6em;
+  }
+  @media screen and (max-width: 575px) {
+    .gazette2 .list > ul > li span.mName,
+    .gazette2 .list ol > li span.mName {
+      position: static;
+    }
+  }
+  .gazette2 .list > ul > li span.mName a,
+  .gazette2 .list ol > li span.mName a {
+    color: #1b1a1a;
+    background: #f5e276;
+    min-width: 5em;
+    text-align: center;
+    display: block;
+  }
+  .gazette2 .list > ul > li span.mName a:hover, .gazette2 .list > ul > li span.mName a:focus,
+  .gazette2 .list ol > li span.mName a:hover,
+  .gazette2 .list ol > li span.mName a:focus {
+    background: #f2d846;
+  }
+  .gazette2 .list > ul > li time,
+  .gazette2 .list ol > li time {
     display: inline-block;
     color: #646464;
     font-size: 0.938em;
@@ -10628,6 +10740,49 @@ img {
   .searchflex label {
     display: none;
   }
+  .searchflex2 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: end;
+    background: #eee;
+    padding: 5px;
+  }
+  @media screen and (max-width: 575px) {
+    .searchflex2 {
+      flex-flow: row wrap;
+      justify-content: flex-start;
+    }
+  }
+  .searchflex2 select {
+    flex: 0 0 8em;
+  }
+  @media screen and (max-width: 575px) {
+    .searchflex2 select {
+      flex: 1 1 38%;
+      max-width: 46%;
+    }
+  }
+  .searchflex2 input {
+    flex: 1 1 auto;
+    max-width: 70%;
+  }
+  @media screen and (max-width: 575px) {
+    .searchflex2 input {
+      flex: 1 1 94%;
+      max-width: 94%;
+    }
+  }
+  .searchflex2 .btnSearch {
+    margin-left: -45px;
+    background-size: 20px auto;
+    width: 40px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  .searchflex2 label {
+    display: none;
+  }
   .selbox {
     margin-top: 1em;
   }
@@ -11048,6 +11203,159 @@ img {
   }
   .print5_5 .btnGrp {
     flex: 1 1 auto !important;
+  }
+  .listflex3 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .listflex3 li {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: solid 1px #d4d4d4;
+    padding: 0.5em 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex3 li {
+      padding: 0.5em 0;
+    }
+  }
+  .listflex3 li .item {
+    flex: 0 0 2em;
+    text-align: center;
+    padding: 0.5em 0;
+  }
+  .listflex3 li .item2 {
+    flex: 1 1 auto;
+    padding: 0.5em 0;
+    position: relative;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 991px) {
+    .listflex3 li .item2 {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .listflex3 li .item2 {
+      max-width: 100%;
+    }
+  }
+  .listflex3 li .item3 {
+    flex: 1 1 auto;
+    text-align: right;
+    padding: 0.5em 0;
+  }
+  .listflex3 li a {
+    display: block;
+    font-size: 1.125em;
+    font-weight: bold;
+    padding: 0.5em;
+  }
+  .listflex3 li label {
+    margin: 0;
+  }
+  .listflex3 li .dept2 {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #a0ebf6;
+    border-radius: 2em;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 1em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex3 li .dept2 {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex3 li .issuedate {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #fcbaec;
+    border-radius: 2em;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 1em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex3 li .issuedate {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex3 li .rollbox {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  .listflex3 li .rollbox a {
+    flex: 1 1 auto;
+  }
+  .listflex3 li .rollbox .dept2 {
+    flex: 0 0 13em;
+  }
+  .listflex3 li .rollbox .issuedate {
+    flex: 0 0 10em;
+  }
+  .listflex3 li .dept {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #a0ebf6;
+    border-radius: 2em;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 1em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex3 li .dept {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex3 li .date {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 0.5em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex3 li .date {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex3 li .starpage {
+    color: #1b1a1a;
+    background: #f5e276;
+    min-width: 5em;
+    text-align: center;
+    font-size: 0.938em;
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+  .listflex3 li .regular {
+    color: #1b1a1a;
+    background: #fcbaec;
+    min-width: 5em;
+    text-align: center;
+    font-size: 0.938em;
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+  .t_arrow {
+    background: url(../images/li_arrow.png) no-repeat left top 0.75em;
+    background-size: 10px auto;
+    padding-left: 1em !important;
   }
 }
 .colorA a:hover {

@@ -184,62 +184,24 @@
                 <button type="button" class="btn clearBtn">清除條件</button>
                 <!-- flexForm -->
                 <div class="flexForm">
-                  <!-- 分類 -->
-                  <label for="selectSample" class="ftitle">分類</label>
+                  <!-- 依屆會次 -->
+                  <label for="selectSample" class="ftitle">依屆會次</label>
                   <select name="" id="selectSample">
-                    <option value="書面質詢">書面質詢</option>
-                    <option value="會議紀錄">會議紀錄</option>
-                    <option value="速記錄">速記錄</option>
-                    <option value="市府書面報告" selected>市府書面報告</option>
+                    <option value="第1屆" selected>第1屆</option>
+                    <option value="第2屆">第2屆</option>
+                    <option value="第3屆">第3屆</option>
+                    <option value="第4屆">第4屆</option>
                   </select>
-                  <!-- 分類 end-->
-                  <!-- 條件 -->
-                  <label for="selectSample" class="ftitle">條件</label>
                   <select name="" id="selectSample">
-                    <option value="依部門" selected>依部門</option>
-                    <option value="依屆會次別">依屆會次別</option>
-                    <option value="依議員發言">依議員發言</option>
+                    <option value="第5次" selected>第5次</option>
+                    <option value="第4次">第4次</option>
+                    <option value="第3次">第3次</option>
                   </select>
-                  <!-- 條件 end-->
-                  <!-- 部門 -->
-                  <fieldset>
-                    <legend class="ftitle">部門</legend>
-                    <div>
-                      <input type="radio" id="radio1" name="radioname" value="全部(23442筆)" checked />
-                      <label for="radio1">全部（23442筆）</label>
-                    </div>
-
-                    <div>
-                      <input type="radio" id="radio2" name="radioname" value="民政(415筆)" />
-                      <label for="radio2">民政(415筆)</label>
-                    </div>
-
-                    <div>
-                      <input type="radio" id="radio3" name="radioname" value="財政建設(29筆)" />
-                      <label for="radio3">財政建設(29筆)</label>
-                    </div>
-
-                    <div>
-                      <input type="radio" id="radio3" name="radioname" value="教育(326筆)" />
-                      <label for="radio3">教育(326筆)</label>
-                    </div>
-
-                    <div>
-                      <input type="radio" id="radio3" name="radioname" value="交通(17筆)" />
-                      <label for="radio3">交通(17筆)</label>
-                    </div>
-
-                    <div>
-                      <input type="radio" id="radio3" name="radioname" value="警政衛生(24筆)" />
-                      <label for="radio3">警政衛生(24筆)</label>
-                    </div>
-
-                    <div>
-                      <input type="radio" id="radio3" name="radioname" value="工務(123筆)" />
-                      <label for="radio3">工務(123筆)</label>
-                    </div>
-                  </fieldset>
-                  <!-- 部門 end-->
+                  <select name="" id="selectSample">
+                    <option value="定期大會" selected>定期大會</option>
+                    <option value="臨時大會">臨時大會</option>
+                  </select>
+                  <!-- 依屆會次 end-->
                 </div>
                 <!-- flexForm end -->
               </div>
@@ -250,12 +212,11 @@
             <nav aria-label="Breadcrumb" class="breadcrumb">
               <ul>
                 <li><a href="#">首頁</a></li>
-                <li><a href="#">查詢結果</a></li>
-                <li aria-current="page">市府書面報告</li>
+                <li aria-current="page">公報瀏覽</li>
               </ul>
             </nav>
             <!-- h2節點 -->
-            <h2 class="title">查詢結果-市府書面報告</h2>
+            <h2 class="title">公報瀏覽-依會次</h2>
             <!-- functionPanel -->
             <div class="functionPanel">
               <!-- <div class="publishTime"><span>發布日期：</span><time>2019-01-01</time></div> -->
@@ -270,117 +231,117 @@
                 </ul>
               </div>
             </div>
-            <div class="condition">查詢條件：[不限欄位：<em>王世堅</em>] [不限欄位：<em>台北101</em>] [不限欄位：<em>捷運</em>] [不限欄位：<em>市長</em>]</div>
-            <!-- category -->
-            <div class="category">
-              <ul>
-                <li><a href="#">公報</a></li>
-                <li><a href="#" class="active">搶鮮報</a></li>
-              </ul>
-            </div>
+
             <!-- LP Start -->
             <section class="lp">
-              <!-- aRight -->
-              <div class="printBox">
-                <div class="flexForm">
-                  <div class="formGrp formInline">
-                    <label for="selectSample" class="labelhidden">選擇筆數列印:</label>
-                    第
-                    <select name="" id="selectSample">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                    </select>
-                    筆 ~ 第
-                    <select name="pets" id="pet-select">
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                    筆
-                    <button type="button" class="btn btnPrimary printBtn" aria-label="列印" data-fancybox data-src="#dialog-content-print"><span class="i_print_dark"></span></button>
-                  </div>
-                </div>
-              </div>
-              <!-- aRight end-->
-              <!-- searchflex -->
-              <div class="searchflex">
+              <!-- searchflex2 -->
+              <div class="searchflex2">
                 <label for="">查詢</label>
                 <select name="" id="">
-                  <option value="">依屆會次</option>
-                  <option value="">...</option>
+                  <option value="依卷期瀏覽">依卷期瀏覽</option>
+                  <option value="依屆會次" selected>依屆會次</option>
+                  <option value="依日期">依日期</option>
+                  <option value="公報頁碼">公報頁碼</option>
+                  <option value="依要目瀏覽">依要目瀏覽</option>
                 </select>
                 <select name="" id="">
-                  <option value="">由大到小</option>
+                  <option value="由新到舊">由新到舊</option>
                   <option value="">...</option>
                 </select>
-                <input name="username" type="text" id="" />
-                <button type="button" class="btnSearch">查詢</button>
               </div>
               <!-- searchflex end-->
-              <!-- selbox -->
-              <div class="selbox">
-                <button type="button" class="btn btnYellow"><span class="i_checksel_dark"></span>全選</button>
-                <button type="button" class="btn btnYellow"><span class="i_checkdel_dark"></span>全部取消</button>
-              </div>
-              <!-- selbox end-->
+
               <!-- 文字列表 -->
-              <div class="listflex2">
+              <div class="listflex3">
                 <ul>
                   <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">1</div>
                     <div class="item2">
-                      <span class="date">112-10-19</span><span class="dept">第13屆第08次定期大會</span><span class="dept">教育</span>
-                      <a href="query_results_detail.html">
-                        <!-- help2 star -->
-                        <div class="help2">
-                          <span class="taghover">第3次會議(審查議員提案及專案報告)</span>
-                          <div class="readset">
-                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
-                          </div>
-                        </div>
-                        <!-- help2 end -->
-                      </a>
+                      <span class="date">111-07-08-111-09-20</span>
+                      <div class="rollbox">
+                        <a href="#">128 卷 01期</a>
+                        <span class="issuedate">發行日111-07-08</span><span class="dept2">第13屆第08次定期大會</span>
+                      </div>
                     </div>
                   </li>
                   <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">2</div>
                     <div class="item2">
-                      <span class="date">112-10-19</span><span class="dept">第12屆第01次定期大會</span><span class="dept">交通</span>
-                      <a href="query_results_detail.html">
-                        <!-- help2 star -->
-                        <div class="help2">
-                          <span class="taghover">第4次會議(專案報告1)</span>
-                          <div class="readset">
-                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
-                          </div>
-                        </div>
-                        <!-- help2 end -->
-                      </a>
+                      <span class="date">111-07-08-111-09-20</span>
+                      <div class="rollbox">
+                        <a href="#">127 卷 13期</a>
+                        <span class="issuedate">發行日111-07-08</span><span class="dept2">第13屆第08次定期大會</span>
+                      </div>
                     </div>
                   </li>
-
                   <li>
-                    <div class="item checkGrp">
-                      <label><input type="checkbox" value="" /></label>
-                    </div>
-                    <div class="item num">3</div>
                     <div class="item2">
-                      <span class="date">112-10-19</span><span class="dept">第12屆第01次定期大會</span><span class="dept">交通</span>
-                      <a href="query_results_detail.html">
-                        <!-- help2 star -->
-                        <div class="help2">
-                          <span class="taghover">第2次會議(工作報告2)</span>
-                          <div class="readset">
-                            <p><em>台北101</em>（英語：TAIPEI 101）[2]是位於臺灣臺北市信義計畫區的超高層摩天大樓，樓高509.2公尺，地上101層、地下5層[5]。於2004年12月1日落成至2010年1月4日是世界第一高樓。目前是台灣第一高樓，以及臺灣唯一高度超過500公尺、樓層超過100層的建築物。</p>
-                          </div>
-                        </div>
-                        <!-- help2 end -->
-                      </a>
+                      <span class="date">111-07-08-111-09-20</span>
+                      <div class="rollbox">
+                        <a href="#">126 卷 10期</a>
+                        <span class="issuedate">發行日111-07-08</span><span class="dept2">第13屆第08次定期大會</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item2">
+                      <span class="date">111-07-08-111-09-20</span>
+                      <div class="rollbox">
+                        <a href="#">125 卷 03期</a>
+                        <span class="issuedate">發行日111-07-08</span><span class="dept2">第13屆第08次定期大會</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item2">
+                      <span class="date">111-07-08-111-09-20</span>
+                      <div class="rollbox">
+                        <a href="#">124 卷 13期</a>
+                        <span class="issuedate">發行日111-07-08</span><span class="dept2">第13屆第08次定期大會</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item2">
+                      <span class="date">111-07-08-111-09-20</span>
+                      <div class="rollbox">
+                        <a href="#">128 卷 01期</a>
+                        <span class="issuedate">發行日111-07-08</span><span class="dept2">第13屆第08次定期大會</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item2">
+                      <span class="date">111-07-08-111-09-20</span>
+                      <div class="rollbox">
+                        <a href="#">127 卷 13期</a>
+                        <span class="issuedate">發行日111-07-08</span><span class="dept2">第13屆第08次定期大會</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item2">
+                      <span class="date">111-07-08-111-09-20</span>
+                      <div class="rollbox">
+                        <a href="#">126 卷 10期</a>
+                        <span class="issuedate">發行日111-07-08</span><span class="dept2">第13屆第08次定期大會</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item2">
+                      <span class="date">111-07-08-111-09-20</span>
+                      <div class="rollbox">
+                        <a href="#">125 卷 03期</a>
+                        <span class="issuedate">發行日111-07-08</span><span class="dept2">第13屆第08次定期大會</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item2">
+                      <span class="date">111-07-08-111-09-20</span>
+                      <div class="rollbox">
+                        <a href="#">124 卷 13期</a>
+                        <span class="issuedate">發行日111-07-08</span><span class="dept2">第13屆第08次定期大會</span>
+                      </div>
                     </div>
                   </li>
                 </ul>

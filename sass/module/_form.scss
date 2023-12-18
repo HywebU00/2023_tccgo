@@ -92,10 +92,13 @@ select::-ms-expand {
     flex: 0 0 $formTitleWidth;
     align-self: flex-start;
     padding: 0.3em 1em;
+
     @include screen('mobile') {
       max-width: calc(100% - 0.6em);
       flex-basis: calc(100% - 0.6em);
-      margin: 0 0.3em;
+      // margin: 0 0.3em;
+      padding: 0.3em 1em;
+      margin: 0;
       @include gutter(0);
     }
 
