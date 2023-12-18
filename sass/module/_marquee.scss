@@ -1,6 +1,6 @@
 .marquee {
   .swiperBox {
-    margin: 1em 0;
+    margin: 1rem 0;
     list-style: none;
     display: block;
     overflow: hidden;
@@ -26,7 +26,7 @@
     }
 
     @media (max-width: 991px) {
-      margin: 1.5em 0em;
+      margin: 1.5rem 0rem;
     }
     .swiper {
       height: 40px;
@@ -50,9 +50,13 @@
       }
       &.prevSlider {
         top: 0;
+        height: 1rem;
+        font-size: 0px;
       }
       &.nextSlider {
         bottom: 0;
+        font-size: 0px;
+        height: 1rem;
         // right: 5px;
         &::before {
           transform: rotate(180deg);
@@ -66,7 +70,7 @@
   a {
     display: block;
     line-height: 40px;
-    margin-right: 3em;
+    margin-right: 3rem;
     // font-weight: bold;
     overflow: hidden;
     white-space: nowrap;

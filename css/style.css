@@ -7684,7 +7684,7 @@ img {
     filter: grayscale(1);
   }
   .marquee .swiperBox {
-    margin: 1em 0;
+    margin: 1rem 0;
     list-style: none;
     display: block;
     overflow: hidden;
@@ -7710,7 +7710,7 @@ img {
   }
   @media (max-width: 991px) {
     .marquee .swiperBox {
-      margin: 1.5em 0em;
+      margin: 1.5rem 0rem;
     }
   }
   .marquee .swiperBox .swiper {
@@ -7736,9 +7736,13 @@ img {
   }
   .marquee .swiperBox .marquee-arrow.prevSlider {
     top: 0;
+    height: 1rem;
+    font-size: 0px;
   }
   .marquee .swiperBox .marquee-arrow.nextSlider {
     bottom: 0;
+    font-size: 0px;
+    height: 1rem;
   }
   .marquee .swiperBox .marquee-arrow.nextSlider::before {
     transform: rotate(180deg);
@@ -7749,7 +7753,7 @@ img {
   .marquee a {
     display: block;
     line-height: 40px;
-    margin-right: 3em;
+    margin-right: 3rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
