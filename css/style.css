@@ -4259,6 +4259,7 @@ img {
     padding: 0;
     box-sizing: border-box;
     z-index: 99;
+    font-size: 0;
   }
   @media screen and (max-width: 991px) {
     .header h1 {
@@ -10874,6 +10875,7 @@ img {
     background: url(../images/body_bg.png) repeat left top;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
+    font-size: 0;
   }
   .pdfViewBox h2 {
     font-size: 1.25em;
@@ -10957,6 +10959,7 @@ img {
     background: url(../images/body_bg.png) repeat left top;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
+    font-size: 0;
   }
   .pdfViewBox2 h2 {
     font-size: 1.25em;
@@ -11052,6 +11055,7 @@ img {
     background: url(../images/body_bg.png) repeat left top;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
+    font-size: 0;
   }
   .pdfViewBox3 h2 {
     font-size: 1.25em;

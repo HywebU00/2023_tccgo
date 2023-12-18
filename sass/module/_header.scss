@@ -131,6 +131,7 @@
     padding: 0;
     box-sizing: border-box;
     z-index: 99;
+    font-size: 0;
     @include screen('tablet') {
       top: 5px;
       left: 30px;
