@@ -32,7 +32,7 @@
     // }
     &:hover,
     &:focus {
-      color: $colorWord;
+      color: $colorWord !important;
       background: lighten($colorPrimary, 20);
       border: 1px solid lighten($colorPrimary, 20);
     }

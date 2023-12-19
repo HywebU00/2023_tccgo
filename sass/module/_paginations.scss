@@ -124,6 +124,9 @@
     display: flex;
     align-items: center;
     vertical-align: middle;
+    @include screen('mobile') {
+      flex-wrap: wrap;
+    }
     select {
       margin: 0px 0.5em;
       @include screen('mobile') {

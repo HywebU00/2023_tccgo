@@ -1837,7 +1837,7 @@ img {
     margin-bottom: 1.25em;
   }
   .cp h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .cp h4 {
     font-size: 1.25em;
@@ -3885,7 +3885,7 @@ img {
     font-weight: bold;
   }
   .category a:hover, .category a:focus {
-    color: #1b1a1a;
+    color: #1b1a1a !important;
     background: #90e7f4;
     border: 1px solid #90e7f4;
   }
@@ -3937,8 +3937,9 @@ img {
     font-size: 0.938em;
     text-decoration: none;
     color: #1b1a1a;
-    border: 1px solid #ddd;
     padding: 0.2em 0.75em;
+    text-decoration: none !important;
+    background: #a0ebf6;
   }
   .tag ul li a:hover, .tag ul li a:focus-visible {
     color: #0b626f;
@@ -7867,6 +7868,11 @@ img {
     align-items: center;
     vertical-align: middle;
   }
+  @media screen and (max-width: 767px) {
+    .pagination .total {
+      flex-wrap: wrap;
+    }
+  }
   .pagination .total select {
     margin: 0px 0.5em;
   }
@@ -7977,6 +7983,7 @@ img {
   .accordion ul {
     list-style: none;
     padding: 0;
+    font-size: 1.125em;
   }
   .accordion ul li {
     margin-bottom: 0.5em;
@@ -7987,10 +7994,10 @@ img {
     border-radius: 0;
     display: block;
     text-align: left;
-    background-color: #21baff;
-    color: #fff;
+    background-color: #eee;
+    color: #1b1a1a;
     text-decoration: none;
-    padding: 5px 50px 5px 20px;
+    padding: 15px 50px 15px 20px;
     position: relative;
   }
   .accordion ul li.active .accordionArrow {
@@ -8005,9 +8012,18 @@ img {
   }
   .accordion .accordionContent .content {
     padding: 10px;
+    font-size: 1rem;
+  }
+  .accordion .accordionContent .content a {
+    color: #0b626f;
+    text-decoration: underline;
+  }
+  .accordion .accordionContent .content a:hover {
+    text-decoration: none;
   }
   .accordion .accordionState {
     margin-left: 10px;
+    display: none;
   }
   .accordion .accordionArrow {
     position: absolute;
@@ -8018,7 +8034,7 @@ img {
   }
   .accordion .accordionArrow:after {
     content: "";
-    border: 2px solid #fff;
+    border: 2px solid #1b1a1a;
     border-top: none;
     border-left: none;
     display: block;
@@ -8028,6 +8044,12 @@ img {
   .accordion .accordionArrow.open:after {
     top: 8px;
     transform: rotate(225deg);
+  }
+  .accordion .question {
+    font-weight: bold;
+    color: #0b626f;
+    font-size: 1.25em;
+    margin-right: 5px;
   }
   /* sitemap */
   .sitemap {
@@ -8087,7 +8109,7 @@ img {
     border-bottom: 2px solid #33d3eb;
   }
   .cascading li a:hover, .cascading li a:focus-visible {
-    color: #33d3eb;
+    color: #0b626f;
     text-decoration: none;
   }
   .cascading li ul {
@@ -10057,6 +10079,14 @@ img {
     outline: #0033cc 0px dashed !important;
     box-shadow: 0 0px 0px 2px #0033cc inset !important;
   }
+  .cp p a {
+    color: #0b626f;
+    text-decoration: underline;
+  }
+  .cp p a:hover {
+    color: #1b1a1a;
+    text-decoration: none;
+  }
   .cp .publishInfo {
     font-size: 0.875em;
     line-height: 1.5em;
@@ -10071,7 +10101,7 @@ img {
   }
   .cp .publishInfo li {
     flex: 1 1 33.3333333333%;
-    margin-bottom: 0.5em;
+    margin: 0 0.2em;
   }
   @media screen and (max-width: 991px) {
     .cp .publishInfo li {
@@ -10602,6 +10632,12 @@ img {
     font-size: 0.938em;
     display: inline-block;
     padding: 0 0.5em;
+  }
+  .listflex li .item5 {
+    flex: 1 1 auto;
+    padding: 0.5em 0;
+    position: relative;
+    max-width: 100%;
   }
   .listflex2 ul {
     margin: 0;

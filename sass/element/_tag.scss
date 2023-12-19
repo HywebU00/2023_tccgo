@@ -24,8 +24,10 @@
         display: block;
         font-size: 0.938em;
         @include aSetting($colorWord);
-        border: 1px solid #ddd;
+        // border: 1px solid #ddd;
         padding: 0.2em 0.75em;
+        text-decoration: none !important;
+        background: $colorBlue2;
       }
     }
   }
