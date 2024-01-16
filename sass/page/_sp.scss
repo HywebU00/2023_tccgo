@@ -397,12 +397,25 @@
     background: #eee;
     width: 100%;
   }
+  h3.ftitle {
+    margin: 0.5em 0;
+  }
   input,
   select {
     margin-bottom: 1em;
   }
   fieldset {
     margin-bottom: 1em;
+  }
+  .ul_list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1.5em;
+    li {
+      padding: 0.3em 1em 0.3em 1.5em;
+      background: url(../images/li_arrow.png) no-repeat left 0.5em top 0.75rem;
+      background-size: 10px;
+    }
   }
 }
 

@@ -38,6 +38,7 @@
 }
 .swiperBox {
   position: relative;
+  margin-top: 4rem;
 }
 .swiper {
   img {
@@ -321,12 +322,13 @@
     }
   }
   .swiperArrow {
-    top: 50%;
+    top: 52%;
     z-index: 98;
+    font-size: 0;
     &::before {
       content: '';
       width: 30px;
-      height: 30px;
+      height: 50px;
       display: block;
       background: url('../vendor/swiper/ar.svg') center no-repeat;
       background-size: 20px auto;

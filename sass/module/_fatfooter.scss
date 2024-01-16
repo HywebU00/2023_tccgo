@@ -140,7 +140,18 @@
           }
           //第三層關閉
           ul {
-            display: none;
+            // display: none;
+            // padding-left: 0.5em;
+            margin-left: 3px;
+            // border-left: solid 3px darken($colorPrimary, 30);
+            li {
+              a {
+                padding: 0.2em 0;
+                background: url(../images/li_arrow.png) no-repeat left top 0.6em;
+                background-size: 8px auto;
+                padding-left: 0.8em;
+              }
+            }
           }
         }
       }

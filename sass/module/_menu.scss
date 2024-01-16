@@ -52,15 +52,16 @@
       & > a {
         display: block;
         padding: 0 1em;
-        min-height: 3em;
+        min-height: 2.5em;
         font-size: 1.125em;
         font-weight: bold;
-        line-height: 3em;
+        line-height: 2.5em;
         white-space: nowrap;
         color: $colorWord;
         box-sizing: border-box;
         text-align: center;
         position: relative;
+        border-bottom: solid 5px rgba(255, 255, 255, 0);
         &:hover,
         &:focus {
           border-bottom: solid 5px $colorPrimary;
@@ -151,7 +152,7 @@
               content: '';
               position: absolute;
               right: 10px;
-              top: 1.3em;
+              top: 1.2em;
               width: 6px;
               height: 6px;
               border: 2px solid #fff;

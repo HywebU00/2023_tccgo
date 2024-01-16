@@ -4439,15 +4439,16 @@ img {
   .mainMenu > ul > li > a {
     display: block;
     padding: 0 1em;
-    min-height: 3em;
+    min-height: 2.5em;
     font-size: 1.125em;
     font-weight: bold;
-    line-height: 3em;
+    line-height: 2.5em;
     white-space: nowrap;
     color: #1b1a1a;
     box-sizing: border-box;
     text-align: center;
     position: relative;
+    border-bottom: solid 5px rgba(255, 255, 255, 0);
   }
   .mainMenu > ul > li > a:hover, .mainMenu > ul > li > a:focus {
     border-bottom: solid 5px #33d3eb;
@@ -4525,7 +4526,7 @@ img {
     content: "";
     position: absolute;
     right: 10px;
-    top: 1.3em;
+    top: 1.2em;
     width: 6px;
     height: 6px;
     border: 2px solid #fff;
@@ -4949,7 +4950,13 @@ img {
     }
   }
   .fatFooter nav ul li ul ul {
-    display: none;
+    margin-left: 3px;
+  }
+  .fatFooter nav ul li ul ul li a {
+    padding: 0.2em 0;
+    background: url(../images/li_arrow.png) no-repeat left top 0.6em;
+    background-size: 8px auto;
+    padding-left: 0.8em;
   }
   .fatFooter.typeB {
     background: linear-gradient(175deg, rgb(75, 146, 160) 0%, rgb(0, 93, 157) 80%);
@@ -8862,6 +8869,7 @@ img {
   }
   .swiperBox {
     position: relative;
+    margin-top: 4rem;
   }
   .swiper img {
     display: block;
@@ -9145,13 +9153,14 @@ img {
     box-sizing: border-box;
   }
   .popupSlider .swiperArrow {
-    top: 50%;
+    top: 52%;
     z-index: 98;
+    font-size: 0;
   }
   .popupSlider .swiperArrow::before {
     content: "";
     width: 30px;
-    height: 30px;
+    height: 50px;
     display: block;
     background: url("../vendor/swiper/ar.svg") center no-repeat;
     background-size: 20px auto;
@@ -9715,7 +9724,12 @@ img {
     background-size: 60px auto;
   }
   .popupBox {
-    margin: 0 5% 30px;
+    margin: 4rem 0 0 0;
+    padding: 10px 5%;
+    background: #fff;
+  }
+  .popupBox h2 {
+    margin: 0 0 1em;
   }
   .popupBox .table1 caption {
     font-size: 0;
@@ -9756,7 +9770,7 @@ img {
   .popupBox .searchBox {
     box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.15);
     padding: 10px 5%;
-    margin: 30px 0 30px;
+    margin: 0 0 30px;
   }
   .popupBox .searchBox .btnGrp {
     flex: 0 1 auto;
@@ -10859,12 +10873,25 @@ img {
     background: #eee;
     width: 100%;
   }
+  .dataSearch h3.ftitle {
+    margin: 0.5em 0;
+  }
   .dataSearch input,
   .dataSearch select {
     margin-bottom: 1em;
   }
   .dataSearch fieldset {
     margin-bottom: 1em;
+  }
+  .dataSearch .ul_list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1.5em;
+  }
+  .dataSearch .ul_list li {
+    padding: 0.3em 1em 0.3em 1.5em;
+    background: url(../images/li_arrow.png) no-repeat left 0.5em top 0.75rem;
+    background-size: 10px;
   }
   .printBox .formGrp {
     justify-content: flex-end;

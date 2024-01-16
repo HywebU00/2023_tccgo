@@ -573,7 +573,12 @@ section {
 }
 
 .popupBox {
-  margin: 0 5% 30px;
+  margin: 4rem 0 0 0;
+  padding: 10px 5%;
+  background: #fff;
+  h2 {
+    margin: 0 0 1em;
+  }
 
   .table1 {
     caption {
@@ -616,7 +621,7 @@ section {
   .searchBox {
     box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.15);
     padding: 10px 5%;
-    margin: 30px 0 30px;
+    margin: 0 0 30px;
     .btnGrp {
       flex: 0 1 auto;
       @include screen('mobile') {

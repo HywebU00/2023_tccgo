@@ -86,7 +86,8 @@
   cursor: pointer;
   color: var(--carousel-button-color, currentColor);
   background: var(--carousel-button-bg, transparent);
-  border-radius: var(--carousel-button-border-radius, 50%);
+  /* border-radius: var(--carousel-button-border-radius, 50%); */
+  border-radius: var(--carousel-button-border-radius, 5px);
   box-shadow: var(--carousel-button-shadow, none);
   transition: opacity 0.15s ease;
 }
@@ -155,10 +156,11 @@ body.compensate-for-scrollbar {
   box-sizing: inherit;
 }
 .fancybox__container :focus {
-  outline: none;
+  /* outline: solid 2px #0033cc; */
 }
 body:not(.is-using-mouse) .fancybox__container :focus {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--fancybox-accent-color, rgba(1, 210, 232, 0.94));
+  /* box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--fancybox-accent-color, rgba(1, 210, 232, 0.94)); */
+  /* box-shadow: 0 0px 0px 2px #0033cc inset; */
 }
 @media all and (min-width: 1024px) {
   .fancybox__container {
@@ -238,8 +240,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   z-index: 20;
 }
 .fancybox__content :focus:not(.carousel__button.is-close) {
-  outline: thin dotted;
-  box-shadow: none;
+  /* outline: thin dotted;
+  box-shadow: none; */
 }
 .fancybox__caption {
   align-self: center;
@@ -287,9 +289,12 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   right: calc(env(safe-area-inset-right, 0px) + 8px);
   z-index: 40;
 }
+.carousel__button.is-close:focus {
+  outline: solid 2px #0033cc;
+}
 @media all and (min-width: 1024px) {
   .carousel__button.is-close {
-    right: 40px;
+    /* right: 40px; */
   }
 }
 .fancybox__content > .carousel__button.is-close {
@@ -297,8 +302,9 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   top: 0.1rem;
   right: 0;
   color: var(--fancybox-color, #fff);
-  border: none !important;
+  /* border: none !important; */
 }
+
 .fancybox__no-click,
 .fancybox__no-click button {
   pointer-events: none;
@@ -535,7 +541,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .fancybox__carousel .fancybox__slide.has-pdf .fancybox__content,
 .fancybox__carousel .fancybox__slide.has-video .fancybox__content,
 .fancybox__carousel .fancybox__slide.has-html5video .fancybox__content {
-  max-width: 100%;
+  max-width: 1000px;
   flex-shrink: 1;
   min-height: 1px;
   overflow: visible;
@@ -747,7 +753,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   display: block;
 }
 .fancybox__content {
-  max-width: 1000px;
+  max-width: 100%;
   width: 100% !important;
   padding: 0 0 0.5em 0;
   border-radius: 10px;
@@ -761,12 +767,19 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   border-left: solid 6px #4bc8e1;
 }
 .fancybox__content .popupContent h2 {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   color: #fff;
-  margin: 0 0 1em;
+  margin: 0;
   padding: 0.8rem 1.5rem;
   font-size: 1.35em;
   border-left: solid 6px #fec003;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.fancybox__content .popupContent h2:focus-visible {
+  box-shadow: 0 0 0 2px #0033cc inset;
 }
 /* .fancybox__content .popupContent p {
   margin: 1em 2em;
