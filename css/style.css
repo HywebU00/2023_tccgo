@@ -9363,6 +9363,9 @@ img {
     font-weight: normal;
     font-size: 1rem;
   }
+  .listTypeB .gazette .titleBox {
+    padding: 3% 0 1%;
+  }
   .listTypeB .item {
     background: #ffffff;
     position: relative;
