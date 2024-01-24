@@ -18,6 +18,24 @@
     @include screen('xsMobile') {
       padding: 20px;
     }
+    .formTitle {
+      max-width: 15%;
+      flex: 0 0 15%;
+      white-space: nowrap;
+      @include screen('mobile') {
+        max-width: calc(100% - 0.6em);
+        flex-basis: calc(100% - 0.6em);
+      }
+    }
+    .formContent {
+      max-width: calc(100% - 15%);
+      flex: auto;
+      flex-basis: calc(100% - 15%);
+      @include screen('mobile') {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
   }
   p {
     span {

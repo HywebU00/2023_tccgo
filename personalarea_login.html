@@ -194,7 +194,44 @@
             <section class="login">
               <p>本網站個人服務目前僅供本會人員使用，請輸入您在會內的帳號/密碼</p>
               <p>若您忘記密碼，請撥<span>分機533、534</span>由管理人員為您服務。助理查詢議員個人帳號／密碼，請攜助理證到５樓資訊室洽詢</p>
-              <div class="flexForm">
+              <div class="flexForm formGrid">
+                <div class="formGrp">
+                  <!-- 使用aria-required屬性指出必填的表單欄位 -->
+                  <label for="username" class="formTitle" aria-required="true">帳號</label>
+                  <div class="formContent">
+                    <div class="input_i">
+                      <i class="i_man_dark"></i>
+                      <input type="text" id="username" value="請輸入您的帳號" title="請輸入帳號" />
+                    </div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="password" class="formTitle" aria-required="true">密碼</label>
+                  <div class="formContent">
+                    <div class="input_i">
+                      <i class="i_lock_dark"></i>
+                      <input class="password" name="password" type="password" placeholder="請輸入密碼" title="請輸入密碼" />
+                      <button type="button" class="passwordEye hide">顯示密碼</button>
+                    </div>
+                    <div class="noticeError">您輸入的帳號密碼有誤！</div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="password" class="formTitle" aria-required="true">驗證碼</label>
+                  <div class="formContent formInline">
+                    <img src="images/basic/captcha.gif" alt="ˇ3254" tabindex="0" class="captcha" />
+                    <input name="" type="text" value="" title="請輸入驗證碼" />
+                    <button type="button" class="btn"><i class="i_reflash_dark" aria-hidden="true" focusable="false"></i>重新整理</button>
+                    <button type="button" class="btn"><i class="i_play_dark" aria-hidden="true" focusable="false"></i>語音播放</button>
+                  </div>
+                </div>
+
+                <div class="btnGrp formInline">
+                  <button type="reset" class="btn btnReset">取消</button>
+                  <button type="submit" class="btn btnSubmit">送出</button>
+                </div>
+              </div>
+              <!-- <div class="flexForm">
                 <div class="formGrp">
                   <label for="username">帳號</label>
                   <input name="username" type="text" id="username" placeholder="請輸入您的帳號" value="請輸入您的帳號" />
@@ -207,7 +244,7 @@
                   <button type="reset" class="btn btnReset">取消</button>
                   <button type="submit" class="btn btnSubmit">送出</button>
                 </div>
-              </div>
+              </div> -->
             </section>
             <!-- login End -->
           </div>
