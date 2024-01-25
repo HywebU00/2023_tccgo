@@ -336,12 +336,12 @@ function topNav() {
   // 移除手機版字體大小按鈕
   if (sideLanguage !== null) {
     sideLanguage.remove();
-    body.classList.remove('smallSize', 'largeSize');
-    body.classList.add('mediumSize');
+    //body.classList.remove('smallSize', 'largeSize');
+    //body.classList.add('mediumSize');
   }
 
   const languageSelect = document.querySelectorAll('.language');
-
+  
   function languageSelectInit() {
     const languageSelect = new SelectSlider({
       name: document.querySelectorAll('.language'), // --- 控制的對象
