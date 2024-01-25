@@ -305,13 +305,14 @@ $('.labelPool').each(function () {
 
   function addNewLabel() {
     if (_input.val() !== '' && _input.val() !== ' ') {
-      _addOne.before('<li class="pdLabel">' + _input.val() + '<span class="removeThis"></span></li>');
+      _addOne.before('<li class="pdLabel">' + _input.val() + '<span class="removeThis"></span><input name="councillorIds" type="hidden" value="' + _input.val() + '"></li>');
       _input.val('');
       _pdLabel = _this.find('.pdLabel');
       _removeLabel = _pdLabel.find('.removeThis');
       removeLabel();
     }
   }
+  
 
   function removeLabel() {
     _removeLabel.click(function () {
