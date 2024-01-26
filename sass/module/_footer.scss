@@ -70,6 +70,7 @@ footer {
   }
   p {
     line-height: 1.65em;
+    margin: 0;
   }
   .update,
   .counter {
@@ -77,7 +78,7 @@ footer {
     margin-right: 5px;
     em {
       font-style: normal;
-      color: $colorPrimary;
+      color: #80fdff;
       padding: 0 0.5em;
     }
   }

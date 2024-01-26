@@ -4728,6 +4728,7 @@ img {
   }
   footer p {
     line-height: 1.65em;
+    margin: 0;
   }
   footer .update,
   footer .counter {
@@ -4737,7 +4738,7 @@ img {
   footer .update em,
   footer .counter em {
     font-style: normal;
-    color: #33d3eb;
+    color: #80fdff;
     padding: 0 0.5em;
   }
   footer .footerIcon a {
