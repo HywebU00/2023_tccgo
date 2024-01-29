@@ -107,8 +107,6 @@ body {
     padding-top: 30px;
     @include gutter(); //gutter 代表左右要留白
     display: flex;
-    max-width: 100%;
-    width: 100%;
     .centerBlock {
       flex: none;
       flex-basis: 100%;
