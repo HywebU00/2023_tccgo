@@ -57,6 +57,7 @@ body {
     @include gutter(); //gutter 代表左右要留白
     display: flex;
   }
+
   .centerBlock {
     flex: none;
     flex-basis: 100%;
@@ -99,4 +100,53 @@ body {
 }
 .hidden {
   display: none;
+}
+.gazform {
+  position: relative;
+  .container {
+    padding-top: 30px;
+    @include gutter(); //gutter 代表左右要留白
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    .centerBlock {
+      flex: none;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+    .leftBlock {
+      flex: none;
+      flex-basis: 260px;
+      max-width: 260px;
+      margin-right: 40px;
+      align-self: flex-start;
+      position: sticky;
+      top: 50px;
+      &.hidden {
+        & + .centerBlock {
+          flex: none;
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+      & + .centerBlock {
+        flex: auto;
+        flex-basis: calc(100% - 300px);
+        max-width: calc(100% - 300px);
+        background: $colorWhite;
+        position: relative;
+        padding: 30px 5% 50px;
+        margin: 0;
+        box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.2);
+      }
+      @include screen('tablet') {
+        display: none;
+        & + .centerBlock {
+          flex: none;
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }

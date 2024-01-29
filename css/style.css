@@ -8371,6 +8371,59 @@ img {
   .hidden {
     display: none;
   }
+  .gazform {
+    position: relative;
+  }
+  .gazform .container {
+    padding-top: 30px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+  }
+  .gazform .container .centerBlock {
+    flex: none;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .gazform .container .leftBlock {
+    flex: none;
+    flex-basis: 260px;
+    max-width: 260px;
+    margin-right: 40px;
+    align-self: flex-start;
+    position: sticky;
+    top: 50px;
+  }
+  .gazform .container .leftBlock.hidden + .centerBlock {
+    flex: none;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .gazform .container .leftBlock + .centerBlock {
+    flex: auto;
+    flex-basis: calc(100% - 300px);
+    max-width: calc(100% - 300px);
+    background: #ffffff;
+    position: relative;
+    padding: 30px 5% 50px;
+    margin: 0;
+    box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.2);
+  }
+  @media screen and (max-width: 991px) {
+    .gazform .container .leftBlock {
+      display: none;
+    }
+    .gazform .container .leftBlock + .centerBlock {
+      flex: none;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
   .mobileSidebar {
     position: fixed;
     top: 0;
