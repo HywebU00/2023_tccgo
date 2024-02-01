@@ -143,6 +143,12 @@
         display: inline-block;
         vertical-align: middle;
       }
+      .content_table {
+        width: 100%;
+      }
+      .confirm_table {
+        width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -153,53 +159,72 @@
           <td height="96"><img src="epaper/images/bg01_01.jpg" alt="臺北市議會公報電子報" width="650" height="96" /></td>
         </tr>
         <tr>
-          <td height="28" background="epaper/images/bg01_02.jpg">
-            <!-- <span class="floaright">目前發行份數：322 份</span> -->
-            <div class="date">中華民國112年07月28日(星期五) 臺北市議會發行</div>
-          </td>
-        </tr>
-        <tr>
-          <td height="49" background="epaper/images/bg01_03.jpg"><div class="word">感謝您訂閱臺北市議會公報電子報！本電子報將定期送達最新一期公報之目錄至您的電子信箱，如您想進一步查閱公報全文內容，只需直接點選目錄標題即可瀏覽全文內容。</div></td>
-        </tr>
-        <tr>
-          <td background="epaper/images/bg01_04.jpg">
-            <div class="new">
-              <img src="epaper/images/new.gif" align="absmiddle" /> 最新公報：臺北市議會公報第132卷第04期。<a href="http://tcckm.tcc.gov.tw/tccgazFront/pdfFile.jsp?volno=13204"><img src="epaper/images/download.png" alt="下載" border="0" /></a>
-            </div>
-            <!--會員訂閱認證信-->
-            <div class="title">會員訂閱認證信</div>
+          <td>
+            <!-- content_table -->
+            <table border="0" cellpadding="0" cellspacing="0" class="content_table">
+              <tr>
+                <td height="28" background="epaper/images/bg01_02.jpg">
+                  <div class="date">中華民國112年07月28日(星期五) 臺北市議會發行</div>
+                </td>
+              </tr>
+              <tr>
+                <td height="49" background="epaper/images/bg01_03.jpg"><div class="word">感謝您訂閱臺北市議會公報電子報！本電子報將定期送達最新一期公報之目錄至您的電子信箱，如您想進一步查閱公報全文內容，只需直接點選目錄標題即可瀏覽全文內容。</div></td>
+              </tr>
+              <tr>
+                <td background="epaper/images/bg01_04.jpg">
+                  <div class="new">
+                    <img src="epaper/images/new.gif" align="absmiddle" /> 最新公報：臺北市議會公報第132卷第04期。<a href="http://tcckm.tcc.gov.tw/tccgazFront/pdfFile.jsp?volno=13204"><img src="epaper/images/download.png" alt="下載" border="0" /></a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- confirm_table -->
+                  <table border="0" cellpadding="0" cellspacing="0" class="confirm_table">
+                    <tr>
+                      <td>
+                        <!--會員訂閱認證信-->
+                        <div class="title">會員訂閱認證信</div>
 
-            <div class="word">
-              <p>
-                <strong>親愛的會員，您好：</strong><br /><br />
-                下面是您的聯絡EMAIIL，請確認是否正確，並進行認證。<br />
-                <span class="link"><a href="mailto:abc123@gmail.com" target="_blank">abc123@gmail.com</a></span
-                ><br />
-                請注意：您必須完成「EMAIIL 認證」，才能在收到臺北市議會公報電子報。<br />
-                若您未曾訂閱臺北市議會公報電子報，請忽略此確認信。<br /><br />
-                EMAIIL通過確認：
-                <a
-                  class="confirmbtn"
-                  role="button"
-                  title="點選連結進行訂閱電子報認證"
-                  href="http://tcckm.tcc.gov.tw/tccgazFront/member/subscribe_confirm.jsp?email=mingshuya@gmail.com&amp;key=ZV3z112htRKd0IGXvVa5"
-                  target="_blank"
-                  data-saferedirecturl="https://www.google.com/url?q=http://tcckm.tcc.gov.tw/tccgazFront/member/subscribe_confirm.jsp?email%3Dmingshuya@gmail.com%26key%3DZV3z112htRKd0IGXvVa5&amp;source=gmail&amp;ust=1706238638864000&amp;usg=AOvVaw3Iw4peVFEGKcs32H_F3obz"
-                  ><img src="epaper/images/confirm_btn.png" alt="馬上進行認證"
-                /></a>
-                <br />若無法點選上面「請按此進行認證」的連結，請複製下面的網址到您的瀏覽器中，並繼續進行認證。 <br />認證網址：<br />
-                <span class="link"
-                  ><a
-                    href="http://tccgaz.hyweb.com.tw/epaper/subConfirm.html?e=84145C417BC16D9196AA92C166237F5130906001088FACF6&t=26536235A98566FB66EF67B5957AED149BA5BF8BD052D8E6713635E585233B82D0636733C6861689"
-                    target="_blank"
-                    data-saferedirecturl="http://tccgaz.hyweb.com.tw/epaper/subConfirm.html?e=84145C417BC16D9196AA92C166237F5130906001088FACF6&t=26536235A98566FB66EF67B5957AED149BA5BF8BD052D8E6713635E585233B82D0636733C6861689"
-                    >http://tccgaz.hyweb.com.tw/epaper/subConfirm.html?e=84145C417BC16D9196AA92C166237F5130906001088FACF6&t=26536235A98566FB66EF67B5957AED149BA5BF8BD052D8E6713635E585233B82D0636733C6861689</a
-                  ></span
-                >
-              </p>
-              <p>有任何建議與問題請洽客服專線：02-27297708 分機514。謝謝！</p>
-            </div>
-            <!--會員訂閱認證信 end-->
+                        <div class="word">
+                          <p>
+                            親愛的會員，您好：<br /><br />
+                            下面是您的聯絡EMAIIL，請確認是否正確，並進行認證。<br />
+                            <span class="link"><a href="mailto:abc123@gmail.com" target="_blank">abc123@gmail.com</a></span
+                            ><br />
+                            請注意：您必須完成「EMAIIL 認證」，才能在收到臺北市議會公報電子報。<br />
+                            若您未曾訂閱臺北市議會公報電子報，請忽略此確認信。<br /><br />
+                            EMAIIL通過確認：
+                            <a
+                              class="confirmbtn"
+                              role="button"
+                              title="點選連結進行訂閱電子報認證"
+                              href="http://tcckm.tcc.gov.tw/tccgazFront/member/subscribe_confirm.jsp?email=mingshuya@gmail.com&amp;key=ZV3z112htRKd0IGXvVa5"
+                              target="_blank"
+                              data-saferedirecturl="https://www.google.com/url?q=http://tcckm.tcc.gov.tw/tccgazFront/member/subscribe_confirm.jsp?email%3Dmingshuya@gmail.com%26key%3DZV3z112htRKd0IGXvVa5&amp;source=gmail&amp;ust=1706238638864000&amp;usg=AOvVaw3Iw4peVFEGKcs32H_F3obz"
+                              ><img src="epaper/images/confirm_btn.png" alt="馬上進行認證"
+                            /></a>
+                            <br />若無法點選上面「請按此進行認證」的連結，請複製下面的網址到您的瀏覽器中，並繼續進行認證。 <br />認證網址：<br />
+                            <span class="link"
+                              ><a
+                                href="http://tccgaz.hyweb.com.tw/epaper/subConfirm.html?e=84145C417BC16D9196AA92C166237F5130906001088FACF6&t=26536235A98566FB66EF67B5957AED149BA5BF8BD052D8E6713635E585233B82D0636733C6861689"
+                                target="_blank"
+                                data-saferedirecturl="http://tccgaz.hyweb.com.tw/epaper/subConfirm.html?e=84145C417BC16D9196AA92C166237F5130906001088FACF6&t=26536235A98566FB66EF67B5957AED149BA5BF8BD052D8E6713635E585233B82D0636733C6861689"
+                                >http://tccgaz.hyweb.com.tw/epaper/subConfirm.html?e=84145C417BC16D9196AA92C166237F5130906001088FACF6&t=26536235A98566FB66EF67B5957AED149BA5BF8BD052D8E6713635E585233B82D0636733C6861689</a
+                              ></span
+                            >
+                          </p>
+                          <p>有任何建議與問題請洽客服專線：02-27297708 分機514。謝謝！</p>
+                        </div>
+                        <!--會員訂閱認證信 end-->
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- confirm_table end-->
+                </td>
+              </tr>
+            </table>
+            <!-- content_table end-->
           </td>
         </tr>
         <tr>
