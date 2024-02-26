@@ -1638,17 +1638,17 @@ abbr[title] {
     flex-flow: row wrap;
   }
   .col {
-    flex: 0 0 8em;
+    flex: 0 0 9em;
     box-sizing: border-box;
 
     &:nth-child(2) {
       flex: 1 1 auto;
     }
     @include screen('mobile') {
-      flex: 0 0 8em;
+      flex: 0 0 9em;
       padding: 0 3px;
       &:nth-child(2) {
-        flex: 0 1 calc(100% - 8.5em);
+        flex: 0 1 calc(100% - 9.5em);
       }
     }
   }
