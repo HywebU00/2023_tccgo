@@ -180,30 +180,27 @@
               <a class="accessKey" href="#ac" id="aC" accesskey="C" title="主要內容區">:::</a>
 
               <!-- 如果不要sticky效果，就移除stickySidebar classname -->
-              <aside class="leftBlock stickySidebar">
+              <aside class="leftBlock stickySidebar hidden">
                 <div class="sidebar__inner">
                   <div class="dataSearch">
                     <h2>搜尋條件</h2>
                     <button type="button" class="btn clearBtn">清除條件</button>
                     <!-- flexForm -->
                     <div class="flexForm">
-                      <!-- 卷 -->
-                      <label for="selectSample" class="ftitle">卷</label>
-                      <select name="" id="selectSample">
-                        <option value="第027卷" selected>第027卷</option>
-                        <option value="第026卷">第026卷</option>
-                        <option value="第025卷">第025卷</option>
-                        <option value="第024卷">第024卷</option>
-                      </select>
-                      <!-- 卷 end-->
-                      <!-- 期 -->
-                      <label for="selectSample" class="ftitle">期</label>
-                      <select name="" id="selectSample">
-                        <option value="第18期" selected>第18期</option>
-                        <option value="第17期">第17期</option>
-                        <option value="第16期">第16期</option>
-                      </select>
-                      <!-- 期 end-->
+                      <!-- 性質 -->
+                      <h3 class="ftitle" id="ss_elem">性質</h3>
+                      <ul tabindex="0" role="listbox" aria-labelledby="ss_elem" class="ul_list">
+                        <li role="option"><a href="#">一般提案</a></li>
+                        <li role="option"><a href="#">工作報告</a></li>
+                        <li role="option"><a href="#">工作報告質詢</a></li>
+                        <li role="option"><a href="#">公告事項</a></li>
+                        <li role="option"><a href="#">市法規</a></li>
+                        <li role="option"><a href="#">決算案</a></li>
+                        <li role="option"><a href="#">其他</a></li>
+                        <li role="option"><a href="#">施政報告</a></li>
+                        <li role="option"><a href="#">相片簡歷</a></li>
+                      </ul>
+                      <!-- 性質 end-->
                     </div>
                     <!-- flexForm end -->
                   </div>
@@ -218,7 +215,7 @@
                   </ul>
                 </nav>
                 <!-- h2節點 -->
-                <h2 class="title">公報瀏覽-依卷期</h2>
+                <h2 class="title">公報瀏覽</h2>
                 <!-- functionPanel -->
                 <div class="functionPanel">
                   <!-- <div class="publishTime"><span>發布日期：</span><time>2019-01-01</time></div> -->
@@ -236,100 +233,78 @@
 
                 <!-- LP Start -->
                 <section class="lp">
-                  <!-- searchflex2 -->
-                  <div class="searchflex2">
-                    <label for="searchid">查詢</label>
-                    <select name="" id="searchid">
-                      <option value="依卷期瀏覽" selected>依卷期瀏覽</option>
-                      <option value="依屆會次">依屆會次</option>
-                      <option value="依日期">依日期</option>
-                      <option value="公報頁碼">公報頁碼</option>
-                      <option value="依要目瀏覽">依要目瀏覽</option>
-                    </select>
-                    <select name="" id="searchid">
-                      <option value="由新到舊">由新到舊</option>
-                      <option value="">...</option>
-                    </select>
+                  <h3 class="lph3">134卷02期公報要目瀏覽(民國113年01月12日發行)</h3>
+                  <div class="iconBlock">
+                    <button type="button" class="btn btnPrimary">
+                      <span class="i_download_dark"></span>
+                      下載整期公報
+                    </button>
+                    <button type="button" class="btn btnPrimary">
+                      <span class="i_download_dark"></span>
+                      下載公報word檔
+                    </button>
                   </div>
-                  <!-- searchflex end-->
 
                   <!-- 文字列表 -->
                   <div class="listflex3">
+                    <!-- 1 -->
+                    <div class="t1">會議紀錄（大會）</div>
                     <ul>
                       <li>
                         <div class="item2">
-                          <div class="rollbox"><a href="#">128 卷 01期</a><span class="issuedate">發行日111-07-08</span><button type="button" class="btn btnPrimary btnEpaper">瀏覽電子報</button></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="item2">
                           <div class="rollbox">
-                            <a href="#">127 卷 13期</a>
-                            <span class="issuedate">發行日111-07-08</span><button type="button" class="btn btnPrimary btnEpaper">瀏覽電子報</button>
+                            <div class="t2">第14屆第1次臨時大會第1次會議紀錄及速記錄</div>
+                            <span class="issuedate2">0655～0679</span>
+                            <button type="button" class="btn btnPrimary btnEpaper">瀏覽全文</button>
+                            <button type="button" class="btn btnPrimary btnEpaper">下載全文</button>
                           </div>
                         </div>
                       </li>
                       <li>
                         <div class="item2">
                           <div class="rollbox">
-                            <a href="#">126 卷 10期</a>
-                            <span class="issuedate">發行日111-07-08</span><button type="button" class="btn btnPrimary btnEpaper">瀏覽電子報</button>
+                            <div class="t2">第14屆第1次臨時大會第2次會議紀錄及速記錄</div>
+                            <span class="issuedate2">0680～0716</span>
+                            <button type="button" class="btn btnPrimary btnEpaper">瀏覽全文</button>
+                            <button type="button" class="btn btnPrimary btnEpaper">下載全文</button>
                           </div>
                         </div>
                       </li>
                       <li>
                         <div class="item2">
                           <div class="rollbox">
-                            <a href="#">125 卷 03期</a>
-                            <span class="issuedate">發行日111-07-08</span><button type="button" class="btn btnPrimary btnEpaper">瀏覽電子報</button>
+                            <div class="t2">第14屆第1次臨時大會第3次會議紀錄及速記錄</div>
+                            <span class="issuedate2">0717～0752</span>
+                            <button type="button" class="btn btnPrimary btnEpaper">瀏覽全文</button>
+                            <button type="button" class="btn btnPrimary btnEpaper">下載全文</button>
                           </div>
                         </div>
                       </li>
+                    </ul>
+                    <!-- 2 -->
+                    <div class="t1">質詢及答覆</div>
+                    <ul>
                       <li>
                         <div class="item2">
                           <div class="rollbox">
-                            <a href="#">124 卷 13期</a>
-                            <span class="issuedate">發行日111-07-08</span><button type="button" class="btn btnPrimary btnEpaper">瀏覽電子報</button>
+                            <div class="t2">第14屆第1次定期大會市政總質詢臺北市政府繼續辦理情形彙編</div>
+                            <span class="issuedate2">0753～1320</span>
+                            <button type="button" class="btn btnPrimary btnEpaper">瀏覽全文</button>
+                            <button type="button" class="btn btnPrimary btnEpaper">下載全文</button>
                           </div>
                         </div>
                       </li>
+                    </ul>
+                    <!-- 3 -->
+                    <div class="t1">書面質詢及答覆</div>
+                    <ul>
                       <li>
                         <div class="item2">
                           <div class="rollbox">
-                            <a href="#">128 卷 01期</a>
-                            <span class="issuedate">發行日111-07-08</span><button type="button" class="btn btnPrimary btnEpaper">瀏覽電子報</button>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="item2">
-                          <div class="rollbox">
-                            <a href="#">127 卷 13期</a>
-                            <span class="issuedate">發行日111-07-08</span><button type="button" class="btn btnPrimary btnEpaper">瀏覽電子報</button>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="item2">
-                          <div class="rollbox">
-                            <a href="#">126 卷 10期</a>
-                            <span class="issuedate">發行日111-07-08</span><button type="button" class="btn btnPrimary btnEpaper">瀏覽電子報</button>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="item2">
-                          <div class="rollbox">
-                            <a href="#">125 卷 03期</a>
-                            <span class="issuedate">發行日111-07-08</span><button type="button" class="btn btnPrimary btnEpaper">瀏覽電子報</button>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="item2">
-                          <div class="rollbox">
-                            <a href="#">124 卷 13期</a>
-                            <span class="issuedate">發行日111-07-08</span><button type="button" class="btn btnPrimary btnEpaper">瀏覽電子報</button>
+                            <div class="t2">第14屆休會期間(112·7·1至112·10·3)議員書面質詢及答覆(2)</div>
+                            <span class="issuedate2">1321～1376</span>
+                            <button type="button" class="btn btnPrimary btnEpaper">瀏覽全文</button>
+                            <button type="button" class="btn btnPrimary btnEpaper">下載全文</button>
                           </div>
                         </div>
                       </li>
@@ -337,41 +312,6 @@
                   </div>
                 </section>
                 <!-- LP End -->
-                <!-- Pagination -->
-                <div class="pagination">
-                  <!-- <form action=""> -->
-                  <div class="formInline">
-                    <div class="total">
-                      共<span>308</span>筆資料，第<span>1/18</span>頁，<label for="pet-select">每頁顯示</label>
-                      <select name="" id="pet-select" aria-label="每頁顯示">
-                        <option value="">10</option>
-                        <option value="">20</option>
-                        <option value="">30</option>
-                        <option value="">40</option>
-                      </select>
-                      筆<input type="button" value="確定" class="btn btnSubmit" title="確定" />
-                    </div>
-                  </div>
-                  <!-- </form> -->
-                  <ul class="page">
-                    <li class="first"><a href="#" title="第一頁">第一頁 </a></li>
-                    <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">8</a></li>
-                    <li><a href="#">9</a></li>
-                    <li><a href="#">10</a></li>
-                    <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
-                    <li class="last">
-                      <a href="#" title="最後一頁">最後一頁 </a>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
           </form>

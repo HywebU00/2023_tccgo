@@ -849,8 +849,15 @@
 
 //listflex3
 .listflex3 {
+  .t1 {
+    font-size: 1.25em;
+    background: #eee;
+    padding: 0.5em;
+    border-left: solid 5px $colorPrimary;
+    font-weight: bold;
+  }
   ul {
-    margin: 0;
+    margin: 0 0 1em 0;
     padding: 0;
     list-style: none;
   }
@@ -930,6 +937,20 @@
         margin: 2px 0.5em;
       }
     }
+    .issuedate2 {
+      display: inline-block;
+      font-size: 0.938em;
+      font-weight: normal;
+      background: $colorRed2;
+      border-radius: 2em;
+      min-width: 5em;
+      text-align: center;
+      padding: 0 1em;
+      margin: 2px 0.5em 2px 0;
+      @include screen('xsMobile') {
+        margin: 2px 0.5em;
+      }
+    }
     .rollbox {
       display: flex;
       flex-flow: row wrap;
@@ -939,11 +960,26 @@
       a {
         flex: 1 1 auto;
       }
+      .t2 {
+        flex: 1 1 auto;
+        padding-left: 0.5em;
+        font-size: 1.125em;
+        @include screen('mobile') {
+          flex: 1 1 100%;
+        }
+      }
       .dept2 {
         flex: 0 0 13em;
       }
       .issuedate {
         flex: 0 0 10em;
+      }
+      .issuedate2 {
+        flex: 0 0 10em;
+        @include screen('xsMobile') {
+          flex: 1 1 100%;
+          margin: 1em 0;
+        }
       }
     }
     .dept {
@@ -994,10 +1030,39 @@
       padding: 0 0.5em;
     }
   }
+  .btnEpaper {
+    margin-left: 0.5em;
+  }
 }
 
 .t_arrow {
   background: url(../images/li_arrow.png) no-repeat left top 0.75em;
   background-size: 10px auto;
   padding-left: 1em !important;
+}
+.lph3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: darken($colorPrimary, 30%);
+  margin: 0.5em 0;
+}
+.iconBlock {
+  text-align: right;
+  margin-bottom: 0.5em;
+  @include screen('xsMobile') {
+    .btn {
+      padding: 0.5em;
+    }
+  }
+}
+.historyBox {
+  margin: 1em;
+  h3 {
+    font-size: 1.35em;
+    border-left: solid 5px $colorPrimary;
+    padding-left: 0.5em;
+  }
+  @include screen('xsMobile') {
+    margin: 0.5em;
+  }
 }

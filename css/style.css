@@ -3360,6 +3360,12 @@ img {
     margin-top: -0.1em;
     margin-bottom: 0.1em;
   }
+  .i_download_dark:before {
+    background: url(../images/icon/icon_download_dark.svg) center center no-repeat;
+    background-size: contain;
+    margin-top: -0.1em;
+    margin-bottom: 0.1em;
+  }
   .i_edit_dark:before {
     background: url(../images/icon/icon_edit_dark.svg) center center no-repeat;
     background-size: contain;
@@ -5945,6 +5951,54 @@ img {
   }
   @media screen and (max-width: 575px) {
     .flexForm .formCol_8_2_2 > input:first-child, .flexForm .formCol_8_2_2 > select:first-child, .flexForm .formCol_8_2_2 > label:first-child {
+      width: calc(100% - 0.6em);
+      max-width: calc(100% - 0.6em);
+      flex-basis: calc(100% - 0.6em);
+    }
+  }
+  .flexForm .formCol_3_6_3 > .formGrp {
+    width: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  @media screen and (max-width: 575px) {
+    .flexForm .formCol_3_6_3 > .formGrp {
+      width: 50%;
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  .flexForm .formCol_3_6_3 > .formGrp:nth-child(2) {
+    width: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  @media screen and (max-width: 575px) {
+    .flexForm .formCol_3_6_3 > .formGrp:nth-child(2) {
+      width: 100%;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+  .flexForm .formCol_3_6_3 > input, .flexForm .formCol_3_6_3 > select, .flexForm .formCol_3_6_3 > label {
+    width: calc(25% - 0.6em);
+    max-width: calc(25% - 0.6em);
+    flex-basis: calc(25% - 0.6em);
+  }
+  @media screen and (max-width: 575px) {
+    .flexForm .formCol_3_6_3 > input, .flexForm .formCol_3_6_3 > select, .flexForm .formCol_3_6_3 > label {
+      width: calc(50% - 0.6em);
+      max-width: calc(50% - 0.6em);
+      flex-basis: calc(50% - 0.6em);
+    }
+  }
+  .flexForm .formCol_3_6_3 > input:nth-child(2), .flexForm .formCol_3_6_3 > select:nth-child(2), .flexForm .formCol_3_6_3 > label:nth-child(2) {
+    width: calc(50% - 0.6em);
+    max-width: calc(50% - 0.6em);
+    flex-basis: calc(50% - 0.6em);
+  }
+  @media screen and (max-width: 575px) {
+    .flexForm .formCol_3_6_3 > input:nth-child(2), .flexForm .formCol_3_6_3 > select:nth-child(2), .flexForm .formCol_3_6_3 > label:nth-child(2) {
       width: calc(100% - 0.6em);
       max-width: calc(100% - 0.6em);
       flex-basis: calc(100% - 0.6em);
@@ -11355,8 +11409,15 @@ img {
   .print5_5 .btnGrp {
     flex: 1 1 auto !important;
   }
+  .listflex3 .t1 {
+    font-size: 1.25em;
+    background: #eee;
+    padding: 0.5em;
+    border-left: solid 5px #33d3eb;
+    font-weight: bold;
+  }
   .listflex3 ul {
-    margin: 0;
+    margin: 0 0 1em 0;
     padding: 0;
     list-style: none;
   }
@@ -11439,6 +11500,22 @@ img {
       margin: 2px 0.5em;
     }
   }
+  .listflex3 li .issuedate2 {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #fcbaec;
+    border-radius: 2em;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 1em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex3 li .issuedate2 {
+      margin: 2px 0.5em;
+    }
+  }
   .listflex3 li .rollbox {
     display: flex;
     flex-flow: row wrap;
@@ -11449,11 +11526,30 @@ img {
   .listflex3 li .rollbox a {
     flex: 1 1 auto;
   }
+  .listflex3 li .rollbox .t2 {
+    flex: 1 1 auto;
+    padding-left: 0.5em;
+    font-size: 1.125em;
+  }
+  @media screen and (max-width: 767px) {
+    .listflex3 li .rollbox .t2 {
+      flex: 1 1 100%;
+    }
+  }
   .listflex3 li .rollbox .dept2 {
     flex: 0 0 13em;
   }
   .listflex3 li .rollbox .issuedate {
     flex: 0 0 10em;
+  }
+  .listflex3 li .rollbox .issuedate2 {
+    flex: 0 0 10em;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex3 li .rollbox .issuedate2 {
+      flex: 1 1 100%;
+      margin: 1em 0;
+    }
   }
   .listflex3 li .dept {
     display: inline-block;
@@ -11503,10 +11599,41 @@ img {
     display: inline-block;
     padding: 0 0.5em;
   }
+  .listflex3 .btnEpaper {
+    margin-left: 0.5em;
+  }
   .t_arrow {
     background: url(../images/li_arrow.png) no-repeat left top 0.75em;
     background-size: 10px auto;
     padding-left: 1em !important;
+  }
+  .lph3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #0c6b79;
+    margin: 0.5em 0;
+  }
+  .iconBlock {
+    text-align: right;
+    margin-bottom: 0.5em;
+  }
+  @media screen and (max-width: 575px) {
+    .iconBlock .btn {
+      padding: 0.5em;
+    }
+  }
+  .historyBox {
+    margin: 1em;
+  }
+  .historyBox h3 {
+    font-size: 1.35em;
+    border-left: solid 5px #33d3eb;
+    padding-left: 0.5em;
+  }
+  @media screen and (max-width: 575px) {
+    .historyBox {
+      margin: 0.5em;
+    }
   }
 }
 .colorA a:hover {

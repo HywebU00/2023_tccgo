@@ -1048,6 +1048,55 @@ select::-ms-expand {
     }
   }
 
+  .formCol_3_6_3 {
+    & > .formGrp {
+      width: 25%;
+      flex-basis: 25%;
+      max-width: 25%;
+
+      @include screen('xsMobile') {
+        width: 50%;
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+      &:nth-child(2) {
+        width: 50%;
+        flex-basis: 50%;
+        max-width: 50%;
+
+        @include screen('xsMobile') {
+          width: 100%;
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+    & > input,
+    & > select,
+    & > label {
+      width: calc(25% - 0.6em);
+      max-width: calc(25% - 0.6em);
+      flex-basis: calc(25% - 0.6em);
+
+      @include screen('xsMobile') {
+        width: calc(50% - 0.6em);
+        max-width: calc(50% - 0.6em);
+        flex-basis: calc(50% - 0.6em);
+      }
+      &:nth-child(2) {
+        width: calc(50% - 0.6em);
+        max-width: calc(50% - 0.6em);
+        flex-basis: calc(50% - 0.6em);
+
+        @include screen('xsMobile') {
+          width: calc(100% - 0.6em);
+          max-width: calc(100% - 0.6em);
+          flex-basis: calc(100% - 0.6em);
+        }
+      }
+    }
+  }
+
   .btnGrp {
     justify-content: center;
 
