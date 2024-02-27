@@ -3131,6 +3131,24 @@ img {
     background: #15bdd6;
     border: 1px solid #ddd;
   }
+  .btnSave {
+    background: #f5e276;
+    color: #1b1a1a;
+    border: solid 1px #f5e276;
+  }
+  .btnSave:hover, .btnSave:focus-visible {
+    background: #f2d846;
+    border: solid 1px #f5e276;
+  }
+  .btnDelete {
+    background: #fcbaec;
+    color: #1b1a1a;
+    border: solid 1px #fcbaec;
+  }
+  .btnDelete:hover, .btnDelete:focus-visible {
+    background: #fa89df;
+    border: solid 1px #fcbaec;
+  }
   .disabled,
   [disabled] {
     opacity: 0.8;
@@ -6711,6 +6729,15 @@ img {
       font-weight: normal;
       font-size: 1rem;
     }
+  }
+  .tableList .aCenter {
+    text-align: center;
+  }
+  .tableList .aLeft {
+    text-align: left;
+  }
+  .tableList .aRight {
+    text-align: right;
   }
   .fixThTable {
     margin: 1em 0;

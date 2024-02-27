@@ -1062,6 +1062,7 @@
     border-left: solid 5px $colorPrimary;
     padding-left: 0.5em;
   }
+
   @include screen('xsMobile') {
     margin: 0.5em;
   }

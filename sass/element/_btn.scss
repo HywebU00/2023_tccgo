@@ -188,6 +188,30 @@
     border: 1px solid #ddd;
   }
 }
+// 儲存
+.btnSave {
+  background: #f5e276;
+  color: $colorWord;
+  border: solid 1px #f5e276;
+
+  &:hover,
+  &:focus-visible {
+    background: darken(#f5e276, 10);
+    border: solid 1px #f5e276;
+  }
+}
+// 刪除
+.btnDelete {
+  background: #fcbaec;
+  color: $colorWord;
+  border: solid 1px #fcbaec;
+
+  &:hover,
+  &:focus-visible {
+    background: darken(#fcbaec, 10);
+    border: solid 1px #fcbaec;
+  }
+}
 
 .disabled,
 [disabled] {
