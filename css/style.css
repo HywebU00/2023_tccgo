@@ -11662,6 +11662,53 @@ img {
       margin: 0.5em;
     }
   }
+  .upload_area {
+    flex: 1 1 100%;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+  .upload_area p {
+    color: #666;
+    font-size: 0.875em;
+  }
+  .upload_area .upload_notice {
+    color: #333;
+    font-size: 1rem;
+  }
+  .upload_area .ui-sortable .file {
+    background: #eee;
+    display: flex;
+    align-items: center;
+  }
+  .upload_area .ui-sortable .file .pic {
+    flex: 0 0 3em;
+  }
+  .upload_area .ui-sortable .file .pic img {
+    width: 3em;
+    height: 3em;
+    margin: 0;
+  }
+  .upload_area .ui-sortable .file span {
+    flex: 1 1 auto;
+    padding: 0 5px;
+    font-size: 0.938em;
+  }
+  .upload_area .ui-sortable .file span em {
+    font-style: normal;
+  }
+  .upload_area .ui-sortable .file .delete {
+    background: #666;
+    padding: 3px;
+    width: 2em !important;
+    height: 2em;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+  .upload_area .ui-sortable .file .delete .i_close {
+    font-size: 0.875em !important;
+  }
 }
 .colorA a:hover {
   color: #298729;
