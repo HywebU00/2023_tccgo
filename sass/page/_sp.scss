@@ -1084,10 +1084,12 @@
 
   .ui-sortable {
     .file {
-      // height: 3em;
       background: #eee;
       display: flex;
       align-items: center;
+      margin-bottom: 1em;
+      height: 3em;
+
       .pic {
         flex: 0 0 3em;
         img {
@@ -1102,6 +1104,7 @@
         font-size: 0.938em;
         em {
           font-style: normal;
+          margin-left: 1em;
         }
       }
       .delete {
@@ -1114,6 +1117,14 @@
         margin: 0 5px;
         .i_close {
           font-size: 0.875em !important;
+        }
+      }
+    }
+    .notice_error {
+      background: #ffced1;
+      span {
+        em {
+          color: #c00;
         }
       }
     }

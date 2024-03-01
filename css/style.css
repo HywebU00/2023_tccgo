@@ -6675,6 +6675,10 @@ img {
   table td a {
     word-break: break-all;
   }
+  table td em {
+    font-style: normal;
+    color: #c00;
+  }
   table th {
     background-color: #f3f3f3;
     color: #333;
@@ -11680,6 +11684,8 @@ img {
     background: #eee;
     display: flex;
     align-items: center;
+    margin-bottom: 1em;
+    height: 3em;
   }
   .upload_area .ui-sortable .file .pic {
     flex: 0 0 3em;
@@ -11696,6 +11702,7 @@ img {
   }
   .upload_area .ui-sortable .file span em {
     font-style: normal;
+    margin-left: 1em;
   }
   .upload_area .ui-sortable .file .delete {
     background: #666;
@@ -11708,6 +11715,12 @@ img {
   }
   .upload_area .ui-sortable .file .delete .i_close {
     font-size: 0.875em !important;
+  }
+  .upload_area .ui-sortable .notice_error {
+    background: #ffced1;
+  }
+  .upload_area .ui-sortable .notice_error span em {
+    color: #c00;
   }
 }
 .colorA a:hover {
