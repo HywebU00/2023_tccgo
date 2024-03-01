@@ -248,10 +248,28 @@
             </div>
             <!-- LP Start -->
             <section class="lp">
-              <!-- aRight -->
+              <!-- searchflex -->
+              <div class="searchflex">
+                <label for="searchid">查詢</label>
+                <select name="" id="searchid">
+                  <option value="">依屆會次</option>
+                  <option value="">...</option>
+                </select>
+                <select name="" id="searchid">
+                  <option value="">由新到舊</option>
+                  <option value="">...</option>
+                </select>
+                <input name="username" type="text" id="searchid" value="請輸入關鍵字" placeholder="請輸入關鍵字" />
+                <button type="button" class="btnSearch">查詢</button>
+              </div>
+              <!-- searchflex end-->
+
+              <!-- printBox -->
               <div class="printBox">
                 <div class="flexForm">
                   <div class="formGrp formInline">
+                    <button type="button" class="btn btnYellow"><span class="i_checksel_dark"></span>全選</button>
+                    <button type="button" class="btn btnYellow"><span class="i_checkdel_dark"></span>全部取消</button>
                     <label for="selectSample" class="labelhidden">選擇筆數列印:</label>
                     第
                     <select name="" id="selectSample">
@@ -268,28 +286,7 @@
                   </div>
                 </div>
               </div>
-              <!-- aRight end-->
-              <!-- searchflex -->
-              <div class="searchflex">
-                <label for="searchid">查詢</label>
-                <select name="" id="searchid">
-                  <option value="">依屆會次</option>
-                  <option value="">...</option>
-                </select>
-                <select name="" id="searchid">
-                  <option value="">由新到舊</option>
-                  <option value="">...</option>
-                </select>
-                <input name="username" type="text" id="searchid" value="請輸入關鍵字" placeholder="請輸入關鍵字" />
-                <button type="button" class="btnSearch">查詢</button>
-              </div>
-              <!-- searchflex end-->
-              <!-- selbox -->
-              <div class="selbox">
-                <button type="button" class="btn btnYellow"><span class="i_checksel_dark"></span>全選</button>
-                <button type="button" class="btn btnYellow"><span class="i_checkdel_dark"></span>全部取消</button>
-              </div>
-              <!-- selbox end-->
+              <!-- printBox end-->
               <!-- 文字列表 -->
               <div class="listflex2">
                 <ul>
@@ -519,6 +516,7 @@
               <li><a href="javascript:;">隱私權政策</a></li>
             </ul>
             <p class="Copyright">地址：11073 台北市信義區仁愛路4段507號　電話：(02) 2729-7708</p>
+            <span class="counter">網站瀏覽人次:<em>46476653</em></span>
           </div>
           <div class="footerIcon">
             <a target="_blank" href="#" title="另開新視窗-移至無障礙標章網頁">

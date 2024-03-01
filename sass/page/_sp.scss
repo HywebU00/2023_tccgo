@@ -439,7 +439,10 @@
 
 .printBox {
   .formGrp {
-    justify-content: flex-end;
+    justify-content: flex-start;
+    .btn {
+      margin-right: 0.5em;
+    }
   }
   .printBtn {
     min-width: 2em;
