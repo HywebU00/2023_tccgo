@@ -11562,13 +11562,40 @@ img {
   }
   .listflex3 li .rollbox .t2 {
     flex: 1 1 auto;
-    padding-left: 0.5em;
+    padding: 0 0.5em;
     font-size: 1.125em;
+    max-width: 68%;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1399px) {
     .listflex3 li .rollbox .t2 {
-      flex: 1 1 100%;
+      max-width: 63%;
     }
+  }
+  @media screen and (max-width: 1200px) {
+    .listflex3 li .rollbox .t2 {
+      max-width: 58%;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .listflex3 li .rollbox .t2 {
+      max-width: 55%;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .listflex3 li .rollbox .t2 {
+      flex: 1 1 96%;
+      max-width: 96%;
+      margin-bottom: 0.5em;
+    }
+  }
+  .listflex3 li .rollbox .num {
+    position: relative;
+    max-width: 4em;
+  }
+  .listflex3 li .rollbox .num:after {
+    content: " .";
+    width: 1em;
+    height: 1em;
   }
   .listflex3 li .rollbox .dept2 {
     flex: 0 0 13em;
@@ -11635,6 +11662,11 @@ img {
   }
   .listflex3 .btnEpaper {
     margin-left: 0.5em;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex3 .btnEpaper {
+      min-width: 45%;
+    }
   }
   .t_arrow {
     background: url(../images/li_arrow.png) no-repeat left top 0.75em;
