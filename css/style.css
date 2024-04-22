@@ -11356,6 +11356,117 @@ img {
     width: 0.8em;
     height: 0.8em;
   }
+  .pdfViewBox4 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+  .pdfViewBox4 .col {
+    flex: 1 1 auto;
+  }
+  .pdfViewBox4 .col:nth-child(2) {
+    flex: 0 0 200px;
+  }
+  .pdfViewBox4 h1 {
+    height: 58px;
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    background: url(../images/body_bg.png) repeat left top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    font-size: 0;
+  }
+  .pdfViewBox4 h2 {
+    font-size: 1.25em;
+    border-left: solid 5px #33d3eb;
+    padding-left: 8px;
+    line-height: 1.25em;
+  }
+  .pdfViewBox4 .title {
+    font-weight: bold;
+    font-size: 1em;
+    color: #07424b;
+  }
+  .pdfViewBox4 .content {
+    padding: 0 10px 20px;
+  }
+  .pdfViewBox4 ul {
+    font-size: 0.938em;
+    padding: 0 0 0 1.5em;
+  }
+  .pdfViewBox4 ul li {
+    margin-bottom: 5px;
+  }
+  .pdfViewBox4 ul ul {
+    font-size: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .pdfViewBox4 ul ul li {
+    background: url("../images/li_arrow.png") no-repeat left 2px top 0.4em;
+    background-size: 10px auto;
+    padding-left: 14px;
+  }
+  .pdfViewBox4 a {
+    color: #07424b;
+    text-decoration: underline;
+  }
+  .pdfViewBox4 a:hover {
+    text-decoration: none;
+    color: #d30000;
+  }
+  .pdfViewBox4 p {
+    font-size: 0.938em;
+    padding: 0 5px 10px 5px;
+  }
+  .pdfViewBox4 .pagelist {
+    font-size: 0.875em;
+    font-weight: bold;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    padding: 2px;
+  }
+  .pdfViewBox4 .btnGrp {
+    justify-content: center;
+  }
+  .pdfViewBox4 .btn {
+    padding: 0.2em 0.5em;
+    margin: 5px;
+    font-weight: normal;
+  }
+  .pdfViewBox4 [class^=i_]:before {
+    width: 0.8em;
+    height: 0.8em;
+  }
+  .pdfViewBox4 form {
+    font-size: 0.938em;
+  }
+  .pdfViewBox4 form span {
+    margin: 0 2px;
+    color: #c00;
+  }
+  .pdfViewBox4 label {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .pdfViewBox4 .pageinput {
+    max-width: 4em;
+    padding: 0.3em 0.5em;
+  }
+  .pdfViewBox4 select {
+    margin: 0.3em 0;
+    padding: 0.3em 1.5em 0.3em 0.5em;
+  }
+  .pdfViewBox4 select.selup {
+    background: #fff url(../images/icon/icon_selup.svg) no-repeat right 2px center;
+    background-size: 12px;
+  }
+  .pdfViewBox4 select.seldown {
+    background: #fff url(../images/icon/icon_seldown.svg) no-repeat right 2px center;
+    background-size: 12px;
+  }
   .condition {
     background: #eee url("../images/li_arrow.png") no-repeat left 10px top 0.9em;
     background-size: 12px auto;
