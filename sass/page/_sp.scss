@@ -228,18 +228,28 @@
       padding: 0.5em 0;
       position: relative;
       max-width: 80%;
+      &.w90 {
+        max-width: 90%;
+      }
       @include screen('tablet') {
-        max-width: 80%;
+        max-width: 100%;
+        min-width: 70%;
       }
       @include screen('xsMobile') {
         max-width: 100%;
       }
     }
     .item3 {
-      flex: 1 1 auto;
+      flex: 0 0 auto;
       text-align: right;
       padding: 0.5em 0;
+      .btn {
+        padding: 0em;
+        margin-left: 5px;
+        border-radius: 0;
+      }
     }
+
     a {
       display: block;
       font-size: 1.125em;
@@ -894,6 +904,9 @@
   text-indent: 0;
   padding-left: 0;
   text-align: left;
+  .keyword {
+    color: #c00 !important;
+  }
 
   .taghover {
     color: $colorWord;
@@ -906,6 +919,9 @@
       color: $aHover;
       padding: 0 !important;
       // background: #ffff00;
+    }
+    &.txt2col {
+      @include textLine(2, 1.5em);
     }
   }
 
