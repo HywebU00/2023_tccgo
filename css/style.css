@@ -10844,10 +10844,20 @@ img {
     flex: 1 1 auto;
     padding: 0.5em 0;
     position: relative;
-    max-width: 80%;
+    max-width: 72%;
   }
   .listflex2 li .item2.w90 {
     max-width: 90%;
+  }
+  @media screen and (max-width: 1399px) {
+    .listflex2 li .item2 {
+      max-width: 65%;
+    }
+  }
+  @media screen and (max-width: 1132px) {
+    .listflex2 li .item2 {
+      max-width: 100%;
+    }
   }
   @media screen and (max-width: 991px) {
     .listflex2 li .item2 {
@@ -10861,11 +10871,21 @@ img {
     }
   }
   .listflex2 li .item3 {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     text-align: right;
     padding: 0.5em 0;
   }
   .listflex2 li .item3 .btn {
+    padding: 0em;
+    margin-left: 5px;
+    border-radius: 0;
+  }
+  .listflex2 li .item4 {
+    flex: 0 0 auto;
+    text-align: right;
+    padding: 0.5em 0;
+  }
+  .listflex2 li .item4 .btn {
     padding: 0em;
     margin-left: 5px;
     border-radius: 0;
@@ -10916,6 +10936,7 @@ img {
     font-size: 0.938em;
     display: inline-block;
     padding: 0 0.5em;
+    min-width: 8em;
   }
   .listflex2 li .regular {
     color: #1b1a1a;
