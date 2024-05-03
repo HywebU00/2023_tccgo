@@ -10857,12 +10857,12 @@ img {
   @media screen and (max-width: 1132px) {
     .listflex2 li .item2 {
       max-width: 100%;
+      min-width: 100%;
     }
   }
   @media screen and (max-width: 991px) {
     .listflex2 li .item2 {
       max-width: 100%;
-      min-width: 70%;
     }
   }
   @media screen and (max-width: 575px) {

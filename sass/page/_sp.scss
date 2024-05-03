@@ -236,10 +236,10 @@
       }
       @media screen and (max-width: 1132px) {
         max-width: 100%;
+        min-width: 100%;
       }
       @include screen('tablet') {
         max-width: 100%;
-        min-width: 70%;
       }
       @include screen('xsMobile') {
         max-width: 100%;
