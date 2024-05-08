@@ -342,21 +342,22 @@
   padding: 5px;
   @include screen('xsMobile') {
     flex-flow: row wrap;
-    justify-content: flex-start;
+    // justify-content: flex-start;
+    justify-content: center;
   }
   select {
     flex: 0 0 8em;
     @include screen('xsMobile') {
       flex: 1 1 38%;
-      max-width: 46%;
+      max-width: 50%;
     }
   }
   input {
     flex: 1 1 auto;
     max-width: 70%;
     @include screen('xsMobile') {
-      flex: 1 1 94%;
-      max-width: 94%;
+      flex: 1 1 100%;
+      max-width: 100%;
     }
   }
   .btnSearch {
@@ -365,6 +366,21 @@
     width: 40px;
     padding: 8px;
     margin-right: 10px;
+  }
+  .btn {
+    min-width: auto;
+    background: #ccc;
+    &:hover,
+    &:focus {
+      background: #bbb;
+    }
+  }
+  .btnPrimary {
+    background: $colorPrimary;
+    &:hover,
+    &:focus {
+      background: darken($colorPrimary, 8);
+    }
   }
   label {
     display: none;

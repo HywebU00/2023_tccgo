@@ -10958,7 +10958,7 @@ img {
   @media screen and (max-width: 575px) {
     .searchflex {
       flex-flow: row wrap;
-      justify-content: flex-start;
+      justify-content: center;
     }
   }
   .searchflex select {
@@ -10967,7 +10967,7 @@ img {
   @media screen and (max-width: 575px) {
     .searchflex select {
       flex: 1 1 38%;
-      max-width: 46%;
+      max-width: 50%;
     }
   }
   .searchflex input {
@@ -10976,8 +10976,8 @@ img {
   }
   @media screen and (max-width: 575px) {
     .searchflex input {
-      flex: 1 1 94%;
-      max-width: 94%;
+      flex: 1 1 100%;
+      max-width: 100%;
     }
   }
   .searchflex .btnSearch {
@@ -10986,6 +10986,19 @@ img {
     width: 40px;
     padding: 8px;
     margin-right: 10px;
+  }
+  .searchflex .btn {
+    min-width: auto;
+    background: #ccc;
+  }
+  .searchflex .btn:hover, .searchflex .btn:focus {
+    background: #bbb;
+  }
+  .searchflex .btnPrimary {
+    background: #33d3eb;
+  }
+  .searchflex .btnPrimary:hover, .searchflex .btnPrimary:focus {
+    background: #16c5df;
   }
   .searchflex label {
     display: none;
