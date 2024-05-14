@@ -11,9 +11,10 @@
         background-image: url('epaper/images/body_bg.png');
       }
       .Layout {
-        width: 650px;
+        width: 100%;
+        max-width: 650px;
         background-color: #ffffff;
-        margin-top: 10px;
+        margin-top: 0;
         margin-bottom: 10px;
         padding: 0px;
         font-size: 1em;
@@ -28,13 +29,13 @@
         vertical-align: top;
       }
       .date {
-        margin-left: 30px;
-        margin-top: 8px;
         font-size: 0.875em;
+        line-height: 1.5em;
+        padding: 5px 1.5em;
       }
       html > body .date {
-        margin-left: 30px;
-        margin-top: 5px;
+        /* margin-left: 30px;
+        margin-top: 5px; */
       }
       .floaright {
         float: right;
@@ -47,19 +48,14 @@
         margin-top: 5px;
       }
       .word {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-right: 25px;
-        margin-left: 30px;
         line-height: 150%;
         font-size: 0.875em;
+        padding: 0.5em 1.5em;
       }
       .new {
         font-size: 0.938rem;
         color: #137da9;
-        margin-top: 0.5em;
-        margin-left: 2em;
-        margin-bottom: 0.5em;
+        padding: 1em 1.5em 0;
       }
       .new img {
         margin-right: 3px;
@@ -121,7 +117,7 @@
         line-height: 150%;
         color: #ffffff;
         margin-top: 10px;
-        margin-left: 30px;
+        padding: 0 1.5em 0 2em;
       }
       .foot .title {
         font-size: 0.938rem;
@@ -157,7 +153,7 @@
       <tbody>
         <tr>
           <!--star-->
-          <td height="96"><img src="epaper/images/bg01_01.jpg" alt="臺北市議會公報電子報" width="650" height="96" /></td>
+          <td><img src="epaper/images/bg01_01.jpg" alt="臺北市議會公報電子報" width="100%" /></td>
         </tr>
         <tr>
           <td>

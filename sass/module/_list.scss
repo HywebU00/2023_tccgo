@@ -14,7 +14,7 @@
       &.date,
       &.name {
         text-align: center;
-        white-space: nowrap;
+        // white-space: nowrap;
         // color: #666;
         @include screen('mobile') {
           text-align: left;
@@ -56,6 +56,12 @@
         }
         @include screen('mobile') {
           text-align: left;
+        }
+      }
+      &.brief {
+        width: 50%;
+        @include screen('mobile') {
+          width: 100%;
         }
       }
     }

@@ -206,6 +206,7 @@
       flex: 1 1 auto;
       border: none;
       box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.15);
+      border: solid 1px #ccc;
       &[type='submit'] {
         min-width: auto;
         padding: 0.2em 0.8em;
@@ -229,6 +230,13 @@
     }
     .btnSearch {
       margin-left: -56px;
+      background: $colorPrimary url(../images/icon_search.png) no-repeat center center;
+      border: solid 1px darken($colorPrimary, 10);
+      &:hover,
+      &:focus {
+        background: darken($colorPrimary, 5) url(../images/icon_search.png) no-repeat center center;
+        border: solid 1px darken($colorPrimary, 20);
+      }
     }
   }
   .btnGrp {
@@ -246,10 +254,15 @@
         box-shadow: none;
       }
     }
-    .btnBlue,
+    .btnBlue {
+      box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      border: solid 1px darken($colorPrimary, 10);
+    }
     .btnYellow {
       box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.2);
       font-weight: bold;
+      border: solid 1px #bbb;
     }
   }
   .keywordHot {
@@ -262,12 +275,16 @@
       display: flex;
       justify-content: flex-end;
       list-style-type: none;
+      flex-wrap: wrap;
+
       @include screen('tablet') {
         margin: 0;
+        justify-content: flex-start;
       }
 
       &:before {
         content: '熱門查詢：';
+        flex: 0 0 5em;
       }
       li {
         margin: 0;

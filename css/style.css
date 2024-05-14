@@ -1837,7 +1837,7 @@ img {
     margin-bottom: 1.25em;
   }
   .cp h3 {
-    font-size: 1.4em;
+    font-size: 1.25em;
   }
   .cp h4 {
     font-size: 1.25em;
@@ -2557,6 +2557,7 @@ img {
     flex: 1 1 auto;
     border: none;
     box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.15);
+    border: solid 1px #ccc;
   }
   .webSearch .formGrp input[type=submit] {
     min-width: auto;
@@ -2584,6 +2585,12 @@ img {
   }
   .webSearch .formGrp .btnSearch {
     margin-left: -56px;
+    background: #33d3eb url(../images/icon_search.png) no-repeat center center;
+    border: solid 1px #15bdd6;
+  }
+  .webSearch .formGrp .btnSearch:hover, .webSearch .formGrp .btnSearch:focus {
+    background: #1ccee9 url(../images/icon_search.png) no-repeat center center;
+    border: solid 1px #1094a8;
   }
   .webSearch .btnGrp {
     flex: 0 0 auto !important;
@@ -2604,10 +2611,15 @@ img {
   .webSearch .btnGrp .btnSearch:focus-visible {
     box-shadow: none;
   }
-  .webSearch .btnGrp .btnBlue,
+  .webSearch .btnGrp .btnBlue {
+    box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    border: solid 1px #15bdd6;
+  }
   .webSearch .btnGrp .btnYellow {
     box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.2);
     font-weight: bold;
+    border: solid 1px #bbb;
   }
   .webSearch .keywordHot {
     flex: 1 1 100%;
@@ -2620,14 +2632,17 @@ img {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    flex-wrap: wrap;
   }
   @media screen and (max-width: 991px) {
     .webSearch .keywordHot ul {
       margin: 0;
+      justify-content: flex-start;
     }
   }
   .webSearch .keywordHot ul:before {
     content: "熱門查詢：";
+    flex: 0 0 5em;
   }
   .webSearch .keywordHot ul li {
     margin: 0;
@@ -6684,7 +6699,6 @@ img {
     color: #333;
     border: #ddd 1px solid;
     text-align: center;
-    white-space: nowrap;
   }
   table.tableHover tr:hover {
     background: #f3f3f3;
@@ -6889,7 +6903,6 @@ img {
   }
   .lp table td.date, .lp table td.name {
     text-align: center;
-    white-space: nowrap;
   }
   @media screen and (max-width: 767px) {
     .lp table td.date, .lp table td.name {
@@ -6935,6 +6948,14 @@ img {
   @media screen and (max-width: 767px) {
     .lp table td.num {
       text-align: left;
+    }
+  }
+  .lp table td.brief {
+    width: 50%;
+  }
+  @media screen and (max-width: 767px) {
+    .lp table td.brief {
+      width: 100%;
     }
   }
   .lp .list > ul,
@@ -9979,6 +10000,8 @@ img {
     flex-flow: row wrap;
     width: 100%;
     border-top: solid 3px #eee;
+    max-height: 10em;
+    overflow-y: scroll;
   }
   .popupBox .mlistbox ul li {
     flex-basis: 16.6666666667%;
@@ -10163,6 +10186,7 @@ img {
     font-size: 1.6em;
     line-height: 1.25em;
     margin: 0.5em 0;
+    max-width: 80%;
   }
   .cp .pic {
     float: left;
@@ -10239,6 +10263,7 @@ img {
   .cp p a {
     color: #0b626f;
     text-decoration: underline;
+    word-break: break-all;
   }
   .cp p a:hover {
     color: #1b1a1a;
@@ -10269,6 +10294,18 @@ img {
     .cp .publishInfo li {
       flex: 1 1 100%;
     }
+  }
+  .cp .cptable th {
+    width: 6em;
+    text-align: right;
+    vertical-align: top;
+    padding: 1em 0.5em;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .cp .cptable td {
+    padding: 1em 0.5em;
+    font-size: 1rem;
   }
   .fileDownload {
     width: 100%;
@@ -10958,7 +10995,7 @@ img {
   @media screen and (max-width: 575px) {
     .searchflex {
       flex-flow: row wrap;
-      justify-content: center;
+      justify-content: flex-start;
     }
   }
   .searchflex select {
@@ -10972,20 +11009,28 @@ img {
   }
   .searchflex input {
     flex: 1 1 auto;
-    max-width: 70%;
   }
   @media screen and (max-width: 575px) {
     .searchflex input {
       flex: 1 1 100%;
-      max-width: 100%;
+      max-width: calc(100% - 50px);
     }
   }
   .searchflex .btnSearch {
-    margin-left: -45px;
-    background-size: 20px auto;
+    margin-left: -42px;
     width: 40px;
-    padding: 8px;
+    padding: 6px 8px;
     margin-right: 10px;
+    background: #33d3eb url(../images/icon_search.png) no-repeat center center;
+    background-size: 20px auto;
+    border: solid 1px #15bdd6;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .searchflex .btnSearch:hover, .searchflex .btnSearch:focus {
+    background: #1ccee9 url(../images/icon_search.png) no-repeat center center;
+    background-size: 20px auto;
+    border: solid 1px #1094a8;
   }
   .searchflex .btn {
     min-width: auto;
@@ -11100,6 +11145,10 @@ img {
     padding: 0.3em 1em 0.3em 1.5em;
     background: url(../images/li_arrow.png) no-repeat left 0.5em top 0.75rem;
     background-size: 10px;
+  }
+  .dataSearch .ul_list.scrollBox {
+    max-height: 50vh;
+    overflow: auto;
   }
   .printBox .formGrp {
     justify-content: flex-start;

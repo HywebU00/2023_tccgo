@@ -5,6 +5,7 @@ h2.title {
   font-size: 1.6em;
   line-height: 1.25em;
   margin: 0.5em 0;
+  max-width: 80%;
 }
 // .tt{ color: #222; }
 .cp {
@@ -77,6 +78,7 @@ h2.title {
     a {
       color: $aHover;
       text-decoration: underline;
+      word-break: break-all;
       &:hover {
         color: $aColor;
         text-decoration: none;
@@ -104,6 +106,20 @@ h2.title {
       @include screen('mobile') {
         flex: 1 1 calc(100% / 1);
       }
+    }
+  }
+  .cptable {
+    th {
+      width: 6em;
+      text-align: right;
+      vertical-align: top;
+      padding: 1em 0.5em;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    td {
+      padding: 1em 0.5em;
+      font-size: 1rem;
     }
   }
 }

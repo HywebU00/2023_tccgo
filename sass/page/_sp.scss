@@ -342,8 +342,8 @@
   padding: 5px;
   @include screen('xsMobile') {
     flex-flow: row wrap;
-    // justify-content: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
+    // justify-content: center;
   }
   select {
     flex: 0 0 8em;
@@ -354,18 +354,28 @@
   }
   input {
     flex: 1 1 auto;
-    max-width: 70%;
+    // max-width: 70%;
     @include screen('xsMobile') {
       flex: 1 1 100%;
-      max-width: 100%;
+      max-width: calc(100% - 50px);
     }
   }
   .btnSearch {
-    margin-left: -45px;
-    background-size: 20px auto;
+    margin-left: -42px;
     width: 40px;
-    padding: 8px;
+    padding: 6px 8px;
     margin-right: 10px;
+    background: $colorPrimary url(../images/icon_search.png) no-repeat center center;
+    background-size: 20px auto;
+    border: solid 1px darken($colorPrimary, 10);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    &:hover,
+    &:focus {
+      background: darken($colorPrimary, 5) url(../images/icon_search.png) no-repeat center center;
+      background-size: 20px auto;
+      border: solid 1px darken($colorPrimary, 20);
+    }
   }
   .btn {
     min-width: auto;
@@ -478,6 +488,10 @@
       padding: 0.3em 1em 0.3em 1.5em;
       background: url(../images/li_arrow.png) no-repeat left 0.5em top 0.75rem;
       background-size: 10px;
+    }
+    &.scrollBox {
+      max-height: 50vh;
+      overflow: auto;
     }
   }
 }

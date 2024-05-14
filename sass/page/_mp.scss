@@ -693,6 +693,8 @@ section {
       flex-flow: row wrap;
       width: 100%;
       border-top: solid 3px #eee;
+      max-height: 10em;
+      overflow-y: scroll;
       // border-bottom: solid 3px #eee;
 
       li {

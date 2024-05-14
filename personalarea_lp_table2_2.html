@@ -186,12 +186,11 @@
             <nav aria-label="Breadcrumb" class="breadcrumb">
               <ul>
                 <li><a href="#">首頁</a></li>
-                <li><a href="#">個人專區</a></li>
-                <li aria-current="page">書面質詢申請</li>
+                <li aria-current="page">個人專區</li>
               </ul>
             </nav>
             <!-- h2節點 -->
-            <h2 class="title">書面質詢申請</h2>
+            <h2 class="title">議員提案</h2>
             <!-- functionPanel -->
             <div class="functionPanel">
               <!-- <div class="publishTime"><span>發布日期：</span><time>2019-01-01</time></div> -->
@@ -211,98 +210,194 @@
               <!-- category -->
               <div class="category">
                 <ul>
-                  <li><a href="#" class="active">書面質詢申請</a></li>
-                  <li><a href="#">議員提案</a></li>
+                  <li><a href="#">書面質詢申請</a></li>
+                  <li><a href="#" class="active">議員提案</a></li>
                   <li><a href="#">公報會議紀錄</a></li>
                   <li><a href="#">議員發言</a></li>
                   <li><a href="#">書面質詢</a></li>
                   <li><a href="#">您的查詢歷史</a></li>
                 </ul>
               </div>
-              <!-- searchflex -->
-              <div class="searchflex">
-                <label for="searchid">查詢</label>
-                <select name="" id="searchid">
-                  <option value="">申請編號</option>
-                  <option value="">狀態</option>
-                  <option value="">質詢對象</option>
-                </select>
-                <input name="username" type="text" id="searchid" value="請輸入關鍵字" placeholder="請輸入關鍵字" />
-                <button type="button" class="btnSearch">查詢</button>
-              </div>
-              <!-- searchflex end-->
               <div class="aRight">
-                <button type="button" class="btn btnPrimary">
-                  <span class="i_add_dark"></span>
-                  新增申請
-                </button>
+                <div class="flexForm">
+                  <div class="formGrp formInline">
+                    <label for="selectSample" class="labelhidden">議員提案:</label>
+                    <select name="" id="selectSample">
+                      <option value="依提案日期">依提案日期</option>
+                    </select>
+                    <select name="pets" id="pet-select">
+                      <option value="新到舊">新到舊</option>
+                      <option value="舊到新">舊到新</option>
+                    </select>
+                  </div>
+                </div>
               </div>
               <div class="tableList">
                 <table>
                   <!-- 無障礙 caption 標題預設隱藏 -->
                   <caption>
-                    書面質詢申請表格列表
+                    議員提案表格列表
                     <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
                     <!-- <span class="summary">表格摘要</span> -->
                   </caption>
                   <thead>
                     <tr>
-                      <th>申請編號</th>
-                      <th>申請時間</th>
-                      <th>質詢議員</th>
-                      <th>質詢對象</th>
-                      <th>質詢題目</th>
-                      <th>狀態</th>
+                      <th>序號</th>
+                      <th>系統號</th>
+                      <th>提案日期</th>
+                      <th>案別</th>
+                      <th style="text-align: left">類別</th>
+                      <th style="text-align: left">案由</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td data-title="申請編號" class="num"><a href="#">AA231026234</a></td>
-                      <td data-title="申請時間" class="date">112-10-26</td>
-                      <td data-title="質詢議員" class="name">王世堅</td>
-                      <td data-title="質詢對象">台北市政府市長蔣萬安、台北市政府消防局長莫懷祖、台北市政府環保局長徐世勲、台北市立大學校長邱英浩</td>
-                      <td data-title="質詢題目"><a href="#">北投影視音第三度流標！</a></td>
-                      <td data-title="狀態" class="state"><span class="blue">待審核</span></td>
-                    </tr>
-                    <tr>
-                      <td data-title="申請編號" class="num"><a href="#">AA231026234</a></td>
-                      <td data-title="申請時間" class="date">112-10-26</td>
-                      <td data-title="質詢議員" class="name">王世堅</td>
-                      <td data-title="質詢對象">陳大明</td>
-                      <td data-title="質詢題目"><a href="#">關於民眾反映市政府整棟大樓辦公室內的空調冷氣被迫充斥濃重二手菸害，嚴重影響健康與辦公效率乙事，建請市府研議改善。</a></td>
-                      <td data-title="狀態" class="state"><span class="red">退回</span></td>
-                    </tr>
-                    <tr>
-                      <td data-title="申請編號" class="num"><a href="#">AA231026234</a></td>
-                      <td data-title="申請時間" class="date">112-10-26</td>
-                      <td data-title="質詢議員" class="name">王世堅</td>
-                      <td data-title="質詢對象">陳大明</td>
-                      <td data-title="質詢題目"><a href="#">關於民眾反映市政府整棟大樓辦公室內的空調冷氣被迫充斥濃重二手菸害，嚴重影響健康與辦公效率乙事，建請市府研議改善。</a></td>
-                      <td data-title="狀態" class="state"><span class="green">已發文待答覆</span></td>
-                    </tr>
-                    <tr>
-                      <td data-title="申請編號" class="num"><a href="#">AA231026234</a></td>
-                      <td data-title="申請時間" class="date">112-10-26</td>
-                      <td data-title="質詢議員" class="name">王世堅</td>
-                      <td data-title="質詢對象">陳大明</td>
-                      <td data-title="質詢題目">
-                        <a href="#">關於民眾反映市政府整棟大樓辦公室內的空調冷氣被迫充斥濃重二手菸害，嚴重影響健康與辦公效率乙事，建請市府研議改善。</a>
-                        <!-- replylist -->
-                        <div class="replylist">
-                          <ul>
-                            <li><a href="#">市府答覆文：府授財金10411136400</a></li>
-                            <li><a href="#">市府答覆文：府授財金10411136402</a></li>
-                          </ul>
-                        </div>
-                        <!-- replylist end-->
+                      <td data-title="序號" class="num">1</td>
+                      <td data-title="系統號" class="date">34285</td>
+                      <td data-title="提案日期" class="date">113-01-22</td>
+                      <td data-title="案別" class="name">議員提案</td>
+                      <td data-title="類別" style="text-align: left">警衛</td>
+                      <td data-title="案由" class="brief">
+                        <a href="detail.html?eid=99256E20ED8274FFA3DF01315EFAA483">建請市府研議擴大本市LDCT公費補助族群。</a>
                       </td>
-                      <td data-title="狀態" class="state"><span class="green">已發文待答覆</span></td>
+                    </tr>
+                    <tr>
+                      <td data-title="序號" class="num">2</td>
+                      <td data-title="系統號" class="date">34277</td>
+                      <td data-title="提案日期" class="date">113-01-16</td>
+                      <td data-title="案別" class="name">議員提案</td>
+                      <td data-title="類別" style="text-align: left">工務</td>
+                      <td data-title="案由" class="brief">
+                        <a href="detail.html?eid=ADE7D91B82294EABA3DF01315EFAA483">「臺北市高氯離子混凝土建築物善後處理自治條例」於112年7月19日修正公布第七條條文，法令修正前已報核之都市更新案應可比照適用，無須撤案重新報核，提請討論。</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="序號" class="num">3</td>
+                      <td data-title="系統號" class="date">34278</td>
+                      <td data-title="提案日期" class="date">113-01-16</td>
+                      <td data-title="案別" class="name">議員提案</td>
+                      <td data-title="類別" style="text-align: left">工務</td>
+                      <td data-title="案由" class="brief">
+                        <a href="detail.html?eid=13E55FFB866ED1E4A3DF01315EFAA483"
+                          >本市都更二箭依新頒布之「擬定臺北市防災型都市更新細部計畫案」內容「都市更新耐震能力不足建築物而有明顯危害公共安全認定辦法」規定，經結構安全性能評估初評或詳評結果認定，評估結果 ID 值小於 0.35
+                          之建築物其危險建物認定得以放寬獎勵，惟實際執行評估發現已達危險建物標準等級之建物經檢核評定，旨揭標準過於嚴苛難以達成，造成有法無實，陳請放寬危險建物認定標準，以落實都市防災政策，引導危險建築物加速重建，提請討論。</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="序號" class="num">4</td>
+                      <td data-title="系統號" class="date">34258</td>
+                      <td data-title="提案日期" class="date">112-12-22</td>
+                      <td data-title="案別" class="name">議員提案</td>
+                      <td data-title="類別" style="text-align: left">民政</td>
+                      <td data-title="案由" class="brief">
+                        <a href="detail.html?eid=F0751FE502544762A3DF01315EFAA483">為配合臺北市競選廣告物管理自治條例及臺北市競選廣告物選舉公布欄設置及管理辦法，請民政局於各里普設電子布告欄。</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="序號" class="num">5</td>
+                      <td data-title="系統號" class="date">34255</td>
+                      <td data-title="提案日期" class="date">112-12-15</td>
+                      <td data-title="案別" class="name">議員提案</td>
+                      <td data-title="類別" style="text-align: left">教育</td>
+                      <td data-title="案由" class="brief">
+                        <a href="detail.html?eid=12517A8E653E4CE1A3DF01315EFAA483">台北市政府應督促台北市大巨蛋，針對哺乳室設計不良之設施做總體檢及改善。</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="序號" class="num">6</td>
+                      <td data-title="系統號" class="date">34251</td>
+                      <td data-title="提案日期" class="date">112-12-13</td>
+                      <td data-title="案別" class="name">議員提案</td>
+                      <td data-title="類別" style="text-align: left">工務</td>
+                      <td data-title="案由" class="brief">
+                        <a href="detail.html?eid=3F79DE6FC84FC35EA3DF01315EFAA483">建請市府將臺北願景計畫工作室改作松基里民鄰里活動空間使用，以促進鄰里關係、提升空間使用效率，提請審議。</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="序號" class="num">7</td>
+                      <td data-title="系統號" class="date">34250</td>
+                      <td data-title="提案日期" class="date">112-12-12</td>
+                      <td data-title="案別" class="name">議員提案</td>
+                      <td data-title="類別" style="text-align: left">警衛</td>
+                      <td data-title="案由" class="brief">
+                        <a href="detail.html?eid=B32252D3CA307EECA3DF01315EFAA483">台北市衛生局應督導台北市大巨蛋球場等單位，將室外場所列為全面禁菸。</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="序號" class="num">8</td>
+                      <td data-title="系統號" class="date">34248</td>
+                      <td data-title="提案日期" class="date">112-12-11</td>
+                      <td data-title="案別" class="name">議員提案</td>
+                      <td data-title="類別" style="text-align: left">工務</td>
+                      <td data-title="案由" class="brief">
+                        <a href="detail.html?eid=36BF6C81A87F1987A3DF01315EFAA483"
+                          >請臺北市政府儘速檢討「木柵、景美萬芳路一四０高地附近地區細部計畫」，修正放寬該細部計畫第壹類、第貳類及第參類住宅用地高度限制及使用限制，使法定容積及都更改建獎勵容積有使用完竣可能，並放寬該細部計畫第參類住宅用地比照臺北市土地使用分區管制自治條例之第三種住宅區管制措施，請
+                          審議。</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="序號" class="num">9</td>
+                      <td data-title="系統號" class="date">34178</td>
+                      <td data-title="提案日期" class="date">112-10-24</td>
+                      <td data-title="案別" class="name">議員提案</td>
+                      <td data-title="類別" style="text-align: left">教育</td>
+                      <td data-title="案由" class="brief">
+                        <a href="detail.html?eid=A360392EA0175FB4A3DF01315EFAA483">建請市府進行跨局處資源統整，研議規劃「南港藝文商業廊帶」。</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="序號" class="num">10</td>
+                      <td data-title="系統號" class="date">34180</td>
+                      <td data-title="提案日期" class="date">112-10-24</td>
+                      <td data-title="案別" class="name">議員提案</td>
+                      <td data-title="類別" style="text-align: left">工務</td>
+                      <td data-title="案由" class="brief">
+                        <a href="detail.html?eid=327E4967A0C08850A3DF01315EFAA483">確保都市更新後之建築物預留足夠人行道設施。</a>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
             <!-- LP End -->
+            <!-- Pagination -->
+            <div class="pagination">
+              <form action="">
+                <div class="formInline">
+                  <div class="total">
+                    共<span>308</span>筆資料，第<span>1/18</span>頁，<label for="pet-select">每頁顯示</label>
+                    <select name="" id="pet-select" aria-label="每頁顯示">
+                      <option value="">10</option>
+                      <option value="">20</option>
+                      <option value="">30</option>
+                      <option value="">40</option>
+                    </select>
+                    筆<input type="button" value="確定" class="btn btnSubmit" title="確定" />
+                  </div>
+                </div>
+              </form>
+              <ul class="page">
+                <li class="first"><a href="#" title="第一頁">第一頁 </a></li>
+                <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+                <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
+                <li class="last">
+                  <a href="#" title="最後一頁">最後一頁 </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Pagination end-->
           </div>
         </div>
       </main>
