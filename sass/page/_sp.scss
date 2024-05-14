@@ -519,19 +519,23 @@
     }
     select + select {
       flex: 1 1 auto;
+      @include screen('mobile') {
+        flex: 1 1 calc(100% - 80px);
+        max-width: 100%;
+      }
     }
     input {
       flex: 1 1 auto;
       // max-width: 70%;
       @include screen('xsMobile') {
-        flex: 1 1 100%;
-        max-width: calc(100% - 50px);
+        flex: 1 1 calc(100% - 80px);
+        max-width: 99%;
       }
     }
     .btnSearch {
-      margin-left: -42px;
+      margin-left: -30px;
       width: 40px;
-      padding: 6px 8px;
+      padding: 7px 8px;
       margin-right: 10px;
       background: $colorPrimary url(../images/icon_search.png) no-repeat center center;
       background-size: 20px auto;
@@ -548,7 +552,7 @@
     .btnSearch2 {
       margin-left: -6px;
       width: 40px;
-      padding: 6px 8px;
+      padding: 7px 8px;
       margin-right: 10px;
       background: $colorPrimary url(../images/icon_search.png) no-repeat center center;
       background-size: 20px auto;

@@ -4,6 +4,10 @@
       border: none;
       border-top: solid 1px #ddd;
       border-bottom: solid 2px #c1c0c0;
+      white-space: nowrap;
+      @include screen('mobile') {
+        white-space: normal;
+      }
     }
     td {
       border: none;

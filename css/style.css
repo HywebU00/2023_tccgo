@@ -6884,6 +6884,12 @@ img {
     border: none;
     border-top: solid 1px #ddd;
     border-bottom: solid 2px #c1c0c0;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: 767px) {
+    .lp table th {
+      white-space: normal;
+    }
   }
   .lp table td {
     border: none;
@@ -11187,19 +11193,25 @@ img {
   .searchflex3 div select + select {
     flex: 1 1 auto;
   }
+  @media screen and (max-width: 767px) {
+    .searchflex3 div select + select {
+      flex: 1 1 calc(100% - 80px);
+      max-width: 100%;
+    }
+  }
   .searchflex3 div input {
     flex: 1 1 auto;
   }
   @media screen and (max-width: 575px) {
     .searchflex3 div input {
-      flex: 1 1 100%;
-      max-width: calc(100% - 50px);
+      flex: 1 1 calc(100% - 80px);
+      max-width: 99%;
     }
   }
   .searchflex3 div .btnSearch {
-    margin-left: -42px;
+    margin-left: -30px;
     width: 40px;
-    padding: 6px 8px;
+    padding: 7px 8px;
     margin-right: 10px;
     background: #33d3eb url(../images/icon_search.png) no-repeat center center;
     background-size: 20px auto;
@@ -11215,7 +11227,7 @@ img {
   .searchflex3 div .btnSearch2 {
     margin-left: -6px;
     width: 40px;
-    padding: 6px 8px;
+    padding: 7px 8px;
     margin-right: 10px;
     background: #33d3eb url(../images/icon_search.png) no-repeat center center;
     background-size: 20px auto;
