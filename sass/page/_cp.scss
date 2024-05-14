@@ -120,6 +120,15 @@ h2.title {
     td {
       padding: 1em 0.5em;
       font-size: 1rem;
+      a {
+        color: $aHover;
+        text-decoration: underline;
+        word-break: break-all;
+        &:hover {
+          color: $aColor;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

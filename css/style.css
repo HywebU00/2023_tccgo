@@ -10307,6 +10307,15 @@ img {
     padding: 1em 0.5em;
     font-size: 1rem;
   }
+  .cp .cptable td a {
+    color: #0b626f;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+  .cp .cptable td a:hover {
+    color: #1b1a1a;
+    text-decoration: none;
+  }
   .fileDownload {
     width: 100%;
     margin: 0 auto 2em;
