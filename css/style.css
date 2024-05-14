@@ -6903,10 +6903,12 @@ img {
   }
   .lp table td.date, .lp table td.name {
     text-align: center;
+    white-space: nowrap;
   }
   @media screen and (max-width: 767px) {
     .lp table td.date, .lp table td.name {
       text-align: left;
+      white-space: normal;
     }
   }
   .lp table td.state {
@@ -11026,8 +11028,8 @@ img {
     }
   }
   .searchflex .btnSearch {
-    margin-left: -42px;
-    width: 40px;
+    margin-left: -41px;
+    width: 45px;
     padding: 6px 8px;
     margin-right: 10px;
     background: #33d3eb url(../images/icon_search.png) no-repeat center center;
@@ -11158,6 +11160,90 @@ img {
   .dataSearch .ul_list.scrollBox {
     max-height: 50vh;
     overflow: auto;
+  }
+  .searchflex3 div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    padding: 5px;
+  }
+  @media screen and (max-width: 575px) {
+    .searchflex3 div {
+      flex-flow: row wrap;
+      justify-content: flex-start;
+    }
+  }
+  .searchflex3 div select {
+    flex: 0 0 8em;
+  }
+  @media screen and (max-width: 575px) {
+    .searchflex3 div select {
+      flex: 1 1 38%;
+      max-width: 50%;
+    }
+  }
+  .searchflex3 div select + select {
+    flex: 1 1 auto;
+  }
+  .searchflex3 div input {
+    flex: 1 1 auto;
+  }
+  @media screen and (max-width: 575px) {
+    .searchflex3 div input {
+      flex: 1 1 100%;
+      max-width: calc(100% - 50px);
+    }
+  }
+  .searchflex3 div .btnSearch {
+    margin-left: -42px;
+    width: 40px;
+    padding: 6px 8px;
+    margin-right: 10px;
+    background: #33d3eb url(../images/icon_search.png) no-repeat center center;
+    background-size: 20px auto;
+    border: solid 1px #15bdd6;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .searchflex3 div .btnSearch:hover, .searchflex3 div .btnSearch:focus {
+    background: #1ccee9 url(../images/icon_search.png) no-repeat center center;
+    background-size: 20px auto;
+    border: solid 1px #1094a8;
+  }
+  .searchflex3 div .btnSearch2 {
+    margin-left: -6px;
+    width: 40px;
+    padding: 6px 8px;
+    margin-right: 10px;
+    background: #33d3eb url(../images/icon_search.png) no-repeat center center;
+    background-size: 20px auto;
+    border: solid 1px #15bdd6;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 0;
+  }
+  .searchflex3 div .btnSearch2:hover, .searchflex3 div .btnSearch2:focus {
+    background: #1ccee9 url(../images/icon_search.png) no-repeat center center;
+    background-size: 20px auto;
+    border: solid 1px #1094a8;
+  }
+  .searchflex3 div .btn {
+    min-width: auto;
+    background: #ccc;
+  }
+  .searchflex3 div .btn:hover, .searchflex3 div .btn:focus {
+    background: #bbb;
+  }
+  .searchflex3 div .btnPrimary {
+    background: #33d3eb;
+  }
+  .searchflex3 div .btnPrimary:hover, .searchflex3 div .btnPrimary:focus {
+    background: #16c5df;
+  }
+  .searchflex3 div label {
+    display: none;
   }
   .printBox .formGrp {
     justify-content: flex-start;

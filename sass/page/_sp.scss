@@ -361,8 +361,8 @@
     }
   }
   .btnSearch {
-    margin-left: -42px;
-    width: 40px;
+    margin-left: -41px;
+    width: 45px;
     padding: 6px 8px;
     margin-right: 10px;
     background: $colorPrimary url(../images/icon_search.png) no-repeat center center;
@@ -492,6 +492,94 @@
     &.scrollBox {
       max-height: 50vh;
       overflow: auto;
+    }
+  }
+}
+
+//searchflex3
+.searchflex3 {
+  div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    padding: 5px;
+    @include screen('xsMobile') {
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      // justify-content: center;
+    }
+    select {
+      flex: 0 0 8em;
+      @include screen('xsMobile') {
+        flex: 1 1 38%;
+        max-width: 50%;
+      }
+    }
+    select + select {
+      flex: 1 1 auto;
+    }
+    input {
+      flex: 1 1 auto;
+      // max-width: 70%;
+      @include screen('xsMobile') {
+        flex: 1 1 100%;
+        max-width: calc(100% - 50px);
+      }
+    }
+    .btnSearch {
+      margin-left: -42px;
+      width: 40px;
+      padding: 6px 8px;
+      margin-right: 10px;
+      background: $colorPrimary url(../images/icon_search.png) no-repeat center center;
+      background-size: 20px auto;
+      border: solid 1px darken($colorPrimary, 10);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      &:hover,
+      &:focus {
+        background: darken($colorPrimary, 5) url(../images/icon_search.png) no-repeat center center;
+        background-size: 20px auto;
+        border: solid 1px darken($colorPrimary, 20);
+      }
+    }
+    .btnSearch2 {
+      margin-left: -6px;
+      width: 40px;
+      padding: 6px 8px;
+      margin-right: 10px;
+      background: $colorPrimary url(../images/icon_search.png) no-repeat center center;
+      background-size: 20px auto;
+      border: solid 1px darken($colorPrimary, 10);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      font-size: 0;
+      &:hover,
+      &:focus {
+        background: darken($colorPrimary, 5) url(../images/icon_search.png) no-repeat center center;
+        background-size: 20px auto;
+        border: solid 1px darken($colorPrimary, 20);
+      }
+    }
+    .btn {
+      min-width: auto;
+      background: #ccc;
+      &:hover,
+      &:focus {
+        background: #bbb;
+      }
+    }
+    .btnPrimary {
+      background: $colorPrimary;
+      &:hover,
+      &:focus {
+        background: darken($colorPrimary, 8);
+      }
+    }
+    label {
+      display: none;
     }
   }
 }
