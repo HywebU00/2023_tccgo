@@ -11291,6 +11291,13 @@ img {
       margin: 0.5em;
     }
   }
+  .formBox h3 {
+    font-weight: normal;
+    padding: 0;
+    flex: 1 1 100%;
+    max-width: 100%;
+    font-size: 1rem;
+  }
   .pdfViewBox {
     display: flex;
     flex-flow: row wrap;
