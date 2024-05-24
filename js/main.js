@@ -341,7 +341,7 @@ function topNav() {
   }
 
   const languageSelect = document.querySelectorAll('.language');
-  
+
   function languageSelectInit() {
     const languageSelect = new SelectSlider({
       name: document.querySelectorAll('.language'), // --- 控制的對象
@@ -809,7 +809,7 @@ document.querySelectorAll('[class*="notice"] a.close').forEach((i) => {
 // -----  fatFooter   ----------------------------------------------------
 // -----------------------------------------------------------------------
 
-function fatFooter(obj) {
+function fatFooter(openCheck = true) {
   const el = document.querySelector('.btnFatFooter') || null; // --- 控制的對象
 
   if (el !== null) {
@@ -821,10 +821,14 @@ function fatFooter(obj) {
           i.setAttribute('style', '');
           let _itemHeight = i.offsetHeight;
           i.dataset.itemHeight = _itemHeight;
-          if (Number(_itemHeight) !== 0) {
+          if (Number(_itemHeight) !== 0 && openCheck) {
             i.style.height = `${Number(i.dataset.itemHeight)}px`;
           } else {
+            console.log('a');
             i.style.height = '0px';
+            el.innerHTML = '收合/CLOSE';
+            el.setAttribute('name', '收合選單/CLOSE');
+            el.classList.add('close');
           }
         });
       }, 20);

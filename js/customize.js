@@ -2,7 +2,7 @@
 window.addEventListener('load', () => {
   topNav(); // 手機版顯示nav選單
   navSticky(); // 捲動時固定主選單
-  fatFooter(); // fatFooter是否要展開
+  fatFooter(false); // fatFooter是否要展開
   tabFunction('.tabSet'); // tab功能
   scrollTables('.tableWrapper'); // table捲動功能
 
@@ -312,7 +312,6 @@ $('.labelPool').each(function () {
       removeLabel();
     }
   }
-  
 
   function removeLabel() {
     _removeLabel.click(function () {
