@@ -387,6 +387,10 @@ function searchTypeB() {
     const webSearchBtn = document.createElement('button');
     webSearchBtn.className = 'mobileSearchBtn';
     webSearchBtn.setAttribute('type', 'button');
+    const searchspan = document.createElement('span');
+    searchspan.className = 'sr-only';
+    searchspan.append('查詢');
+    webSearchBtn.append(searchspan);
     siteHeader.prepend(webSearchBtn);
 
     const remove = document.querySelector('aside .submenuBox .webSearchBtn');
