@@ -491,7 +491,9 @@
     }
     &.scrollBox {
       max-height: 50vh;
-      overflow: auto;
+      // overflow: auto;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
   }
 }

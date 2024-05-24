@@ -11165,7 +11165,8 @@ img {
   }
   .dataSearch .ul_list.scrollBox {
     max-height: 50vh;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .searchflex3 div {
     display: flex;
