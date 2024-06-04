@@ -227,14 +227,14 @@
       flex: 1 1 auto;
       padding: 0.5em 0;
       position: relative;
-      max-width: 80%;
+      max-width: 75%;
       &.w90 {
         max-width: 90%;
       }
       @include screen('notebook') {
-        // max-width: 65%;
+        max-width: 90%;
       }
-      @media screen and (max-width: 1132px) {
+      @media screen and (max-width: 1300px) {
         max-width: 100%;
         min-width: 100%;
       }

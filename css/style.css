@@ -10898,12 +10898,17 @@ img {
     flex: 1 1 auto;
     padding: 0.5em 0;
     position: relative;
-    max-width: 80%;
+    max-width: 75%;
   }
   .listflex2 li .item2.w90 {
     max-width: 90%;
   }
-  @media screen and (max-width: 1132px) {
+  @media screen and (max-width: 1399px) {
+    .listflex2 li .item2 {
+      max-width: 90%;
+    }
+  }
+  @media screen and (max-width: 1300px) {
     .listflex2 li .item2 {
       max-width: 100%;
       min-width: 100%;
