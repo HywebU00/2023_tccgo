@@ -10903,11 +10903,6 @@ img {
   .listflex2 li .item2.w90 {
     max-width: 90%;
   }
-  @media screen and (max-width: 1399px) {
-    .listflex2 li .item2 {
-      max-width: 65%;
-    }
-  }
   @media screen and (max-width: 1132px) {
     .listflex2 li .item2 {
       max-width: 100%;

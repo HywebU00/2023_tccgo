@@ -232,7 +232,7 @@
         max-width: 90%;
       }
       @include screen('notebook') {
-        max-width: 65%;
+        // max-width: 65%;
       }
       @media screen and (max-width: 1132px) {
         max-width: 100%;
