@@ -235,8 +235,8 @@
         max-width: 90%;
       }
       @media screen and (max-width: 1300px) {
-        max-width: 100%;
-        min-width: 100%;
+        max-width: 90%;
+        min-width: 90%;
       }
       @include screen('tablet') {
         max-width: 100%;
