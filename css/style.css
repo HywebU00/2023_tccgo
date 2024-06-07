@@ -4822,12 +4822,12 @@ img {
     overflow: hidden;
     padding-bottom: 1em;
     margin: -170px auto 0;
-    padding: 100px 0 50px;
+    padding: 100px 0 10px;
     background: #cecece url("../images/fatfooter_bg.png") repeat left top;
   }
   @media screen and (max-width: 575px) {
     .fatFooter {
-      padding: 100px 0 30px;
+      padding: 100px 0 10px;
     }
   }
   .fatFooter .container {
@@ -4893,13 +4893,13 @@ img {
     overflow: hidden;
     display: block;
     position: relative;
-    padding: 3em 0 0 3em;
+    padding: 2.5em 0 0 3em;
     box-sizing: border-box;
     margin: 0 5%;
   }
   @media screen and (max-width: 991px) {
     .fatFooter nav {
-      padding: 3em 0.5em 1em;
+      padding: 2.5em 0.5em 0;
     }
   }
   .fatFooter nav ul {
@@ -4912,6 +4912,7 @@ img {
   @media screen and (max-width: 767px) {
     .fatFooter nav ul {
       flex-flow: wrap row;
+      overflow: visible;
     }
   }
   .fatFooter nav ul li {
@@ -4950,8 +4951,8 @@ img {
   }
   @media screen and (max-width: 767px) {
     .fatFooter nav ul li ul {
-      width: auto;
-      overflow: hidden;
+      width: 100%;
+      overflow: visible;
     }
   }
   .fatFooter nav ul li ul li {

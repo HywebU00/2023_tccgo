@@ -819,7 +819,8 @@ function fatFooter(openCheck = true) {
   if (el !== null) {
     function fatFooterInit() {
       // --- 抓取UI高度 css樣式修改樣式重新抓取高度
-      const _navUl = el.parentNode.querySelectorAll('nav ul li ul');
+      // const _navUl = el.parentNode.querySelectorAll('nav ul li ul');
+      const _navUl = el.parentNode.querySelectorAll('nav ul');
       setTimeout(() => {
         _navUl.forEach((i) => {
           i.setAttribute('style', '');
@@ -839,7 +840,8 @@ function fatFooter(openCheck = true) {
     }
 
     function toggleFatFooter() {
-      const _navUl = el.parentNode.querySelectorAll('nav ul li ul');
+      // const _navUl = el.parentNode.querySelectorAll('nav ul li ul');
+      const _navUl = el.parentNode.querySelectorAll('nav ul');
       _navUl.forEach((i) => {
         if (i.offsetHeight !== 0) {
           i.style.height = '0px';

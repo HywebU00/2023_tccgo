@@ -2,10 +2,10 @@
   overflow: hidden;
   padding-bottom: 1em;
   margin: -170px auto 0;
-  padding: 100px 0 50px;
+  padding: 100px 0 10px;
   background: $fatFooterBgColor url('../images/fatfooter_bg.png') repeat left top;
   @include screen('xsMobile') {
-    padding: 100px 0 30px;
+    padding: 100px 0 10px;
   }
   .container {
     overflow: hidden;
@@ -65,18 +65,20 @@
     overflow: hidden;
     display: block;
     position: relative;
-    padding: 3em 0 0 3em;
+    padding: 2.5em 0 0 3em;
     box-sizing: border-box;
     margin: 0 5%;
     @include screen('tablet') {
-      padding: 3em 0.5em 1em;
+      padding: 2.5em 0.5em 0;
     }
     ul {
       display: flex;
       overflow: hidden;
+
       @include liReset;
       @include screen('mobile') {
         flex-flow: wrap row;
+        overflow: visible;
       }
       li {
         flex-grow: 1;
@@ -107,8 +109,9 @@
             padding: 0 0.5em 0 0;
           }
           @include screen('mobile') {
-            width: auto;
-            overflow: hidden;
+            width: 100%;
+            // overflow: hidden;
+            overflow: visible;
           }
           li {
             // flex: 0 0 100%;
