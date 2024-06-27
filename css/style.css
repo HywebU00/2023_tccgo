@@ -4471,6 +4471,7 @@ img {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .mainMenu > ul > li {
     flex: 0 1 20%;
