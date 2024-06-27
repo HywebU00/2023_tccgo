@@ -100,6 +100,12 @@
     @include screen('xsMobile') {
       padding: 0.5em 0;
     }
+    &.pintopBlock {
+      .item5 {
+        background: #fef6e0;
+        border-left: solid 5px $colorPrimary;
+      }
+    }
     .item {
       flex: 0 0 2em;
       text-align: center;
@@ -155,6 +161,21 @@
         margin: 2px 0.5em;
       }
     }
+    .pintop {
+      display: inline-block;
+      font-size: 0.938em;
+      font-weight: normal;
+      background: #d804b3;
+      border-radius: 2em;
+      min-width: 2em;
+      text-align: center;
+      padding: 0 1em;
+      margin: 2px 0.5em 2px 0;
+      color: #fff;
+      @include screen('xsMobile') {
+        margin: 2px 0.5em;
+      }
+    }
     .date {
       display: inline-block;
       font-size: 0.938em;
@@ -189,7 +210,7 @@
     }
     .item5 {
       flex: 1 1 auto;
-      padding: 0.5em 0;
+      padding: 0.5em 0.3em;
       position: relative;
       max-width: 100%;
       // @include screen('tablet') {

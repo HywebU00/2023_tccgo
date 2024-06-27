@@ -10802,6 +10802,10 @@ img {
       padding: 0.5em 0;
     }
   }
+  .listflex li.pintopBlock .item5 {
+    background: #fef6e0;
+    border-left: solid 5px #33d3eb;
+  }
   .listflex li .item {
     flex: 0 0 2em;
     text-align: center;
@@ -10861,6 +10865,23 @@ img {
       margin: 2px 0.5em;
     }
   }
+  .listflex li .pintop {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #d804b3;
+    border-radius: 2em;
+    min-width: 2em;
+    text-align: center;
+    padding: 0 1em;
+    margin: 2px 0.5em 2px 0;
+    color: #fff;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex li .pintop {
+      margin: 2px 0.5em;
+    }
+  }
   .listflex li .date {
     display: inline-block;
     font-size: 0.938em;
@@ -10895,7 +10916,7 @@ img {
   }
   .listflex li .item5 {
     flex: 1 1 auto;
-    padding: 0.5em 0;
+    padding: 0.5em 0.3em;
     position: relative;
     max-width: 100%;
   }
