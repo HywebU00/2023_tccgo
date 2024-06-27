@@ -11940,6 +11940,9 @@ img {
   .listflex3 li .rollbox a {
     flex: 1 1 auto;
   }
+  .listflex3 li .rollbox .period {
+    flex: 1 1 100%;
+  }
   .listflex3 li .rollbox .t2 {
     flex: 1 1 auto;
     padding: 0 0.5em;
@@ -12045,6 +12048,230 @@ img {
   }
   @media screen and (max-width: 575px) {
     .listflex3 .btnEpaper {
+      min-width: 45%;
+    }
+  }
+  .listflex4 .t1 {
+    font-size: 1.25em;
+    background: #eee;
+    padding: 0.5em;
+    border-left: solid 5px #33d3eb;
+    font-weight: bold;
+  }
+  .listflex4 ul {
+    margin: 0 0 1em 0;
+    padding: 0;
+    list-style: none;
+  }
+  .listflex4 li {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: solid 1px #d4d4d4;
+    padding: 0.5em 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex4 li {
+      padding: 0.5em 0;
+    }
+  }
+  .listflex4 li .item {
+    flex: 0 0 2em;
+    text-align: center;
+    padding: 0.5em 0;
+  }
+  .listflex4 li .item2 {
+    flex: 1 1 auto;
+    padding: 0.5em 0;
+    position: relative;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 991px) {
+    .listflex4 li .item2 {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .listflex4 li .item2 {
+      max-width: 100%;
+    }
+  }
+  .listflex4 li .item3 {
+    flex: 1 1 auto;
+    text-align: right;
+    padding: 0.5em 0;
+  }
+  .listflex4 li a {
+    display: block;
+    font-size: 1.125em;
+    font-weight: bold;
+    padding: 0.5em;
+  }
+  .listflex4 li label {
+    margin: 0;
+  }
+  .listflex4 li .dept2 {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #a0ebf6;
+    border-radius: 2em;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 1em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex4 li .dept2 {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex4 li .issuedate {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #fcbaec;
+    border-radius: 2em;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 1em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex4 li .issuedate {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex4 li .issuedate2 {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #fcbaec;
+    border-radius: 2em;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 1em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex4 li .issuedate2 {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex4 li .rollbox {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  .listflex4 li .rollbox a {
+    flex: 1 1 auto;
+  }
+  .listflex4 li .rollbox .period {
+    flex: 1 1 90%;
+    margin-bottom: 0.5em;
+  }
+  .listflex4 li .rollbox .t2 {
+    flex: 1 1 auto;
+    padding: 0 0.5em;
+    font-size: 1.125em;
+    max-width: 70%;
+  }
+  @media screen and (max-width: 991px) {
+    .listflex4 li .rollbox .t2 {
+      flex: 1 1 96%;
+      max-width: 96%;
+      margin-bottom: 0.5em;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .listflex4 li .rollbox .t2 {
+      flex: 1 1 92%;
+      max-width: 92%;
+    }
+  }
+  .listflex4 li .rollbox .t2btn {
+    flex: 1 1 auto;
+    text-align: right;
+  }
+  .listflex4 li .rollbox .num {
+    position: relative;
+    max-width: 4em;
+  }
+  .listflex4 li .rollbox .num:after {
+    content: " .";
+    width: 1em;
+    height: 1em;
+  }
+  .listflex4 li .rollbox .dept2 {
+    flex: 0 0 13em;
+  }
+  .listflex4 li .rollbox .issuedate {
+    flex: 0 0 10em;
+  }
+  .listflex4 li .rollbox .issuedate2 {
+    flex: 0 0 10em;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex4 li .rollbox .issuedate2 {
+      flex: 1 1 auto;
+      margin: 0.2em;
+    }
+  }
+  .listflex4 li .dept {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    background: #a0ebf6;
+    border-radius: 2em;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 1em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex4 li .dept {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex4 li .date {
+    display: inline-block;
+    font-size: 0.938em;
+    font-weight: normal;
+    min-width: 5em;
+    text-align: center;
+    padding: 0 0.5em;
+    margin: 2px 0.5em 2px 0;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex4 li .date {
+      margin: 2px 0.5em;
+    }
+  }
+  .listflex4 li .starpage {
+    color: #1b1a1a;
+    background: #f5e276;
+    min-width: 5em;
+    text-align: center;
+    font-size: 0.938em;
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+  .listflex4 li .regular {
+    color: #1b1a1a;
+    background: #fcbaec;
+    min-width: 5em;
+    text-align: center;
+    font-size: 0.938em;
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+  .listflex4 .btnEpaper {
+    margin-left: 0.5em;
+  }
+  @media screen and (max-width: 575px) {
+    .listflex4 .btnEpaper {
       min-width: 45%;
     }
   }
