@@ -147,9 +147,9 @@
         span.mName {
           font-size: 0.938em;
           font-weight: normal;
-          position: absolute;
-          right: 0;
-          top: 2.6em;
+          // position: absolute;
+          // right: 0;
+          // top: 2.6em;
           @include screen('xsMobile') {
             position: static;
           }
@@ -159,7 +159,8 @@
             // border-radius: 2em;
             min-width: 5em;
             text-align: center;
-            display: block;
+            display: inline-block;
+            padding: 0 3px;
             &:hover,
             &:focus {
               background: darken($colorYellow, 10);
@@ -175,6 +176,36 @@
           font-size: 0.938em;
           font-weight: normal;
         }
+      }
+    }
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      .items1 {
+        flex: 1 1 100%;
+        margin: 0.2em 0;
+      }
+      .items2 {
+        flex: 1 1 auto;
+        max-width: 80%;
+        margin: 0.2em 0;
+        a {
+          font-weight: bold;
+          // overflow: hidden;
+          // white-space: nowrap;
+          // text-overflow: ellipsis;
+          // max-width: 80%;
+        }
+        @include screen('tablet') {
+          max-width: 100%;
+        }
+      }
+      .items3 {
+        flex: 1 1 auto;
+        text-align: right;
+        margin: 0.2em 0;
       }
     }
   }

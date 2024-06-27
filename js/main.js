@@ -813,59 +813,67 @@ document.querySelectorAll('[class*="notice"] a.close').forEach((i) => {
 // -----  fatFooter   ----------------------------------------------------
 // -----------------------------------------------------------------------
 
-function fatFooter(openCheck = true) {
-  const el = document.querySelector('.btnFatFooter') || null; // --- 控制的對象
+// function fatFooter(openCheck = true) {
+//   const el = document.querySelector('.btnFatFooter') || null; // --- 控制的對象
 
-  if (el !== null) {
-    function fatFooterInit() {
-      // --- 抓取UI高度 css樣式修改樣式重新抓取高度
-      // const _navUl = el.parentNode.querySelectorAll('nav ul li ul');
-      const _navUl = el.parentNode.querySelectorAll('nav ul');
-      setTimeout(() => {
-        _navUl.forEach((i) => {
-          i.setAttribute('style', '');
-          let _itemHeight = i.offsetHeight;
-          i.dataset.itemHeight = _itemHeight;
-          if (Number(_itemHeight) !== 0 && openCheck) {
-            i.style.height = `${Number(i.dataset.itemHeight)}px`;
-          } else {
-            console.log('a');
-            i.style.height = '0px';
-            el.innerHTML = '收合/CLOSE';
-            el.setAttribute('name', '收合選單/CLOSE');
-            el.classList.add('close');
-          }
-        });
-      }, 20);
-    }
+//   if (el !== null) {
+//     function fatFooterInit() {
+//       // --- 抓取UI高度 css樣式修改樣式重新抓取高度
+//       const _navUl = el.parentNode.querySelectorAll('nav ul li ul');
+//       setTimeout(() => {
+//         _navUl.forEach((i) => {
+//           i.setAttribute('style', '');
+//           let _itemHeight = i.offsetHeight;
+//           i.dataset.itemHeight = _itemHeight;
+//           if (Number(_itemHeight) !== 0 && openCheck) {
+//             i.style.height = `${Number(i.dataset.itemHeight)}px`;
+//           } else {
+//             console.log('a');
+//             i.style.height = '0px';
+//             el.innerHTML = '收合/CLOSE';
+//             el.setAttribute('name', '收合選單/CLOSE');
+//             el.classList.add('close');
+//           }
+//         });
+//       }, 20);
+//     }
 
-    function toggleFatFooter() {
-      // const _navUl = el.parentNode.querySelectorAll('nav ul li ul');
-      const _navUl = el.parentNode.querySelectorAll('nav ul');
-      _navUl.forEach((i) => {
-        if (i.offsetHeight !== 0) {
-          i.style.height = '0px';
-          el.innerHTML = '收合/CLOSE';
-          el.setAttribute('name', '收合選單/CLOSE');
-        } else {
-          i.style.height = `${i.dataset.itemHeight}px`;
-          el.innerHTML = '展開/OPEN';
-          el.setAttribute('name', '展開選單/OPEN');
-        }
-      });
-      el.classList.toggle('close');
-    }
+//     function toggleFatFooter() {
+//       const _navUl = el.parentNode.querySelectorAll('nav ul li ul');
+//       _navUl.forEach((i) => {
+//         if (i.offsetHeight !== 0) {
+//           i.style.height = '0px';
+//           el.innerHTML = '收合/CLOSE';
+//           el.setAttribute('name', '收合選單/CLOSE');
+//         } else {
+//           i.style.height = `${i.dataset.itemHeight}px`;
+//           el.innerHTML = '展開/OPEN';
+//           el.setAttribute('name', '展開選單/OPEN');
+//         }
+//       });
+//       el.classList.toggle('close');
+//     }
 
-    fatFooterInit();
-    // --- 點擊時
-    el.addEventListener('click', toggleFatFooter);
+//     fatFooterInit();
+//     // --- 點擊時
+//     el.addEventListener('click', toggleFatFooter);
 
-    window.addEventListener('resize', () => {
-      fatFooterInit();
-    });
+//     window.addEventListener('resize', () => {
+//       fatFooterInit();
+//     });
+//   }
+// }
+
+// fatFooter();
+
+function fatFooterBlock() {
+  var x = document.getElementById('fatFooterNav');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
   }
 }
-// fatFooter();
 
 // -----------------------------------------------------------------------
 // -----  多組Tab   ------------------------------------------------------

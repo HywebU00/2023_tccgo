@@ -4041,10 +4041,10 @@ img {
   [tooltip]:after {
     content: attr(tooltip);
     text-align: left;
-    min-width: 150px;
+    min-width: 4em;
     line-height: 1.5em;
-    max-width: 300px;
-    font-size: 0.813em;
+    max-width: 16em;
+    font-size: 0.875em;
     max-height: 5.182875em;
     overflow: hidden;
     padding: 0.5em;
@@ -4833,6 +4833,7 @@ img {
   .fatFooter .container {
     overflow: hidden;
     box-sizing: border-box;
+    padding-top: 30px;
     position: relative;
     min-height: 1px;
     padding-left: 15px;
@@ -4893,7 +4894,7 @@ img {
     overflow: hidden;
     display: block;
     position: relative;
-    padding: 2.5em 0 0 3em;
+    padding: 2em 0 1em 3em;
     box-sizing: border-box;
     margin: 0 5%;
   }
@@ -7047,9 +7048,6 @@ img {
   .lp .list ol > li span.mName {
     font-size: 0.938em;
     font-weight: normal;
-    position: absolute;
-    right: 0;
-    top: 2.6em;
   }
   @media screen and (max-width: 575px) {
     .lp .list > ul > li span.mName,
@@ -7063,7 +7061,8 @@ img {
     background: #f5e276;
     min-width: 5em;
     text-align: center;
-    display: block;
+    display: inline-block;
+    padding: 0 3px;
   }
   .lp .list > ul > li span.mName a:hover, .lp .list > ul > li span.mName a:focus,
   .lp .list ol > li span.mName a:hover,
@@ -7076,6 +7075,33 @@ img {
     color: #646464;
     font-size: 0.938em;
     font-weight: normal;
+  }
+  .lp .list li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .lp .list li .items1 {
+    flex: 1 1 100%;
+    margin: 0.2em 0;
+  }
+  .lp .list li .items2 {
+    flex: 1 1 auto;
+    max-width: 80%;
+    margin: 0.2em 0;
+  }
+  .lp .list li .items2 a {
+    font-weight: bold;
+  }
+  @media screen and (max-width: 991px) {
+    .lp .list li .items2 {
+      max-width: 100%;
+    }
+  }
+  .lp .list li .items3 {
+    flex: 1 1 auto;
+    text-align: right;
+    margin: 0.2em 0;
   }
   .lp .replylist {
     background: #eee;
