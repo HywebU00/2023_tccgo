@@ -116,10 +116,26 @@ window.addEventListener('load', () => {
   });
 
   //跑馬燈
+  // const marqueeSwiper = new Swiper('.marquee .swiper', {
+  //   direction: 'vertical',
+  //   autoplay: {
+  //     delay: 3000, //1秒切换一次
+  //   },
+  //   // 切換點
+  //   // 切換箭頭
+  //   navigation: {
+  //     nextEl: '.marquee .nextSlider', //自行設定樣式
+  //     prevEl: '.marquee .prevSlider', //自行設定樣式
+  //     disabledClass: '.marquee marquee-arrow-disabled', //不可點選樣式
+  //   },
+  // });
   const marqueeSwiper = new Swiper('.marquee .swiper', {
-    direction: 'vertical',
+    direction: 'vertical', // 設置滾動方向為垂直
+    slidesPerView: 1, // 每次顯示一則訊息
+    loop: true, // 啟用無限循環
     autoplay: {
       delay: 3000, //1秒切换一次
+      disableOnInteraction: false, // 用戶操作後仍然繼續自動播放
     },
     // 切換點
     // 切換箭頭
