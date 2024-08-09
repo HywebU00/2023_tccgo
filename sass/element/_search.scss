@@ -1,7 +1,7 @@
 //search
 
 .mobileSearchBtn {
-  display: none;
+  display: none !important;
   position: fixed;
   top: 0;
   right: 0;
@@ -83,6 +83,9 @@
     position: relative;
     margin: 2em 0;
     box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.2);
+    @include screen('mobile') {
+      padding: 2em 1.2em 1em;
+    }
   }
   .hTitle {
     flex: 0 1 100%;

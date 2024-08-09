@@ -423,25 +423,25 @@ function searchTypeB() {
     clickFn(webSearchBtn);
 
     // --- Focusout
-    // const nodes = webSearch.querySelectorAll('a,button,input');
-    // const lastNodes = nodes[nodes.length - 1];
-    // lastNodes.addEventListener('focusout', (e) => {
-    //   e.preventDefault();
-    //   if (webSearch.classList.contains('typeB')) {
-    //     slider.jsSlideUp(webSearch, 200);
-    //     jsFadeToggle(menuOverlay);
-    //   }
-    // });
+    const nodes = webSearch.querySelectorAll('a,button,input');
+    const lastNodes = nodes[nodes.length - 1];
+    lastNodes.addEventListener('focusout', (e) => {
+      e.preventDefault();
+      if (webSearch.classList.contains('typeB')) {
+        slider.jsSlideUp(webSearch, 200);
+        jsFadeToggle(menuOverlay);
+      }
+    });
     // --- 關閉
-    // function clickOtherPlace(e) {
-    //   const chooseClassName = webSearchBtn.className;
-    //   if (e.target.closest(`.webSearch`) === null && e.target !== searchBtn) {
-    //     slider.jsSlideUp(webSearch, 200);
-    //     jsFadeOut(menuOverlay);
-    //   } else {
-    //     return;
-    //   }
-    // }
+    function clickOtherPlace(e) {
+      const chooseClassName = webSearchBtn.className;
+      if (e.target.closest(`.webSearch`) === null && e.target !== searchBtn) {
+        slider.jsSlideUp(webSearch, 200);
+        jsFadeOut(menuOverlay);
+      } else {
+        return;
+      }
+    }
     // document.addEventListener('touchstart', (e) => {
     //   e.preventDefault();
     //   clickOtherPlace(e);

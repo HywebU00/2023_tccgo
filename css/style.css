@@ -2366,7 +2366,7 @@ img {
     }
   }
   .mobileSearchBtn {
-    display: none;
+    display: none !important;
     position: fixed;
     top: 0;
     right: 0;
@@ -2446,6 +2446,11 @@ img {
     position: relative;
     margin: 2em 0;
     box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.2);
+  }
+  @media screen and (max-width: 767px) {
+    .webSearch .content {
+      padding: 2em 1.2em 1em;
+    }
   }
   .webSearch .hTitle {
     flex: 0 1 100%;
