@@ -2366,7 +2366,7 @@ img {
     }
   }
   .mobileSearchBtn {
-    display: none !important;
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
