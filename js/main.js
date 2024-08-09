@@ -442,11 +442,11 @@ function searchTypeB() {
         return;
       }
     }
-    document.addEventListener('touchstart', (e) => {
-      e.preventDefault();
-      clickOtherPlace(e);
-    });
-    document.addEventListener('click', clickOtherPlace);
+    // document.addEventListener('touchstart', (e) => {
+    //   e.preventDefault();
+    //   clickOtherPlace(e);
+    // });
+    // document.addEventListener('click', clickOtherPlace);
   }
 }
 
@@ -464,7 +464,7 @@ mobileSearch({
 function mainMenuSetup() {
   const body = document.querySelector('body');
   const sidebar = document.querySelector('.mobileSidebar');
-  const mobileSearch = document.querySelector('.mobileSearch');
+  // const mobileSearch = document.querySelector('.mobileSearch');
   const sidebarClose = document.querySelector('.sidebarClose');
   const sidebarCtrlBtn = document.querySelector('.sidebarCtrlBtn');
   const menuOverlay = document.querySelector('.menuOverlay');
@@ -582,7 +582,7 @@ function mainMenuSetup() {
   sidebarCtrlBtn.addEventListener('click', (e) => {
     showSidebar();
     e.preventDefault();
-    mobileSearch !== null ? mobileSearch.classList.remove('active') : '';
+    // mobileSearch !== null ? mobileSearch.classList.remove('active') : '';
     menuOverlay.style.zIndex = '99';
   });
 
@@ -592,7 +592,7 @@ function mainMenuSetup() {
   sidebarClose.addEventListener('click', (e) => {
     jsFadeOut(menuOverlay);
     hideSidebar();
-    mobileSearch !== null ? mobileSearch.classList.remove('active') : '';
+    // mobileSearch !== null ? mobileSearch.classList.remove('active') : '';
   });
 
   // --- PC版設定
@@ -1989,13 +1989,13 @@ function langFunction(obj) {
       }
     });
 
-    obj.searchBtn.data.forEach((s) => {
-      if (webLang.slice(0, 2) == s.lang && searchCtrlBtn !== null) {
-        searchCtrlBtn.innerHTML = s.text;
-      } else {
-        searchCtrlBtn.innerHTML = obj.searchBtn.default;
-      }
-    });
+    // obj.searchBtn.data.forEach((s) => {
+    //   if (webLang.slice(0, 2) == s.lang && searchCtrlBtn !== null) {
+    //     searchCtrlBtn.innerHTML = s.text;
+    //   } else {
+    //     searchCtrlBtn.innerHTML = obj.searchBtn.default;
+    //   }
+    // });
   }
 
   // form password eyes
