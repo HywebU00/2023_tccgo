@@ -433,20 +433,20 @@ function searchTypeB() {
       }
     });
     // --- 關閉
-    // function clickOtherPlace(e) {
-    //   const chooseClassName = webSearchBtn.className;
-    //   if (e.target.closest(`.webSearch`) === null && e.target !== searchBtn) {
-    //     slider.jsSlideUp(webSearch, 200);
-    //     jsFadeOut(menuOverlay);
-    //   } else {
-    //     return;
-    //   }
-    // }
-    // document.addEventListener('touchstart', (e) => {
-    //   e.preventDefault();
-    //   clickOtherPlace(e);
-    // });
-    // document.addEventListener('click', clickOtherPlace);
+    function clickOtherPlace(e) {
+      const chooseClassName = webSearchBtn.className;
+      if (e.target.closest(`.webSearch`) === null && e.target !== searchBtn) {
+        slider.jsSlideUp(webSearch, 200);
+        jsFadeOut(menuOverlay);
+      } else {
+        return;
+      }
+    }
+    document.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      clickOtherPlace(e);
+    });
+    document.addEventListener('click', clickOtherPlace);
   }
 }
 
