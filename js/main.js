@@ -447,6 +447,36 @@ function searchTypeB() {
     //   clickOtherPlace(e);
     // });
     // document.addEventListener('click', clickOtherPlace);
+    if (searchBtn) {
+      searchBtn.addEventListener('click', (e) => {
+        jsSlideToggle(webSearch);
+        // jsFadeToggle(menuOverlay);
+
+        language ? jsSlideUp(language.querySelector('ul')) : null;
+        fontSize ? jsSlideUp(fontSize.querySelector('ul')) : null;
+      });
+      searchBtn.addEventListener('keydown', (e) => {
+        let target = webSearch.querySelectorAll('a, button');
+        if (e.which === 9 && !e.shiftKey) {
+          //tab
+          jsSlideToggle(webSearch);
+          [...target][target.length - 1].addEventListener('focusout', function (e) {
+            jsSlideUp(webSearch);
+            jsFadeOut(menuOverlay);
+          });
+        } else if (e.which === 9 && e.shiftKey) {
+        } else if (e.which === 27) {
+          jsSlideUp(webSearch);
+          jsFadeOut(menuOverlay);
+        }
+      });
+    }
+
+    menuOverlay?.addEventListener('click', (e) => {
+      jsSlideUp(webSearch);
+      menuOverlay ? menuOverlay.style.removeProperty('z-index') : null;
+      jsFadeOut(menuOverlay);
+    });
   }
 }
 
