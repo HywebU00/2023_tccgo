@@ -32,18 +32,48 @@
   }
 }
 
+// .webSearchBtn {
+//   position: relative;
+//   & > button {
+//     text-indent: -9999px;
+//     color: transparent;
+//     width: 50px;
+//     aspect-ratio: 1/1;
+//     position: relative;
+//     background: none;
+//     padding: 0;
+//     margin: 0;
+//     border: none;
+//     &::before {
+//       content: '';
+//       width: 100%;
+//       height: auto;
+//       position: absolute;
+//       inset: 0;
+//       z-index: 2;
+//       aspect-ratio: 1/1;
+//       display: block;
+//       mask: url('../images/icon/icon_search2.svg') center no-repeat;
+//       mask-size: 40%;
+//       background: #fff;
+//     }
+//   }
+// }
 .webSearchBtn {
   position: relative;
+
   & > button {
     text-indent: -9999px;
     color: transparent;
-    width: 50px;
+    width: 60px;
     aspect-ratio: 1/1;
     position: relative;
     background: none;
     padding: 0;
     margin: 0;
     border: none;
+    z-index: 90;
+
     &::before {
       content: '';
       width: 100%;
@@ -161,12 +191,12 @@
   &.mobile {
     display: none;
     width: 100% !important;
-    min-height: 320px;
+    min-height: 340px;
     left: 0;
     right: 0;
     margin: 0;
     background: url('../images/mp_search_bg.jpg') no-repeat left bottom;
-    background-size: contain;
+    background-size: cover;
 
     .content {
       width: 96%;

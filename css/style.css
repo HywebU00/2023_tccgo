@@ -2401,13 +2401,14 @@ img {
   .webSearchBtn > button {
     text-indent: -9999px;
     color: transparent;
-    width: 50px;
+    width: 60px;
     aspect-ratio: 1/1;
     position: relative;
     background: none;
     padding: 0;
     margin: 0;
     border: none;
+    z-index: 90;
   }
   .webSearchBtn > button::before {
     content: "";
@@ -2521,12 +2522,12 @@ img {
   .webSearch.mobile {
     display: none;
     width: 100% !important;
-    min-height: 320px;
+    min-height: 340px;
     left: 0;
     right: 0;
     margin: 0;
     background: url("../images/mp_search_bg.jpg") no-repeat left bottom;
-    background-size: contain;
+    background-size: cover;
   }
   .webSearch.mobile .content {
     width: 96%;

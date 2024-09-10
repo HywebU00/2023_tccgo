@@ -372,7 +372,7 @@ function searchTypeB() {
     item.addEventListener('click', (e) => {
       e.preventDefault();
       slider.jsSlideToggle(webSearch, 200);
-      jsFadeToggle();
+      jsFadeToggle(menuOverlay);
     });
     // --- Keydown
     item.addEventListener('keydown', (e) => {
@@ -433,15 +433,15 @@ function searchTypeB() {
       }
     });
     // --- 關閉
-    // function clickOtherPlace(e) {
-    //   const chooseClassName = webSearchBtn.className;
-    //   if (e.target.closest(`.webSearch`) === null && e.target !== searchBtn) {
-    //     slider.jsSlideUp(webSearch, 200);
-    //     jsFadeOut(menuOverlay);
-    //   } else {
-    //     return;
-    //   }
-    // }
+    function clickOtherPlace(e) {
+      const chooseClassName = webSearchBtn.className;
+      if (e.target.closest(`.webSearch`) === null && e.target !== searchBtn) {
+        slider.jsSlideUp(webSearch, 200);
+        jsFadeOut(menuOverlay);
+      } else {
+        return;
+      }
+    }
     // document.addEventListener('touchstart', (e) => {
     //   e.preventDefault();
     //   clickOtherPlace(e);
@@ -457,9 +457,9 @@ mobileSearch({
   searchCtrlBtn: document.querySelector('.searchCtrlBtn'),
 });
 
-// // -----------------------------------------------------------------------
-// // ----- 手機桌機版本切換及手機版menu設定 -------------------------------------
-// // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+// ----- 手機桌機版本切換及手機版menu設定 -------------------------------------
+// -----------------------------------------------------------------------
 
 function mainMenuSetup() {
   const body = document.querySelector('body');
