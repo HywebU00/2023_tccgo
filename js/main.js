@@ -303,7 +303,7 @@ function menu() {
   window.addEventListener('resize', mobileSearchFunction);
   window.addEventListener('load', mobileSearchFunction);
   function mobileSearchFunction() {
-    let windowWidth = body.outerWidth;
+    let windowWidth = window.outerWidth;
     const search = document.querySelector('.webSearch');
     if (search !== null && windowWidth < windowWidthSmall) {
       search.removeAttribute('style');
@@ -398,7 +398,7 @@ function searchTypeB() {
 
     let checkMobile = () => {
       windowWidth = window.outerWidth;
-      webSearch.removeAttribute('style');
+      //webSearch.removeAttribute('style');
       const observer = new ResizeObserver(function (entries) {
         if (entries[0].contentRect.width <= windowWidthSmall) {
           !webSearchBtn.classList.contains('active') && webSearchBtn.classList.add('active');
@@ -408,6 +408,7 @@ function searchTypeB() {
         } else {
           webSearchBtn.classList.contains('active') && webSearchBtn.classList.remove('active');
           webSearch.classList.contains('mobile') && webSearch.classList.remove('mobile');
+		  webSearch.removeAttribute('style');
           let webSearchTop = searchBtnOut?.parentElement.offsetHeight;
           webSearch.style.top = `${webSearchTop}px`;
         }
