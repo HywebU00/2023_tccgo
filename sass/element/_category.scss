@@ -86,3 +86,39 @@
     display: block;
   }
 }
+.sort {
+  margin-bottom: 1em;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+    a {
+      border: 1px solid #d4d4d4;
+      padding: 0.2em 1em;
+      display: block;
+      color: #333;
+      font-size: 1rem;
+      box-sizing: border-box;
+      border-radius: 5px;
+      text-align: center;
+      min-width: 6em;
+      font-weight: bold;
+      &:hover,
+      &:focus {
+        color: $colorWord !important;
+        background: lighten($colorPrimary, 20);
+        border: 1px solid lighten($colorPrimary, 20);
+      }
+
+      &.active {
+        color: $colorWord;
+        background: lighten($colorPrimary, 0);
+        border: 1px solid lighten($colorPrimary, 0);
+        box-shadow: none;
+      }
+    }
+  }
+}

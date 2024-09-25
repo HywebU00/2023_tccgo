@@ -244,42 +244,22 @@
             </div>
             <div class="condition">查詢條件：[不限欄位：<em>王世堅</em>] [不限欄位：<em>台北101</em>] [不限欄位：<em>捷運</em>] [不限欄位：<em>市長</em>]</div>
             <!-- category -->
-            <div class="category dropdown">
+            <div class="category">
               <ul>
                 <li><a href="#">公報</a></li>
-                <li>
-                  <a href="javascript:;" onclick="myFunction()" class="active">搶鮮報</a>
-                  <ul id="catDropdown" class="dropdown-content">
-                    <li><a href="#">書面質詢</a></li>
-                    <li><a href="#">會議記錄</a></li>
-                    <li><a href="#">速記錄</a></li>
-                    <li><a href="#">市府書面報告</a></li>
-                  </ul>
-                </li>
+                <li><a href="#" class="active">搶鮮報</a></li>
                 <li><a href="#">7-9屆公報</a></li>
               </ul>
             </div>
             <!-- sort -->
-            <div id="catDropdown" class="dropdown-content"></div>
-            <script>
-              function myFunction() {
-                document.getElementById('catDropdown').classList.toggle('show');
-              }
-
-              window.onclick = function (event) {
-                if (!event.target.matches('.active')) {
-                  var dropdowns = document.getElementsByClassName('dropdown-content');
-                  var i;
-                  for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                      openDropdown.classList.remove('show');
-                    }
-                  }
-                }
-              };
-            </script>
-
+            <div class="sort">
+              <ul>
+                <li><a href="#" class="active">書面質詢</a></li>
+                <li><a href="#">會議記錄</a></li>
+                <li><a href="#">速記錄</a></li>
+                <li><a href="#">市府書面報告</a></li>
+              </ul>
+            </div>
             <!-- sort end-->
             <!-- LP Start -->
             <section class="lp">

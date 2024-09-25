@@ -3980,6 +3980,40 @@ img {
   .dropdown .show {
     display: block;
   }
+  .sort {
+    margin-bottom: 1em;
+  }
+  .sort ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .sort ul li {
+    display: inline-block;
+  }
+  .sort ul a {
+    border: 1px solid #d4d4d4;
+    padding: 0.2em 1em;
+    display: block;
+    color: #333;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 6em;
+    font-weight: bold;
+  }
+  .sort ul a:hover, .sort ul a:focus {
+    color: #1b1a1a !important;
+    background: #90e7f4;
+    border: 1px solid #90e7f4;
+  }
+  .sort ul a.active {
+    color: #1b1a1a;
+    background: #33d3eb;
+    border: 1px solid #33d3eb;
+    box-shadow: none;
+  }
   .tag {
     margin-bottom: 1em;
     position: relative;
