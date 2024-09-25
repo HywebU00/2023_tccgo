@@ -244,18 +244,67 @@
             </div>
             <div class="condition">查詢條件：[不限欄位：<em>王世堅</em>] [不限欄位：<em>台北101</em>] [不限欄位：<em>捷運</em>] [不限欄位：<em>市長</em>]</div>
             <!-- category -->
-            <div class="category">
+            <div class="category dropdown">
               <ul>
                 <li><a href="#">公報</a></li>
-                <li><a href="#" class="active">搶鮮報</a></li>
+                <li>
+                  <a href="javascript:;" onclick="myFunction()" class="active">搶鮮報</a>
+                  <ul id="catDropdown" class="dropdown-content">
+                    <li><a href="#">書面質詢</a></li>
+                    <li><a href="#">會議記錄</a></li>
+                    <li><a href="#">速記錄</a></li>
+                    <li><a href="#">市府書面報告</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">7-9屆公報</a></li>
               </ul>
             </div>
+            <!-- sort -->
+            <div id="catDropdown" class="dropdown-content"></div>
+            <script>
+              function myFunction() {
+                document.getElementById('catDropdown').classList.toggle('show');
+              }
+
+              window.onclick = function (event) {
+                if (!event.target.matches('.active')) {
+                  var dropdowns = document.getElementsByClassName('dropdown-content');
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+                  }
+                }
+              };
+            </script>
+
+            <!-- sort end-->
             <!-- LP Start -->
             <section class="lp">
+              <!-- searchflex -->
+              <div class="searchflex">
+                <label for="searchid">查詢</label>
+                <select name="" id="searchid">
+                  <option value="">依屆會次</option>
+                  <option value="">...</option>
+                </select>
+                <select name="" id="searchid">
+                  <option value="">由大到小</option>
+                  <option value="">...</option>
+                </select>
+                <input name="username" type="text" id="searchid" value="請輸入關鍵字" placeholder="請輸入關鍵字" />
+                <button type="button" class="btn btnPrimary">縮小範圍查詢</button>
+                <button type="button" class="btn">重新查詢</button>
+              </div>
+              <!-- searchflex end-->
               <!-- aRight -->
               <div class="printBox">
                 <div class="flexForm">
                   <div class="formGrp formInline">
+                    <button type="button" class="btn btnYellow"><span class="i_checksel_dark"></span>全選</button>
+                    <button type="button" class="btn btnYellow"><span class="i_checkdel_dark"></span>全部取消</button>
                     <label for="selectSample" class="labelhidden">選擇筆數列印:</label>
                     第
                     <select name="" id="selectSample">
@@ -273,28 +322,6 @@
                 </div>
               </div>
               <!-- aRight end-->
-              <!-- searchflex -->
-              <div class="searchflex">
-                <label for="searchid">查詢</label>
-                <select name="" id="searchid">
-                  <option value="">依屆會次</option>
-                  <option value="">...</option>
-                </select>
-                <select name="" id="searchid">
-                  <option value="">由大到小</option>
-                  <option value="">...</option>
-                </select>
-                <input name="username" type="text" id="searchid" value="請輸入關鍵字" placeholder="請輸入關鍵字" />
-                <button type="button" class="btn btnPrimary">縮小範圍查詢</button>
-                <button type="button" class="btn">重新查詢</button>
-              </div>
-              <!-- searchflex end-->
-              <!-- selbox -->
-              <div class="selbox">
-                <button type="button" class="btn btnYellow"><span class="i_checksel_dark"></span>全選</button>
-                <button type="button" class="btn btnYellow"><span class="i_checkdel_dark"></span>全部取消</button>
-              </div>
-              <!-- selbox end-->
               <!-- 文字列表 -->
               <div class="listflex2">
                 <ul>

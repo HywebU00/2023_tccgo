@@ -56,3 +56,33 @@
     }
   }
 }
+
+.dropdown {
+  padding-bottom: 2em;
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+    margin-top: 0.3em;
+    li {
+      display: inline-block;
+    }
+    a {
+      border: 1px solid #d4d4d4;
+      padding: 0.2em 1em;
+      display: block;
+      color: #333;
+      font-size: 1rem;
+      box-sizing: border-box;
+      border-radius: 5px;
+      text-align: center;
+      min-width: 6em;
+      font-weight: bold;
+    }
+  }
+  .show {
+    display: block;
+  }
+}

@@ -3951,6 +3951,35 @@ img {
     content: ")";
     display: inline-block;
   }
+  .dropdown {
+    padding-bottom: 2em;
+  }
+  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+    margin-top: 0.3em;
+  }
+  .dropdown .dropdown-content li {
+    display: inline-block;
+  }
+  .dropdown .dropdown-content a {
+    border: 1px solid #d4d4d4;
+    padding: 0.2em 1em;
+    display: block;
+    color: #333;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 6em;
+    font-weight: bold;
+  }
+  .dropdown .show {
+    display: block;
+  }
   .tag {
     margin-bottom: 1em;
     position: relative;
